@@ -6,6 +6,191 @@
     <link href="assets/normalize.css" rel="stylesheet">
     <style>
 
+        body > main {
+            width: 99vw;
+            height: 100vh;
+            position: relative;
+        }
+
+        ::-webkit-scrollbar{
+            width: 8px;
+            background-color: cornflowerblue;
+        }
+
+        ::-webkit-scrollbar-thumb{
+            background-color: yellow;
+        }
+
+        body > main > section {
+            width: 50vw;
+            height: 50vh;
+            position: absolute;
+        }
+
+        body > main > section:nth-child(1) {
+            top: 0;
+            left: 0;
+            background: red;
+        }
+
+        body > main > section:nth-child(2) {
+            top: 0;
+            right: 0;
+            background: green;
+        }
+
+        body > main > section:nth-child(3) {
+            bottom: 0;
+            left: 0;
+            background: orange;
+        }
+
+        body > main > section:nth-child(4) {
+            bottom: 0;
+            right: 0;
+            background: deeppink;
+        }
+
+        body > main > div:nth-child(5), body > main > div:nth-child(6), body > main > div:nth-child(7), body > main > div:nth-child(8) {
+            width: 150px;
+            height: 150px;
+            position: absolute;
+
+        }
+
+        body > main > div:nth-child(5) {
+            top: 0;
+            left: 0;
+            background-color: white;
+            border-bottom-right-radius: 100%;
+        }
+
+        body > main > div:nth-child(6) {
+            top: 0;
+            right: 0;
+            background-color: white;
+            border-bottom-left-radius: 100%;
+        }
+
+        body > main > div:nth-child(7) {
+            bottom: 0;
+            left: 0;
+            background-color: white;
+            border-top-right-radius: 100%;
+        }
+
+        body > main > div:nth-child(8) {
+            bottom: 0;
+            right: 0;
+            background-color: white;
+            border-top-left-radius: 100%;
+        }
+
+        body > main > div:nth-child(9) {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            background: white;
+
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        body > main > div:nth-child(9) > div {
+            width: 50%;
+            height: 50%;
+            background: red;
+            position: absolute;
+            border-radius: 100%;
+
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        body > main > div:nth-child(10), body > main > div:nth-child(11) {
+            width: 192px;
+            height: 94px;
+            position: absolute;
+            background: white;
+        }
+
+        body > main > div:nth-child(10) {
+            top: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            border-bottom-left-radius: 100px;
+            border-bottom-right-radius: 100px;
+        }
+
+        body > main > div:nth-child(11) {
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            border-top-left-radius: 100px;
+            border-top-right-radius: 100px;
+        }
+
+        body > main > section > div {
+            width: 150px;
+            height: 150px;
+            background: white;
+            position: absolute;
+        }
+
+        body > main > section:nth-child(1) > div {
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        body > main > section:nth-child(2) > div {
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        body > main > section:nth-child(3) > div {
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        body > main > section:nth-child(4) > div {
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        body > main > section > div > div {
+            width: 50%;
+            height: 50%;
+            background: red;
+            position: absolute;
+            border-radius: 100%;
+
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
     </style>
 
 </head>
