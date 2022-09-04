@@ -1,0 +1,246 @@
+/*Scroll Bar*/
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: seashell;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: gray;
+}
+
+/*HEADER SECTION*/
+/*Add Header*/
+header{
+    width: 99.1vw;
+    height: 70px;
+    position: sticky;
+    top: 0;
+    z-index: 15;
+
+    background: #5B657C;
+    box-shadow: inset 0px 4px 4px rgba(0,0,0,0.25);
+}
+/*add home image sizes*/
+header > nav > img{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    left: 35px;
+    top: 12px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/*add header headlines and styles*/
+header > nav > article {
+    position: absolute;
+    right: 25px;
+    top : 22px;
+    font-weight: bold;
+    font-size: 24px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Nunito', sans-serif;
+}
+
+/*remove headlines underlines and add paddings*/
+body > header > nav > article > a, u{
+    text-decoration: none;
+    color: aliceblue;
+    padding-right: 20px;
+}
+
+/*Added hover colors into header nav*/
+body > header > nav > article > a:hover {
+    color: #927733;
+}
+
+/*MAIN SECTION*/
+main > section {
+    width: 99vw;
+    height: 85vh;
+    border: 1px solid #0E1630;
+    position: relative;
+}
+
+/*Profiles*/
+/*add styles for Home section*/
+body > main > section:nth-child(1) {
+    background-color: #0E1630;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+body > main > section > nav {
+    display: flex;
+}
+
+/*add profile pic into Home Section*/
+body > main > section:nth-child(1) > img {
+    width: 350px;
+    height: 350px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 80px;
+    position: absolute;
+    right: 200px;
+    top: 60px;
+}
+
+/*h1 "Hello "*/
+body > main > section:nth-child(1) > h1:nth-child(1){
+    position: absolute;
+    font-weight: bold;
+    display: inline-block;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 100px;
+    top: 0px;
+    left: 200px;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+
+/*h1 "I'M LASARI WIJAYAWARDHANA"*/
+body > main > section:nth-child(1) > h1:nth-child(2){
+    position: absolute;
+    font-weight: bold;
+    display: inline-block;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 50px;
+    top: 150px;
+    left: 200px;
+    font-family: 'Centaur';
+}
+
+/*h1 "UI & UX Designer"*/
+body > main > section:nth-child(1) > h1:nth-child(3){
+    position: absolute;
+    font-weight: bold;
+    display: inline-block;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 30px;
+    top: 300px;
+    left: 200px;
+    font-family: 'Centaur', sans-serif;
+}
+
+/*Download*/
+body > main > section:nth-child(1) > h1:nth-child(4){
+    position: absolute;
+    font-weight: bold;
+    display: inline-block;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 26px;
+    top: 350px;
+    left: 200px;
+    font-family: 'Nunito', sans-serif;
+}
+
+/*add colors using span*/
+#span1{
+    color: white;
+    opacity: 70%;
+}
+
+#span2{
+    color: white;
+}
+
+#span3{
+    color: #808DAD;
+}
+
+#span4{
+    color: #927733;
+}
+
+/*Add side captions*/
+body > main > section:nth-child(1) > aside > h3:nth-child(1) {
+    font-size: 20px;
+    position: absolute;
+    display: inline-block;
+    top: 400px;
+    right: 450px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+body > main > section:nth-child(1) > aside > h3:nth-child(2) {
+    font-size: 25px;
+    position: absolute;
+    display: inline-block;
+    top: 420px;
+    right: 330px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+body > main > section:nth-child(1) > aside > h3:nth-child(3) {
+    font-size: 18px;
+    position: absolute;
+    display: inline-block;
+    top: 500px;
+    right: 60px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/*add colors for side captions using span*/
+#span5{
+    color: #927733;
+
+}
+
+#span6{
+    color: white;
+}
+
+#span7{
+    color: #808DAD;
+}
+
+/*add service icons*/
+body > main > section:nth-child(1) > div > h2:nth-child(1) {
+    font-size: 20px;
+    position: absolute;
+    display: inline-block;
+    top: 400px;
+    left: 190px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: revert;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+body > main > section:nth-child(1) > div > h2:nth-child(2) {
+    font-size: 20px;
+    position: absolute;
+    display: inline-block;
+    top: 400px;
+    left: 430px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: revert;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+body > main > section:nth-child(1) > div > h2:nth-child(3) {
+    font-size: 20px;
+    position: absolute;
+    display: inline-block;
+    top: 480px;
+    left: 300px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: revert;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/*add colors for service icons using span*/
+#div1{
+    color: white;
+
+}
+
+#div2{
+    color: white;
+}
+
+#div3{
+    color: white;
+}
