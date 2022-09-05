@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        main{
+            width: 900px;
+            height: 620px;
+            position: absolute;
+            box-shadow: 1px 3px 5px 1px ;
+            left: 0;
+            right: 0;
+            margin: auto;
+            top:0px;
+            bottom: 0px;
+            overflow-x: hidden;
+
+        }
+
+        main > section {
+            height: 100%;
+            width: 400%;
+            display: flex;
+            transform: translateX(-300px);
+            animation-name: my-animation;
+            animation-duration: 10s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+        }
+
+        main > section > div{
+            height: 100%;
+            width: 100%;
+        }
+
+        main > section > div:nth-child(1){
+            background: url("images/5.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        main > section > div:nth-child(2){
+            background: url("images/6.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        main > section > div:nth-child(3){
+            background: url("images/1.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        @keyframes my-animation{
+            0%,30%{
+                transform: translateX(0);
+            }
+            45%,65%{
+                transform: translateX(-35%);
+            }
+            75%,100%{
+                transform: translateX(-70%);
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+<main>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</main>
+</body>
+</html>
