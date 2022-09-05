@@ -20,7 +20,8 @@ header{
     background: #5B657C;
     box-shadow: inset 0px 4px 4px rgba(0,0,0,0.25);
 }
-/*add home image sizes*/
+
+/*Add home image sizes*/
 header > nav > img{
     position: relative;
     width: 50px;
@@ -30,7 +31,7 @@ header > nav > img{
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-/*add header headlines and styles*/
+/*Add header headlines and styles*/
 header > nav > article {
     position: absolute;
     right: 25px;
@@ -41,7 +42,7 @@ header > nav > article {
     font-family: 'Nunito', sans-serif;
 }
 
-/*remove headlines underlines and add paddings*/
+/*Remove headlines underlines and add paddings*/
 body > header > nav > article > a, u{
     text-decoration: none;
     color: aliceblue;
@@ -62,7 +63,8 @@ main > section {
 }
 
 /*Profiles*/
-/*add styles for Home section*/
+/*Home page*/
+/*Add styles for Home section*/
 body > main > section:nth-child(1) {
     background-color: #0E1630;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -72,7 +74,7 @@ body > main > section > nav {
     display: flex;
 }
 
-/*add profile pic into Home Section*/
+/*Add profile pic into Home Section*/
 body > main > section:nth-child(1) > img {
     width: 350px;
     height: 350px;
@@ -131,7 +133,7 @@ body > main > section:nth-child(1) > h1:nth-child(4){
     font-family: 'Nunito', sans-serif;
 }
 
-/*add colors using span*/
+/*Add colors using span*/
 #span1{
     color: white;
     opacity: 70%;
@@ -183,7 +185,7 @@ body > main > section:nth-child(1) > aside > h3:nth-child(3) {
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-/*add colors for side captions using span*/
+/*Add colors for side captions using span*/
 #span5{
     color: #927733;
 
@@ -197,7 +199,7 @@ body > main > section:nth-child(1) > aside > h3:nth-child(3) {
     color: #808DAD;
 }
 
-/*add service icons*/
+/*Add service icons*/
 body > main > section:nth-child(1) > div > h2:nth-child(1) {
     font-size: 20px;
     position: absolute;
@@ -206,6 +208,7 @@ body > main > section:nth-child(1) > div > h2:nth-child(1) {
     left: 190px;
     font-family: 'Poppins', sans-serif;
     font-weight: revert;
+    color: white;
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -217,6 +220,7 @@ body > main > section:nth-child(1) > div > h2:nth-child(2) {
     left: 430px;
     font-family: 'Poppins', sans-serif;
     font-weight: revert;
+    color: white;
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -228,19 +232,160 @@ body > main > section:nth-child(1) > div > h2:nth-child(3) {
     left: 300px;
     font-family: 'Poppins', sans-serif;
     font-weight: revert;
+    color: white;
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-/*add colors for service icons using span*/
-#div1{
-    color: white;
-
+/*About page*/
+body > main > section:nth-child(2) {
+    background-color: #0E1630;
 }
 
-#div2{
+body > main > section:nth-child(2) > h2:nth-child(1){
+    position: absolute;
+    font-size: 35px;
+    display: inline-block;
+    font-weight: bold;
+    top: 0;
+    left: 10px;
+    color: #927733;
+}
+
+/*Add subheader headlines and styles*/
+section:nth-child(2) > nav > article {
+    position: absolute;
+    right: 250px;
+    top : 30px;
+    font-weight: bold;
+    font-size: 30px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Nunito', sans-serif;
+}
+
+/*Remove headlines underlines and add paddings*/
+section:nth-child(2)>  nav > article > a, u{
+    text-decoration: none;
+    color: aliceblue;
+    padding-right: 35px;
+}
+
+/*Added hover colors into subheader nav*/
+section > nav > article > a:hover {
+    color: #927733;
+}
+
+/*Add gallery images */
+body > main > section:nth-child(2) > aside:nth-child(3) > img:nth-child(1) {
+    width: 200px;
+    height: auto;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+    position: absolute;
+    left: 10px;
+    top: 100px;
+}
+
+body > main > section:nth-child(2) > aside:nth-child(3) > img:nth-child(2) {
+    width: auto;
+    height: 250px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+    position: absolute;
+    left: 225px;
+    top: 95px;
+}
+body > main > section:nth-child(2) > aside:nth-child(3) > img:nth-child(3) {
+    width: 150px;
+    height: auto;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+    position: absolute;
+    left: 58px;
+    top: 372px;
+}
+
+body > main > section:nth-child(2) > aside:nth-child(3) > img:nth-child(4) {
+    width: 250px;
+    height: auto;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+    position: absolute;
+    left: 220px;
+    top: 355px;
+}
+
+/*My intro*/
+body > main > section:nth-child(2) > p:nth-child(4) {
+    position: relative;
+    display: inline-block;
+    left: 640px ;
+    top: 100px;
+    font-family: 'Poppins',sans-serif;
+    font-size: 28px;
+    font-weight: normal;
+    color: #808DAD;
+}
+
+/*add border to add my details*/
+body > main > section:nth-child(2) > div:nth-child(5) {
+    /*border: 1px solid blue;*/
+    position: relative;
+    width: 43vw;
+    left: 640px;
+    top: 100px;
+    height: 27vh;
+}
+
+/*!*add positions for all p inside div*!*/
+body > main > section:nth-child(2) > div:nth-child(5) > p {
+    position: absolute;
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+}
+
+/*!*Maintain my details p tags*!*/
+body > main > section:nth-child(2) > div:nth-child(5) > p:nth-child(1) {
+    left: 0;
+}
+
+body > main > section:nth-child(2) > div:nth-child(5) > p:nth-child(2) {
+    height: 30px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+body > main > section:nth-child(2) > div:nth-child(5) > p:nth-child(3) {
+    left: 0;
+    bottom: 0;
+}
+
+body > main > section:nth-child(2) > div:nth-child(5) > p:nth-child(4) {
+    right: 0;
+    top: 0;
+}
+
+body > main > section:nth-child(2) > div:nth-child(5) > p:nth-child(5) {
+    height: 30px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin:auto;
+}
+body > main > section:nth-child(2) > div:nth-child(5) > p:nth-child(6) {
+    right: 0;
+    bottom: 0;
+}
+
+/*!*add colors for my details topics*!*/
+.my-details {
+    color: #808DAD;
+}
+
+.my-details2{
     color: white;
 }
 
-#div3{
-    color: white;
-}
+
