@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width: 8px;
+            height: 8px;
+            position: absolute;
+            border: 5px solid deepskyblue;
+            border-radius: 100%;
+
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+
+            animation-name: my-animation;
+            animation-duration: 0.99s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-timing-function:linear;
+        }
+        @keyframes my-animation {
+            0% {
+                width: 10px;
+                height: 10px;
+
+            }
+            100% {
+                width: 200px;
+                height: 200px;
+
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div>
+
+</div>
+</body>
+</html>
