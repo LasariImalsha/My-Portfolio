@@ -236,7 +236,7 @@ body > main > section:nth-child(1) > div > h2:nth-child(3) {
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-/*About page*/
+/*About page - Bio*/
 body > main > section:nth-child(2) {
     background-color: #0E1630;
 }
@@ -388,4 +388,192 @@ body > main > section:nth-child(2) > div:nth-child(5) > p:nth-child(6) {
     color: white;
 }
 
+/*About page - Edu*/
+body > main > section:nth-child(3) {
+    background-color: #0E1630;
+}
 
+body > main > section:nth-child(3) > h2:nth-child(1){
+    position: absolute;
+    font-size: 35px;
+    display: inline-block;
+    font-weight: bold;
+    top: 0;
+    left: 10px;
+    color: #927733;
+}
+
+/*Add subheader headlines and styles*/
+section:nth-child(3) > nav > article {
+    position: absolute;
+    right: 250px;
+    top : 30px;
+    font-weight: bold;
+    font-size: 30px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Nunito', sans-serif;
+}
+
+/*Remove headlines underlines and add paddings*/
+section:nth-child(3)>  nav > article > a, u{
+    text-decoration: none;
+    color: aliceblue;
+    padding-right: 35px;
+}
+
+/*Added hover colors into subheader nav*/
+section > nav > article > a:hover {
+    color: #927733;
+}
+
+.edu{
+    position: relative;
+}
+
+.edu > aside{
+    display: flex;
+    align-content:center;
+    justify-content: center;
+}
+
+.edu > aside > section{
+    position: relative;
+    width: 600px;
+    height: 450px;
+}
+
+.line {
+    display: inline-block;
+    position: absolute;
+    border-left: 3px solid white;
+    height: 475px;
+    width: 0;
+    left: -68px;
+    right: 700px;
+    top: 98px;
+    margin: auto;
+}
+
+.edu-details {
+    position: relative;
+    display: inline;
+    width: 304px;
+    height: 200px;
+}
+
+.edu section > div:nth-child(2) {
+    right: 50px;
+    top: 90px;
+}
+
+.edu section > div:nth-child(3) {
+    right: 50px;
+    top: 100px;
+}
+
+.edu-details > p:first-child {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.edu-details a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: inherit;
+    font-family: 'Nunito', sans-serif;
+}
+
+.edu-details > p:nth-child(3) {
+    color: #BBBBBB;
+    font-size: 16px;
+}
+
+.edu-details > p:nth-child(4) {
+    color: #808DAD;
+    font-size: 17px;
+    font-weight: normal;
+    font-family: 'Poppins',sans-serif;
+}
+
+.edu section > div:nth-child(4) {
+    position: absolute;
+    background-color: #927733;
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    left: -75px;
+    right: 700px;
+    top: 96px;
+    margin: auto;
+}
+
+.edu section > div:nth-child(5) {
+    position: absolute;
+    background-color: #927733;
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    left: -75px;
+    right: 700px;
+    top: 330px;
+    margin: auto;
+}
+
+body > main > section:nth-child(3) > aside:nth-child(4) > h3:nth-child(1){
+    top: 450px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+}
+
+body > main > section:nth-child(3) > aside:nth-child(4) > h3:nth-child(2){
+    top: 475px;
+    font-weight: normal;
+    color: #808DAD;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+body > main > section:nth-child(3) > aside:nth-child(4){
+    bottom:50px;
+    left: 890px;
+    position: relative;
+}
+body > main > section:nth-child(3) > aside:nth-child(4) > img:nth-child(3){
+    width: 40px;
+    height: auto;
+
+}
+body > main > section:nth-child(3) > aside:nth-child(4) > img:nth-child(4){
+    width: 60px;
+    height: auto;
+
+}
+body > main > section:nth-child(3) > aside:nth-child(4) >img:nth-child(5){
+    width: 30px;
+    height: 40px;
+
+}
+body > main > section:nth-child(3) > img:nth-child(5){
+    width: 250px;
+    height: auto;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+    position: absolute;
+    right: 170px;
+    top: 220px;
+}
+
+body > main > section:nth-child(3) > img:nth-child(6){
+    width: 250px;
+    height: auto;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+    position: absolute;
+    right: 250px;
+    top: 90px;
+}
