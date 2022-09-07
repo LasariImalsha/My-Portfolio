@@ -768,3 +768,181 @@ body > main > section:nth-child(4) > section:nth-child(6) > div > p {
 
 }
 
+/*Services page - Professionally*/
+body > main > section:nth-child(5) {
+    background-color: #0E1630;
+}
+
+body > main > section:nth-child(5) > h2:nth-child(1){
+    position: absolute;
+    font-size: 35px;
+    display: inline-block;
+    font-weight: bold;
+    top: 0;
+    left: 10px;
+    color: #927733;
+}
+
+/*Add subheader headlines and styles*/
+section:nth-child(5) > nav > article {
+    position: absolute;
+    right: 250px;
+    top : 30px;
+    font-weight: bold;
+    font-size: 30px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Nunito', sans-serif;
+}
+
+/*Remove headlines underlines and add paddings*/
+section:nth-child(5)>  nav > article > a, u{
+    text-decoration: none;
+    color: aliceblue;
+    padding-right: 35px;
+}
+
+/*Add hover colors into subheader nav*/
+section > nav > article > a:hover {
+    color: #927733;
+}
+
+/*Add subheadings - 1 */
+body > main > section:nth-child(5) > p:nth-child(3){
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    position: relative;
+    top: 70px ;
+    left: 10px;
+    color: white;
+    opacity: 70%;
+}
+/*Add flex box for add my services*/
+body > main > section:nth-child(5) > article:nth-child(4) {
+    display: flex;
+    position: relative;
+    width: 98.9vw;
+    /*height: 80vh;*/
+    top: 48px;
+    /*border: 1px solid red;*/
+    /*flex-direction: row;*/
+}
+
+/*Add sizes all divs in flex box*/
+body > main > section:nth-child(5) > article:nth-child(4) > div {
+    /*border: 1px solid orange;*/
+    width: 100%;
+    height: 650px;
+}
+
+/*add style planing h3*/
+body > main > section:nth-child(5) > article:nth-child(4) > div:nth-child(1) > h3 {
+    position: relative;
+    text-align: center;
+    font-size: 31px;
+    top:15px;
+    left: 5px;
+    font-weight: bold;
+    color: #808DAD;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Nunito', sans-serif;
+}
+
+/*add image into planing*/
+body > main > section:nth-child(5) > article:nth-child(4) > div:nth-child(1) > img {
+    height: 228px;
+    width: 228px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 40px;
+    position: relative;
+    top: 20px;
+}
+
+/*description styles planing*/
+body > main > section:nth-child(5) > article:nth-child(4) > div:nth-child(1) > pre {
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    bottom: 20px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    left: 10px;
+
+}
+
+/*add styles UI&UX h3*/
+body > main > section:nth-child(5) > article:nth-child(4) > div:nth-child(2) > h3 {
+    position: relative;
+    text-align: center;
+    font-size: 31px;
+    top: 15px;
+    left: 5px;
+    font-weight: bold;
+    color: #808DAD;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Nunito', sans-serif;
+}
+
+/*add image into UI&UX*/
+body > main > section:nth-child(5) > article:nth-child(4) > div:nth-child(2) > img {
+    height: 228px;
+    width: 228px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 40px;
+    position: relative;
+    top: 20px;
+}
+
+/*description styles UI&UX*/
+body > main > section:nth-child(5) > article:nth-child(4) > div:nth-child(2) > pre {
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    bottom: 20px;
+    left: 10px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+
+}
+
+/*add style graphic design h3*/
+body > main > section:nth-child(5) > article:nth-child(4) > div:nth-child(3) > h3 {
+    position: relative;
+    text-align: center;
+    font-size: 31px;
+    bottom:34px;
+    left: 5px;
+    font-weight: bold;
+    color: #808DAD;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Nunito', sans-serif;
+}
+
+/*add image into graphic design*/
+body > main > section:nth-child(5) > article:nth-child(4) > div:nth-child(3) > img {
+    height: 280px;
+    width: 220px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 40px;
+    position: relative;
+    bottom: 15px;
+}
+
+/*description styles graphic design*/
+body > main > section:nth-child(5) > article:nth-child(4) > div:nth-child(3) > pre {
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    bottom: 65px;
+    left: 10px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+
+}
+
