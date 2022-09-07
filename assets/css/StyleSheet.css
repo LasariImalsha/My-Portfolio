@@ -616,4 +616,155 @@ section > nav > article > a:hover {
     color: #927733;
 }
 
+/*Add subheadings - 1 */
+body > main > section:nth-child(4) > p:nth-child(3){
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    position: relative;
+    top: 90px ;
+    left: 10px;
+    color: white;
+    opacity: 70%;
+}
+
+/*Add grid box for language*/
+body > main > section:nth-child(4) > section:nth-child(4){
+    top: 110px;
+    left: 20px;
+    position: relative;
+    display: grid;
+    height: 300px;
+
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(8,1fr);
+}
+
+/* Add little div box for languages*/
+body > main > section:nth-child(4) > section:nth-child(4) > div {
+    background: #0E1630;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: relative;
+    width: 90px;
+    height: 90px;
+    top: 30px;
+    left: 20px;
+    border-radius: 15px;
+    transition: 1s;
+    transition-property: background, color;
+    cursor: none;
+}
+
+/*add over effect on skills*/
+body > main > section:nth-child(4) > section:nth-child(4) > div:hover {
+    background: linear-gradient(45deg, #0E1630, #927733);
+    /*color: white;*/
+    /*border-radius: 25px;*/
+    transition: 1s;
+    transition-property: background, color;
+}
+
+/*add languages  & tools image*/
+body > main > section:nth-child(4) > section:nth-child(4) > div > img {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left: 17px;
+    top: 5px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 20px;
+    transition: 1.5s;
+}
+
+
+/*add languages  & tools names */
+body > main > section:nth-child(4) > section:nth-child(4) > div > p {
+    font-size: 16px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    bottom: 9px;
+    left: -5px;
+    right: 0;
+    margin: auto;
+    text-align: center;
+
+}
+
+/*Add subheadings - 2*/
+body > main > section:nth-child(4) > p:nth-child(5){
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    position: relative;
+    bottom: 45px ;
+    left: 10px;
+    color: white;
+    opacity: 70%;
+}
+
+/*Add grid box for language*/
+body > main > section:nth-child(4) > section:nth-child(6){
+    bottom: 40px;
+    left: 20px;
+    position: relative;
+    display: grid;
+    width: 800px;
+
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(4,1fr);
+}
+
+/* Add little div box for languages*/
+body > main > section:nth-child(4) > section:nth-child(6) > div {
+    background: #0E1630;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: relative;
+    width: 90px;
+    height: 90px;
+    top: 30px;
+    left: 20px;
+    border-radius: 15px;
+    transition: 1s;
+    transition-property: background, color;
+    cursor: none;
+}
+
+/*add over effect on skills*/
+body > main > section:nth-child(4) > section:nth-child(6) > div:hover {
+    background: linear-gradient(45deg, #0E1630, #927733);
+    color: white;
+    /*border-radius: 25px;*/
+    transition: 1s;
+    transition-property: background, color;
+}
+
+/*add languages  & tools image*/
+body > main > section:nth-child(4) > section:nth-child(6) > div > img {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left: 17px;
+    top: 5px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 20px;
+    transition: 1.5s;
+}
+
+
+/*add languages  & tools names */
+body > main > section:nth-child(4) > section:nth-child(6) > div > p {
+    font-size: 15px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    bottom: 9px;
+    left: -5px;
+    right: 0;
+    margin: auto;
+    text-align: center;
+
+}
 
