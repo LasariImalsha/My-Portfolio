@@ -257,7 +257,7 @@ section:nth-child(2) > nav > article {
     right: 250px;
     top : 30px;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 24px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: 'Nunito', sans-serif;
 }
@@ -409,7 +409,7 @@ section:nth-child(3) > nav > article {
     right: 250px;
     top : 30px;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 24px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: 'Nunito', sans-serif;
 }
@@ -599,7 +599,7 @@ section:nth-child(4) > nav > article {
     right: 250px;
     top : 30px;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 24px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: 'Nunito', sans-serif;
 }
@@ -789,7 +789,7 @@ section:nth-child(5) > nav > article {
     right: 250px;
     top : 30px;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 24px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: 'Nunito', sans-serif;
 }
@@ -945,4 +945,86 @@ body > main > section:nth-child(5) > article:nth-child(4) > div:nth-child(3) > p
     color: white;
 
 }
+
+/*Services - Socially*/
+body > main > section:nth-child(6) {
+    background-color: #0E1630;
+}
+
+body > main > section:nth-child(6) > h2:nth-child(1){
+    position: absolute;
+    font-size: 35px;
+    display: inline-block;
+    font-weight: bold;
+    top: 0;
+    left: 10px;
+    color: #927733;
+}
+
+/*Add subheader headlines and styles*/
+section:nth-child(6) > nav > article {
+    position: absolute;
+    right: 250px;
+    top : 30px;
+    font-weight: bold;
+    font-size: 24px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Nunito', sans-serif;
+}
+
+/*Remove headlines underlines and add paddings*/
+section:nth-child(6)>  nav > article > a, u{
+    text-decoration: none;
+    color: aliceblue;
+    padding-right: 35px;
+}
+
+/*Add hover colors into subheader nav*/
+section > nav > article > a:hover {
+    color: #927733;
+}
+
+/*Add subheadings - 1 */
+body > main > section:nth-child(6) > p:nth-child(3){
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    position: relative;
+    top: 85px ;
+    left: 10px;
+    color: white;
+    opacity: 70%;
+}
+
+/*Add description*/
+body > main > section:nth-child(6) > section:nth-child(4) > p{
+    color: white;
+    position: relative;
+    top:120px;
+    left:45px;
+    font-weight:normal;
+    font-size: 20px;
+    font-family: 'Poppins',sans-serif;
+
+}
+/*Add images*/
+body > main > section:nth-child(6) > aside:nth-child(5) > img:nth-child(1){
+    position: relative;
+    height: 220px;
+    bottom:200px;
+    border-radius: 10px;
+    width: auto;
+    left: 700px;
+}
+
+body > main > section:nth-child(6) > aside:nth-child(5) > img:nth-child(2){
+    height: 200px;
+    width: auto;
+    position: relative;
+    left: 650px;
+    border-radius: 10px;
+    bottom: 30px;
+}
+
+
 
