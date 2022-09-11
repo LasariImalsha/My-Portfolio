@@ -1380,6 +1380,189 @@ body > main > section:nth-child(8) > section:nth-child(4) > div:nth-child(3) > a
     border-radius: 50px;
 }
 
+/*Contact page*/
+body > main > section:nth-child(9) {
+    background-color: #0E1630;
+}
 
+/*Testimonial*/
+body > main > section:nth-child(9) > aside:nth-child(1) > h3{
+    top: 10px;
+    color: white;
+    opacity: 80%;
+    font-weight: bold;
+    font-size:25px;
+    position: relative;
+    left: 10px;
+}
 
+/*Testimonial image*/
+body > main > section:nth-child(9) > aside:nth-child(1) > img{
+    top: 15px;
+    height: 150px;
+    width: auto;
+    position: relative;
+    left: 50px;
+    border-radius: 80px;
+}
 
+/*Testimonial Description*/
+body > main > section:nth-child(9) > aside:nth-child(1) > p:nth-child(3){
+    position: relative;
+    left: 300px;
+    bottom: 160px;
+    font-weight: normal;
+    font-size: 23px;
+    color: #808DAD;
+    font-family: 'Poppins',sans-serif;
+}
+
+/*Testimonial Description*/
+body > main > section:nth-child(9) > aside:nth-child(1) > p:nth-child(4){
+    position: relative;
+    left: 300px;
+    bottom: 160px;
+    font-weight: bold;
+    font-size: 23px;
+    color: #808DAD;
+    font-family: 'Poppins',sans-serif;
+}
+
+/*Testimonial Description*/
+body > main > section:nth-child(9) > aside:nth-child(1) > p:nth-child(5){
+    position: relative;
+    left: 300px;
+    bottom: 220px;
+    font-weight: normal;
+    font-size: 25px;
+    color: #808DAD;
+    font-family: 'Poppins',sans-serif;
+}
+
+/*Contact-Heading*/
+body > main > section:nth-child(9) > h2:nth-child(2){
+    position: absolute;
+    font-size: 35px;
+    display: inline-block;
+    font-weight: bold;
+    top: 245px;
+    left: 10px;
+    color: #927733;
+}
+
+/*Add form*/
+body > main > section:nth-child(9) > form:nth-child(6) {
+    position: absolute;
+    right: 250px;
+    top: 320px;
+}
+
+/*!*add space in between form sections*!*/
+body > main > section:nth-child(9) > form:nth-child(6) > div {
+    position: relative;
+    padding-bottom: 20px;
+}
+
+/*styles name, email, subject as a group selector*/
+body > main > section:nth-child(9) > form:nth-child(6) > div > input {
+    width: 450px;
+    height: 40px;
+    border: none;
+    background: white;
+    opacity: 15%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+}
+
+/*add styles message area*/
+body > main > section:nth-child(9) > form:nth-child(6) > div:nth-child(4) > textarea {
+    height: 70px;
+    width: 450px;
+    border: none;
+    outline-width: 0;
+
+    background: white;
+    opacity: 15%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+}
+
+/*send button*/
+body > main > section:nth-child(9) > form:nth-child(6) > button:nth-child(5) {
+    position: relative;
+    left: 500px;
+    cursor: pointer;
+    bottom: 55px;
+    background: #808DAD;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border: 2px solid #927733;
+    border-radius: 70px;
+    width: 100px;
+    height: 30px;
+    font-weight: bold;
+    color: #FFFFFF;
+
+}
+
+/*Add social links*/
+/*add flex for add email,name,phone and social images*/
+body > main > section:nth-child(9) > address {
+    /*border: 1px solid red;*/
+    width: auto;
+    height: 50px;
+}
+
+/*add border and width and height for all image(gmail,location,phone) div*/
+body > main > section:nth-child(9) > address > div:nth-child(1) {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    /*border: 1px solid yellow;*/
+    bottom: 150px;
+    left: 40px;
+}
+
+/*add all image(gmail,location,phone)  into div*/
+body > main > section:nth-child(9) > address > div:nth-child(1) > img {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    left: 10px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/*add div for all p tags in contact info*/
+body > main > section:nth-child(9) > address > div:nth-child(2) {
+    width: 100%;
+    text-align: left;
+    position: relative;
+    bottom: 22px;
+}
+
+/*add styles for all p tags in contact info*/
+body > main > section:nth-child(9) > address > div:nth-child(2) > p {
+    color: #808DAD;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    display: inline-block;
+    position: relative;
+    left: 130px;
+    bottom:170px
+}
+
+/*Add social links*/
+body > main > section:nth-child(9) > div:nth-child(1) > a > img{
+    width: 50px;
+    height: auto;
+    top: 100px;
+    left: 20px;
+    position: relative;
+
+}
