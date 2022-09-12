@@ -6327,4 +6327,76 @@ body > main > section:nth-child(9) > div:nth-child(1) > a > img{
 
     }
 }
+/*-----------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------*/
+/*Responsive 320px*/
+/*Mobile Small 320px*/
+/*@media all and (max-width: 320px) {*/
+@media all and (max-width: 320px){
+    /*HEADER SECTION*/
+    /*Add Header*/
+    header{
+        width: 99.1vw;
+        height: 70px;
+        position: sticky;
+        top: 0;
+        z-index: 15;
+
+        background: #5B657C;
+        box-shadow: inset 0px 4px 4px rgba(0,0,0,0.25);
+    }
+
+    /*Add home image sizes*/
+    header > nav > img{
+        position: relative;
+        width: 50px;
+        height: 50px;
+        left: 35px;
+        top: 12px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+
+    /*Add header headlines and styles*/
+    header > nav > article {
+        position: absolute;
+        right: 25px;
+        top : 22px;
+        font-weight: bold;
+        font-size: 24px;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-family: 'Nunito', sans-serif;
+    }
+
+    /*Remove headlines underlines and add paddings*/
+    body > header > nav > article > a, u{
+        text-decoration: none;
+        color: aliceblue;
+        padding-right: 20px;
+    }
+
+    /*Added hover colors into header nav*/
+    body > header > nav > article > a:hover {
+        color: #927733;
+    }
+
+    /*Hire button*/
+    body > header > nav > article > button {
+        background: #808DAD;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        border: 2px solid #927733;
+        border-radius: 70px;
+        width: 100px;
+        height: 30px;
+        font-weight: bold;
+        color: #FFFFFF;
+        cursor: pointer;
+
+    }
+
+
+
+
+
+
+}
 
