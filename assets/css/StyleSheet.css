@@ -3234,6 +3234,721 @@ body > main > section:nth-child(9) > div:nth-child(1) > a > img{
 
     }
 
+    /*MAIN SECTION*/
+    main > section {
+        width: 99vw;
+        height: 85vh;
+        border: 1px solid #0E1630;
+        position: relative;
+    }
+
+    /*Profiles*/
+    /*Home page*/
+    /*Add styles for Home section*/
+    body > main > section:nth-child(1) {
+        background-color: #0E1630;
+        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    body > main > section > nav {
+        display: flex;
+    }
+
+    /*Add profile pic into Home Section*/
+    body > main > section:nth-child(1) > img {
+        width: 350px;
+        height: 350px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        border-radius: 80px;
+        position: absolute;
+        right: 200px;
+        top: 60px;
+    }
+
+    /*h1 "Hello "*/
+    body > main > section:nth-child(1) > h1:nth-child(1){
+        position: absolute;
+        font-weight: bold;
+        display: inline-block;
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        font-size: 100px;
+        top: 0px;
+        left: 200px;
+        font-family: 'Atkinson Hyperlegible', sans-serif;
+    }
+
+    /*h1 "I'M LASARI WIJAYAWARDHANA"*/
+    body > main > section:nth-child(1) > h1:nth-child(2){
+        position: absolute;
+        font-weight: bold;
+        display: inline-block;
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        font-size: 50px;
+        top: 150px;
+        left: 200px;
+        font-family: 'Centaur';
+    }
+
+    /*h1 "UI & UX Designer"*/
+    body > main > section:nth-child(1) > h1:nth-child(3){
+        position: absolute;
+        font-weight: bold;
+        display: inline-block;
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        font-size: 30px;
+        top: 300px;
+        left: 200px;
+        font-family: 'Centaur', sans-serif;
+    }
+
+    /*Download*/
+    body > main > section:nth-child(1) > h1:nth-child(4){
+        position: absolute;
+        font-weight: bold;
+        display: inline-block;
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        font-size: 26px;
+        top: 350px;
+        left: 200px;
+        font-family: 'Nunito', sans-serif;
+    }
+
+    /*Add colors using span*/
+    #span1{
+        color: white;
+        opacity: 70%;
+    }
+
+    #span2{
+        color: white;
+    }
+
+    #span3{
+        color: #808DAD;
+    }
+
+    #span4{
+        color: #927733;
+    }
+
+    /*Add side captions*/
+    body > main > section:nth-child(1) > aside > h3:nth-child(1) {
+        font-size: 20px;
+        position: absolute;
+        display: inline-block;
+        top: 400px;
+        right: 450px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    body > main > section:nth-child(1) > aside > h3:nth-child(2) {
+        font-size: 25px;
+        position: absolute;
+        display: inline-block;
+        top: 420px;
+        right: 330px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    body > main > section:nth-child(1) > aside > h3:nth-child(3) {
+        font-size: 18px;
+        position: absolute;
+        display: inline-block;
+        top: 500px;
+        right: 60px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: normal;
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    /*Add colors for side captions using span*/
+    #span5{
+        color: #927733;
+
+    }
+
+    #span6{
+        color: white;
+    }
+
+    #span7{
+        color: #808DAD;
+    }
+
+    /*Add service icons*/
+    body > main > section:nth-child(1) > div > h2:nth-child(1) {
+        font-size: 20px;
+        position: absolute;
+        display: inline-block;
+        top: 400px;
+        left: 190px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: revert;
+        color: white;
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    body > main > section:nth-child(1) > div > h2:nth-child(2) {
+        font-size: 20px;
+        position: absolute;
+        display: inline-block;
+        top: 400px;
+        left: 430px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: revert;
+        color: white;
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    body > main > section:nth-child(1) > div > h2:nth-child(3) {
+        font-size: 20px;
+        position: absolute;
+        display: inline-block;
+        top: 480px;
+        left: 300px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: revert;
+        color: white;
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    /*About page - Bio*/
+    body > main > section:nth-child(2) {
+        background-color: #0E1630;
+    }
+
+    body > main > section:nth-child(2) > h2:nth-child(1){
+        position: absolute;
+        font-size: 35px;
+        display: inline-block;
+        font-weight: bold;
+        top: 0;
+        left: 10px;
+        color: #927733;
+    }
+
+    /*Add subheader headlines and styles*/
+    section:nth-child(2) > nav > article {
+        position: absolute;
+        right: 250px;
+        top : 30px;
+        font-weight: bold;
+        font-size: 24px;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-family: 'Nunito', sans-serif;
+    }
+
+    /*Remove headlines underlines and add paddings*/
+    section:nth-child(2)>  nav > article > a, u{
+        text-decoration: none;
+        color: aliceblue;
+        padding-right: 35px;
+    }
+
+    /*Added hover colors into subheader nav*/
+    section > nav > article > a:hover {
+        color: #927733;
+    }
+
+    /*Add gallery images */
+    body > main > section:nth-child(2) > aside:nth-child(3) > img:nth-child(1) {
+        width: 200px;
+        height: auto;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        border-radius: 10px;
+        position: absolute;
+        left: 10px;
+        top: 100px;
+    }
+
+    body > main > section:nth-child(2) > aside:nth-child(3) > img:nth-child(2) {
+        width: auto;
+        height: 250px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        border-radius: 10px;
+        position: absolute;
+        left: 225px;
+        top: 95px;
+    }
+    body > main > section:nth-child(2) > aside:nth-child(3) > img:nth-child(3) {
+        width: 150px;
+        height: auto;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        border-radius: 10px;
+        position: absolute;
+        left: 58px;
+        top: 372px;
+    }
+
+    body > main > section:nth-child(2) > aside:nth-child(3) > img:nth-child(4) {
+        width: 250px;
+        height: auto;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        border-radius: 10px;
+        position: absolute;
+        left: 220px;
+        top: 355px;
+    }
+
+    /*My intro*/
+    body > main > section:nth-child(2) > p:nth-child(4) {
+        position: relative;
+        display: inline-block;
+        left: 640px ;
+        top: 100px;
+        font-family: 'Poppins',sans-serif;
+        font-size: 28px;
+        font-weight: normal;
+        color: #808DAD;
+    }
+
+    /*add border to add my details*/
+    body > main > section:nth-child(2) > div:nth-child(5) {
+        /*border: 1px solid blue;*/
+        position: relative;
+        width: 43vw;
+        left: 640px;
+        top: 100px;
+        height: 27vh;
+    }
+
+    /*!*add positions for all p inside div*!*/
+    body > main > section:nth-child(2) > div:nth-child(5) > p {
+        position: absolute;
+        display: inline-block;
+        font-size: 20px;
+        font-family: 'Nunito', sans-serif;
+    }
+
+    /*!*Maintain my details p tags*!*/
+    body > main > section:nth-child(2) > div:nth-child(5) > p:nth-child(1) {
+        left: 0;
+    }
+
+    body > main > section:nth-child(2) > div:nth-child(5) > p:nth-child(2) {
+        height: 30px;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    body > main > section:nth-child(2) > div:nth-child(5) > p:nth-child(3) {
+        left: 0;
+        bottom: 0;
+    }
+
+    body > main > section:nth-child(2) > div:nth-child(5) > p:nth-child(4) {
+        right: 0;
+        top: 0;
+    }
+
+    body > main > section:nth-child(2) > div:nth-child(5) > p:nth-child(5) {
+        height: 30px;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin:auto;
+    }
+    body > main > section:nth-child(2) > div:nth-child(5) > p:nth-child(6) {
+        right: 0;
+        bottom: 0;
+    }
+
+    /*!*add colors for my details topics*!*/
+    .my-details {
+        color: #808DAD;
+    }
+
+    .my-details2{
+        color: white;
+    }
+
+    /*About page - Edu*/
+    body > main > section:nth-child(3) {
+        background-color: #0E1630;
+    }
+
+    body > main > section:nth-child(3) > h2:nth-child(1){
+        position: absolute;
+        font-size: 35px;
+        display: inline-block;
+        font-weight: bold;
+        top: 0;
+        left: 10px;
+        color: #927733;
+    }
+
+    /*Add subheader headlines and styles*/
+    section:nth-child(3) > nav > article {
+        position: absolute;
+        right: 250px;
+        top : 30px;
+        font-weight: bold;
+        font-size: 24px;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-family: 'Nunito', sans-serif;
+    }
+
+    /*Remove headlines underlines and add paddings*/
+    section:nth-child(3)>  nav > article > a, u{
+        text-decoration: none;
+        color: aliceblue;
+        padding-right: 35px;
+    }
+
+    /*Added hover colors into subheader nav*/
+    section > nav > article > a:hover {
+        color: #927733;
+    }
+
+    .edu{
+        position: relative;
+    }
+
+    .edu > aside{
+        display: flex;
+        align-content:center;
+        justify-content: center;
+    }
+
+    .edu > aside > section{
+        position: relative;
+        width: 600px;
+        height: 450px;
+    }
+
+    .line {
+        display: inline-block;
+        position: absolute;
+        border-left: 3px solid white;
+        height: 475px;
+        width: 0;
+        left: -68px;
+        right: 700px;
+        top: 98px;
+        margin: auto;
+    }
+
+    .edu-details {
+        position: relative;
+        display: inline;
+        width: 304px;
+        height: 200px;
+    }
+
+    .edu section > div:nth-child(2) {
+        right: 50px;
+        top: 90px;
+    }
+
+    .edu section > div:nth-child(3) {
+        right: 50px;
+        top: 100px;
+    }
+
+    .edu-details > p:first-child {
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: 0;
+        font-family: 'Nunito', sans-serif;
+    }
+
+    .edu-details a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        font-weight: inherit;
+        font-family: 'Nunito', sans-serif;
+    }
+
+    .edu-details > p:nth-child(3) {
+        color: #BBBBBB;
+        font-size: 16px;
+    }
+
+    .edu-details > p:nth-child(4) {
+        color: #808DAD;
+        font-size: 17px;
+        font-weight: normal;
+        font-family: 'Poppins',sans-serif;
+    }
+
+    .edu section > div:nth-child(4) {
+        position: absolute;
+        background-color: #927733;
+        height: 15px;
+        width: 15px;
+        border-radius: 100%;
+        left: -75px;
+        right: 700px;
+        top: 96px;
+        margin: auto;
+    }
+
+    .edu section > div:nth-child(5) {
+        position: absolute;
+        background-color: #927733;
+        height: 15px;
+        width: 15px;
+        border-radius: 100%;
+        left: -75px;
+        right: 700px;
+        top: 330px;
+        margin: auto;
+    }
+
+    body > main > section:nth-child(3) > aside:nth-child(4) > h3:nth-child(1){
+        top: 450px;
+        font-weight: bold;
+        color: white;
+        font-family: 'Nunito', sans-serif;
+    }
+
+    body > main > section:nth-child(3) > aside:nth-child(4) > h3:nth-child(2){
+        top: 475px;
+        font-weight: normal;
+        color: #808DAD;
+        font-family: 'Nunito', sans-serif;
+    }
+
+
+    body > main > section:nth-child(3) > aside:nth-child(4){
+        bottom:50px;
+        left: 890px;
+        position: relative;
+    }
+    body > main > section:nth-child(3) > aside:nth-child(4) > img:nth-child(3){
+        width: 40px;
+        height: auto;
+
+    }
+    body > main > section:nth-child(3) > aside:nth-child(4) > img:nth-child(4){
+        width: 60px;
+        height: auto;
+
+    }
+    body > main > section:nth-child(3) > aside:nth-child(4) >img:nth-child(5){
+        width: 30px;
+        height: 40px;
+
+    }
+    body > main > section:nth-child(3) > img:nth-child(5){
+        width: 250px;
+        height: auto;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        border-radius: 10px;
+        position: absolute;
+        right: 170px;
+        top: 220px;
+    }
+
+    body > main > section:nth-child(3) > img:nth-child(6){
+        width: 250px;
+        height: auto;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        border-radius: 10px;
+        position: absolute;
+        right: 250px;
+        top: 90px;
+    }
+
+    /*About - Skills page */
+    body > main > section:nth-child(4) {
+        background-color: #0E1630;
+    }
+
+    body > main > section:nth-child(4) > h2:nth-child(1){
+        position: absolute;
+        font-size: 35px;
+        display: inline-block;
+        font-weight: bold;
+        top: 0;
+        left: 10px;
+        color: #927733;
+    }
+
+    /*Add subheader headlines and styles*/
+    section:nth-child(4) > nav > article {
+        position: absolute;
+        right: 250px;
+        top : 30px;
+        font-weight: bold;
+        font-size: 24px;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-family: 'Nunito', sans-serif;
+    }
+
+    /*Remove headlines underlines and add paddings*/
+    section:nth-child(4)>  nav > article > a, u{
+        text-decoration: none;
+        color: aliceblue;
+        padding-right: 35px;
+    }
+
+    /*Add hover colors into subheader nav*/
+    section > nav > article > a:hover {
+        color: #927733;
+    }
+
+    /*Add subheadings - 1 */
+    body > main > section:nth-child(4) > p:nth-child(3){
+        font-family: 'Nunito', sans-serif;
+        font-weight: bold;
+        font-size: 25px;
+        position: relative;
+        top: 90px ;
+        left: 10px;
+        color: white;
+        opacity: 70%;
+    }
+
+    /*Add grid box for language*/
+    body > main > section:nth-child(4) > section:nth-child(4){
+        top: 110px;
+        left: 20px;
+        position: relative;
+        display: grid;
+        height: 300px;
+
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: repeat(8,1fr);
+    }
+
+    /* Add little div box for languages*/
+    body > main > section:nth-child(4) > section:nth-child(4) > div {
+        background: #0E1630;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        position: relative;
+        width: 90px;
+        height: 90px;
+        top: 30px;
+        left: 20px;
+        border-radius: 15px;
+        transition: 1s;
+        transition-property: background, color;
+        cursor: none;
+    }
+
+    /*add over effect on skills*/
+    body > main > section:nth-child(4) > section:nth-child(4) > div:hover {
+        background: linear-gradient(45deg, #0E1630, #927733);
+        /*color: white;*/
+        /*border-radius: 25px;*/
+        transition: 1s;
+        transition-property: background, color;
+    }
+
+    /*add languages  & tools image*/
+    body > main > section:nth-child(4) > section:nth-child(4) > div > img {
+        width: 50px;
+        height: 50px;
+        position: relative;
+        left: 17px;
+        top: 5px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        border-radius: 20px;
+        transition: 1.5s;
+    }
+
+
+    /*add languages  & tools names */
+    body > main > section:nth-child(4) > section:nth-child(4) > div > p {
+        font-size: 16px;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        position: absolute;
+        bottom: 9px;
+        left: -5px;
+        right: 0;
+        margin: auto;
+        text-align: center;
+
+    }
+
+    /*Add subheadings - 2*/
+    body > main > section:nth-child(4) > p:nth-child(5){
+        font-family: 'Nunito', sans-serif;
+        font-weight: bold;
+        font-size: 25px;
+        position: relative;
+        bottom: 45px ;
+        left: 10px;
+        color: white;
+        opacity: 70%;
+    }
+
+    /*Add grid box for language*/
+    body > main > section:nth-child(4) > section:nth-child(6){
+        bottom: 40px;
+        left: 20px;
+        position: relative;
+        display: grid;
+        width: 800px;
+
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: repeat(4,1fr);
+    }
+
+    /* Add little div box for languages*/
+    body > main > section:nth-child(4) > section:nth-child(6) > div {
+        background: #0E1630;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        position: relative;
+        width: 90px;
+        height: 90px;
+        top: 30px;
+        left: 20px;
+        border-radius: 15px;
+        transition: 1s;
+        transition-property: background, color;
+        cursor: none;
+    }
+
+    /*add over effect on skills*/
+    body > main > section:nth-child(4) > section:nth-child(6) > div:hover {
+        background: linear-gradient(45deg, #0E1630, #927733);
+        color: white;
+        /*border-radius: 25px;*/
+        transition: 1s;
+        transition-property: background, color;
+    }
+
+    /*add languages  & tools image*/
+    body > main > section:nth-child(4) > section:nth-child(6) > div > img {
+        width: 50px;
+        height: 50px;
+        position: relative;
+        left: 17px;
+        top: 5px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        border-radius: 20px;
+        transition: 1.5s;
+    }
+
+
+    /*add languages  & tools names */
+    body > main > section:nth-child(4) > section:nth-child(6) > div > p {
+        font-size: 15px;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        position: absolute;
+        bottom: 9px;
+        left: -5px;
+        right: 0;
+        margin: auto;
+        text-align: center;
+
+    }
+
+
 
 
 
