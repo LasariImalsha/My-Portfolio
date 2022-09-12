@@ -15,12 +15,11 @@ body {
 /*HEADER SECTION*/
 /*Add Header*/
 header{
-    width: 99.1vw;
+    width: 100%;
     height: 70px;
     position: sticky;
     top: 0;
     z-index: 15;
-
     background: #5B657C;
     box-shadow: inset 0px 4px 4px rgba(0,0,0,0.25);
 }
@@ -73,8 +72,8 @@ body > header > nav > article > button {
 }
 /*MAIN SECTION*/
 main > section {
-    width: 99vw;
-    height: 85vh;
+    width: 100%;
+    height: 710px;
     border: 1px solid #0E1630;
     position: relative;
 }
@@ -7107,11 +7106,803 @@ body > main > section:nth-child(9) > div:nth-child(1) > a > img{
 
     }
 
+    /*Services page - Professionally*/
+    body > main > section:nth-child(5) {
+        background-color: #0E1630;
+    }
 
+    body > main > section:nth-child(5) > h2:nth-child(1){
+        position: absolute;
+        font-size: 35px;
+        display: inline-block;
+        font-weight: bold;
+        top: 0;
+        left: 10px;
+        color: #927733;
+    }
 
+    /*Add subheader headlines and styles*/
+    section:nth-child(5) > nav > article {
+        position: absolute;
+        right: 250px;
+        top : 30px;
+        font-weight: bold;
+        font-size: 24px;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-family: 'Nunito', sans-serif;
+    }
 
+    /*Remove headlines underlines and add paddings*/
+    section:nth-child(5)>  nav > article > a, u{
+        text-decoration: none;
+        color: aliceblue;
+        padding-right: 35px;
+    }
 
+    /*Add hover colors into subheader nav*/
+    section > nav > article > a:hover {
+        color: #927733;
+    }
 
+    /*Add subheadings - 1 */
+    body > main > section:nth-child(5) > p:nth-child(3){
+        font-family: 'Nunito', sans-serif;
+        font-weight: bold;
+        font-size: 25px;
+        position: relative;
+        top: 70px ;
+        left: 10px;
+        color: white;
+        opacity: 70%;
+    }
+    /*Add flex box for add my services*/
+    body > main > section:nth-child(5) > article:nth-child(4) {
+        display: flex;
+        position: relative;
+        width: 98.9vw;
+        /*height: 80vh;*/
+        top: 48px;
+        /*border: 1px solid red;*/
+        /*flex-direction: row;*/
+    }
 
+    /*Add sizes all divs in flex box*/
+    body > main > section:nth-child(5) > article:nth-child(4) > div {
+        /*border: 1px solid orange;*/
+        width: 100%;
+        height: 650px;
+    }
+
+    /*add style planing h3*/
+    body > main > section:nth-child(5) > article:nth-child(4) > div:nth-child(1) > h3 {
+        position: relative;
+        text-align: center;
+        font-size: 31px;
+        top:15px;
+        left: 5px;
+        font-weight: bold;
+        color: #808DAD;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-family: 'Nunito', sans-serif;
+    }
+
+    /*add image into planing*/
+    body > main > section:nth-child(5) > article:nth-child(4) > div:nth-child(1) > img {
+        height: 228px;
+        width: 228px;
+        display: block;
+        margin: 0 auto;
+        border-radius: 40px;
+        position: relative;
+        top: 20px;
+    }
+
+    /*description styles planing*/
+    body > main > section:nth-child(5) > article:nth-child(4) > div:nth-child(1) > pre {
+        position: relative;
+        text-align: center;
+        display: inline-block;
+        bottom: 20px;
+        font-size: 20px;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        left: 10px;
+
+    }
+
+    /*add styles UI&UX h3*/
+    body > main > section:nth-child(5) > article:nth-child(4) > div:nth-child(2) > h3 {
+        position: relative;
+        text-align: center;
+        font-size: 31px;
+        top: 15px;
+        left: 5px;
+        font-weight: bold;
+        color: #808DAD;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-family: 'Nunito', sans-serif;
+    }
+
+    /*add image into UI&UX*/
+    body > main > section:nth-child(5) > article:nth-child(4) > div:nth-child(2) > img {
+        height: 228px;
+        width: 228px;
+        display: block;
+        margin: 0 auto;
+        border-radius: 40px;
+        position: relative;
+        top: 20px;
+    }
+
+    /*description styles UI&UX*/
+    body > main > section:nth-child(5) > article:nth-child(4) > div:nth-child(2) > pre {
+        position: relative;
+        text-align: center;
+        display: inline-block;
+        bottom: 20px;
+        left: 10px;
+        font-size: 20px;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+
+    }
+
+    /*add style graphic design h3*/
+    body > main > section:nth-child(5) > article:nth-child(4) > div:nth-child(3) > h3 {
+        position: relative;
+        text-align: center;
+        font-size: 31px;
+        bottom:34px;
+        left: 5px;
+        font-weight: bold;
+        color: #808DAD;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-family: 'Nunito', sans-serif;
+    }
+
+    /*add image into graphic design*/
+    body > main > section:nth-child(5) > article:nth-child(4) > div:nth-child(3) > img {
+        height: 280px;
+        width: 220px;
+        display: block;
+        margin: 0 auto;
+        border-radius: 40px;
+        position: relative;
+        bottom: 15px;
+    }
+
+    /*description styles graphic design*/
+    body > main > section:nth-child(5) > article:nth-child(4) > div:nth-child(3) > pre {
+        position: relative;
+        text-align: center;
+        display: inline-block;
+        bottom: 65px;
+        left: 10px;
+        font-size: 20px;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+
+    }
+
+    /*Services - Socially*/
+    body > main > section:nth-child(6) {
+        background-color: #0E1630;
+    }
+
+    body > main > section:nth-child(6) > h2:nth-child(1){
+        position: absolute;
+        font-size: 35px;
+        display: inline-block;
+        font-weight: bold;
+        top: 0;
+        left: 10px;
+        color: #927733;
+    }
+
+    /*Add subheader headlines and styles*/
+    section:nth-child(6) > nav > article {
+        position: absolute;
+        right: 250px;
+        top : 30px;
+        font-weight: bold;
+        font-size: 24px;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-family: 'Nunito', sans-serif;
+    }
+
+    /*Remove headlines underlines and add paddings*/
+    section:nth-child(6)>  nav > article > a, u{
+        text-decoration: none;
+        color: aliceblue;
+        padding-right: 35px;
+    }
+
+    /*Add hover colors into subheader nav*/
+    section > nav > article > a:hover {
+        color: #927733;
+    }
+
+    /*Add subheadings - 1 */
+    body > main > section:nth-child(6) > p:nth-child(3){
+        font-family: 'Nunito', sans-serif;
+        font-weight: bold;
+        font-size: 25px;
+        position: relative;
+        top: 85px ;
+        left: 10px;
+        color: white;
+        opacity: 70%;
+    }
+
+    /*Add description*/
+    body > main > section:nth-child(6) > section:nth-child(4) > p{
+        color: white;
+        position: relative;
+        top:120px;
+        left:45px;
+        font-weight:normal;
+        font-size: 20px;
+        font-family: 'Poppins',sans-serif;
+
+    }
+    /*Add images*/
+    body > main > section:nth-child(6) > aside:nth-child(5) > img:nth-child(1){
+        position: relative;
+        height: 220px;
+        bottom:200px;
+        border-radius: 10px;
+        width: auto;
+        left: 700px;
+    }
+
+    body > main > section:nth-child(6) > aside:nth-child(5) > img:nth-child(2){
+        height: 200px;
+        width: auto;
+        position: relative;
+        left: 650px;
+        border-radius: 10px;
+        bottom: 30px;
+    }
+
+    /*Portfolio - Projects*/
+    body > main > section:nth-child(7) {
+        background-color: #0E1630;
+    }
+
+    body > main > section:nth-child(7) > h2:nth-child(1){
+        position: absolute;
+        font-size: 35px;
+        display: inline-block;
+        font-weight: bold;
+        top: 0;
+        left: 10px;
+        color: #927733;
+    }
+
+    /*Add subheader headlines and styles*/
+    section:nth-child(7) > nav > article {
+        position: absolute;
+        right: 250px;
+        top : 30px;
+        font-weight: bold;
+        font-size: 24px;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-family: 'Nunito', sans-serif;
+    }
+
+    /*Remove headlines underlines and add paddings*/
+    section:nth-child(7)>  nav > article > a, u{
+        text-decoration: none;
+        color: aliceblue;
+        padding-right: 35px;
+    }
+
+    /*Add hover colors into subheader nav*/
+    section > nav > article > a:hover {
+        color: #927733;
+    }
+
+    /*Add subheadings - 1 */
+    body > main > section:nth-child(7) > p:nth-child(3){
+        font-family: 'Nunito', sans-serif;
+        font-weight: bold;
+        font-size: 25px;
+        position: relative;
+        top: 85px ;
+        left: 10px;
+        color: white;
+        opacity: 70%;
+    }
+
+    /*Add flexbox into my project*/
+    body > main > section:nth-child(7) > section:nth-child(4) {
+        /*border: 1px solid green;*/
+        display: flex;
+        position: relative;
+        top: 5px;
+        /*height: 680px;*/
+        /*width: 98.9vw;*/
+        width: 1424px;
+    }
+
+    /*div projects boxes*/
+    body > main > section:nth-child(7) > section:nth-child(4) > div {
+        /*border: 1px solid orange;*/
+        width: 100%;
+        height: 650px;
+    }
+
+    /*add all projects names p tags styles*/
+    body > main > section:nth-child(7) > section:nth-child(4) > div > p:nth-child(1) {
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-family: 'Nunito', sans-serif;
+        color: #808DAD;
+        font-size: 22px;
+        position: relative;
+        left: 60px;
+        width: 350px;
+        text-align: center;
+        top: 70px;
+    }
+
+    /*Hostel-Management-System project image*/
+    body > main > section:nth-child(7) > section:nth-child(4) > div:nth-child(1) > img:nth-child(2) {
+        width: 373px;
+        height: 260px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        position: relative;
+        left: 34px;
+        top: 90px;
+    }
+
+    /*add hover to Hostel-Management-System project image*/
+    body > main > section:nth-child(7) > section:nth-child(4) > div:nth-child(1) > img:nth-child(2):hover {
+        width: 376px;
+        height: 266px;
+    }
+
+    /*add Git hyper image into  Hostel-Management-System */
+    body > main > section:nth-child(7) > section:nth-child(4) > div:nth-child(1) > a:nth-child(3) > img {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        bottom: 150px;
+        left: 190px;
+
+        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 50px;
+    }
+
+    /*add  Hostel-Management-System Git hover*/
+    body > main > section:nth-child(7) > section:nth-child(4) > div:nth-child(1) > a:nth-child(3) > img:hover {
+        width: 53px;
+        height: 53px;
+    }
+
+    /*Hardware Management System project image*/
+    body > main > section:nth-child(7) > section:nth-child(4) > div:nth-child(2) > img:nth-child(2) {
+        width: 370px;
+        height: 250px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        position: relative;
+        left: 44px;
+        top: 90px;
+    }
+
+    /*add hover to Hardware Management System project image*/
+    body > main > section:nth-child(7) > section:nth-child(4) > div:nth-child(2) > img:nth-child(2):hover {
+        width: 376px;
+        height: 256px;
+    }
+
+    /*add git hyper image into  Hardware Management System project */
+    body > main > section:nth-child(7) > section:nth-child(4) > div:nth-child(2) > a:nth-child(3) > img {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        bottom: 150px;
+        right: 690px;
+
+        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 50px;
+    }
+
+    /*add  Hardware Management System  Git hover*/
+    body > main > section:nth-child(7) > section:nth-child(4) > div:nth-child(2) > a:nth-child(3) > img:hover {
+        width: 53px;
+        height: 53px;
+    }
+
+    /*Super Market Manage System project image*/
+    body > main > section:nth-child(7) > section:nth-child(4) > div:nth-child(3) > img:nth-child(2) {
+        width: 342px;
+        height: 250px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        position: relative;
+        left: 54px;
+        top: 90px;
+    }
+
+    /*add hover to Super Market Manage System project image*/
+    body > main > section:nth-child(7) > section:nth-child(4) > div:nth-child(3) > img:nth-child(2):hover {
+        width: 348px;
+        height: 256px;
+    }
+
+    /*add git hyper image into Super Market Manage System project */
+    body > main > section:nth-child(7) > section:nth-child(4) > div:nth-child(3) > a:nth-child(3) > img {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        bottom: 150px;
+        right: 220px;
+
+        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 50px;
+    }
+
+    /*Portfolio - Assignments*/
+    body > main > section:nth-child(8) {
+        background-color: #0E1630;
+    }
+
+    body > main > section:nth-child(8) > h2:nth-child(1){
+        position: absolute;
+        font-size: 35px;
+        display: inline-block;
+        font-weight: bold;
+        top: 0;
+        left: 10px;
+        color: #927733;
+    }
+
+    /*Add subheader headlines and styles*/
+    section:nth-child(8) > nav > article {
+        position: absolute;
+        right: 250px;
+        top : 30px;
+        font-weight: bold;
+        font-size: 24px;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-family: 'Nunito', sans-serif;
+    }
+
+    /*Remove headlines underlines and add paddings*/
+    section:nth-child(8)>  nav > article > a, u{
+        text-decoration: none;
+        color: aliceblue;
+        padding-right: 35px;
+    }
+
+    /*Add hover colors into subheader nav*/
+    section > nav > article > a:hover {
+        color: #927733;
+    }
+
+    /*Add subheadings - 1 */
+    body > main > section:nth-child(8) > p:nth-child(3){
+        font-family: 'Nunito', sans-serif;
+        font-weight: bold;
+        font-size: 25px;
+        position: relative;
+        top: 85px ;
+        left: 10px;
+        color: white;
+        opacity: 70%;
+    }
+
+    /*Add flexbox into my assignments*/
+    body > main > section:nth-child(8) > section:nth-child(4) {
+        /*border: 1px solid green;*/
+        display: flex;
+        position: relative;
+        top: 5px;
+        /*height: 680px;*/
+        /*width: 98.9vw;*/
+        width: 1424px;
+    }
+
+    /*div projects boxes*/
+    body > main > section:nth-child(8) > section:nth-child(4) > div {
+        /*border: 1px solid orange;*/
+        width: 100%;
+        height: 650px;
+    }
+
+    /*add all assignment names p tags styles*/
+    body > main > section:nth-child(8) > section:nth-child(4) > div > p:nth-child(1) {
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-family: 'Nunito', sans-serif;
+        color: #808DAD;
+        font-size: 22px;
+        position: relative;
+        left: 60px;
+        width: 350px;
+        text-align: center;
+        top: 70px;
+    }
+
+    /*assignment1 image*/
+    body > main > section:nth-child(8) > section:nth-child(4) > div:nth-child(1) > img:nth-child(2) {
+        width: 373px;
+        height: 260px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        position: relative;
+        left: 34px;
+        top: 90px;
+    }
+
+    /*add hover to assignment1 image*/
+    body > main > section:nth-child(8) > section:nth-child(4) > div:nth-child(1) > img:nth-child(2):hover {
+        width: 376px;
+        height: 266px;
+    }
+
+    /*add Git hyper image into  assignment1 */
+    body > main > section:nth-child(8) > section:nth-child(4) > div:nth-child(1) > a:nth-child(3) > img {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        bottom: 150px;
+        left: 190px;
+
+        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 50px;
+    }
+
+    /*add  assignment1 Git hover*/
+    body > main > section:nth-child(8) > section:nth-child(4) > div:nth-child(1) > a:nth-child(3) > img:hover {
+        width: 53px;
+        height: 53px;
+    }
+
+    /*assignment image*/
+    body > main > section:nth-child(8) > section:nth-child(4) > div:nth-child(2) > img:nth-child(2) {
+        width: 370px;
+        height: 250px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        position: relative;
+        left: 44px;
+        top: 90px;
+    }
+
+    /*add hover to assignment2 image*/
+    body > main > section:nth-child(8) > section:nth-child(4) > div:nth-child(2) > img:nth-child(2):hover {
+        width: 376px;
+        height: 256px;
+    }
+
+    /*add git hyper image into assignment2 */
+    body > main > section:nth-child(8) > section:nth-child(4) > div:nth-child(2) > a:nth-child(3) > img {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        bottom: 150px;
+        right: 690px;
+
+        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 50px;
+    }
+
+    /*add  assignment2 Git hover*/
+    body > main > section:nth-child(8) > section:nth-child(4) > div:nth-child(2) > a:nth-child(3) > img:hover {
+        width: 53px;
+        height: 53px;
+    }
+
+    /*assignment3 image*/
+    body > main > section:nth-child(8) > section:nth-child(4) > div:nth-child(3) > img:nth-child(2) {
+        width: 342px;
+        height: 250px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        position: relative;
+        left: 54px;
+        top: 90px;
+    }
+
+    /*add hover to assignment3 image*/
+    body > main > section:nth-child(8) > section:nth-child(4) > div:nth-child(3) > img:nth-child(2):hover {
+        width: 348px;
+        height: 256px;
+    }
+
+    /*add git hyper image into assignment3 */
+    body > main > section:nth-child(8) > section:nth-child(4) > div:nth-child(3) > a:nth-child(3) > img {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        bottom: 150px;
+        right: 220px;
+
+        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 50px;
+    }
+
+    /*Contact page*/
+    body > main > section:nth-child(9) {
+        background-color: #0E1630;
+    }
+
+    /*Testimonial*/
+    body > main > section:nth-child(9) > aside:nth-child(1) > h3{
+        top: 10px;
+        color: white;
+        opacity: 80%;
+        font-weight: bold;
+        font-size:25px;
+        position: relative;
+        left: 10px;
+    }
+
+    /*Testimonial image*/
+    body > main > section:nth-child(9) > aside:nth-child(1) > img{
+        top: 15px;
+        height: 150px;
+        width: auto;
+        position: relative;
+        left: 50px;
+        border-radius: 80px;
+    }
+
+    /*Testimonial Description*/
+    body > main > section:nth-child(9) > aside:nth-child(1) > p:nth-child(3){
+        position: relative;
+        left: 300px;
+        bottom: 160px;
+        font-weight: normal;
+        font-size: 23px;
+        color: #808DAD;
+        font-family: 'Poppins',sans-serif;
+    }
+
+    /*Testimonial Description*/
+    body > main > section:nth-child(9) > aside:nth-child(1) > p:nth-child(4){
+        position: relative;
+        left: 300px;
+        bottom: 160px;
+        font-weight: bold;
+        font-size: 23px;
+        color: #808DAD;
+        font-family: 'Poppins',sans-serif;
+    }
+
+    /*Testimonial Description*/
+    body > main > section:nth-child(9) > aside:nth-child(1) > p:nth-child(5){
+        position: relative;
+        left: 300px;
+        bottom: 220px;
+        font-weight: normal;
+        font-size: 25px;
+        color: #808DAD;
+        font-family: 'Poppins',sans-serif;
+    }
+
+    /*Contact-Heading*/
+    body > main > section:nth-child(9) > h2:nth-child(2){
+        position: absolute;
+        font-size: 35px;
+        display: inline-block;
+        font-weight: bold;
+        top: 245px;
+        left: 10px;
+        color: #927733;
+    }
+
+    /*Add form*/
+    body > main > section:nth-child(9) > form:nth-child(6) {
+        position: absolute;
+        right: 250px;
+        top: 320px;
+    }
+
+    /*!*add space in between form sections*!*/
+    body > main > section:nth-child(9) > form:nth-child(6) > div {
+        position: relative;
+        padding-bottom: 20px;
+    }
+
+    /*styles name, email, subject as a group selector*/
+    body > main > section:nth-child(9) > form:nth-child(6) > div > input {
+        width: 450px;
+        height: 40px;
+        border: none;
+        background: white;
+        opacity: 15%;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        font-weight: bold;
+        font-family: 'Nunito', sans-serif;
+    }
+
+    /*add styles message area*/
+    body > main > section:nth-child(9) > form:nth-child(6) > div:nth-child(4) > textarea {
+        height: 70px;
+        width: 450px;
+        border: none;
+        outline-width: 0;
+
+        background: white;
+        opacity: 15%;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        font-weight: bold;
+        font-family: 'Nunito', sans-serif;
+    }
+
+    /*send button*/
+    body > main > section:nth-child(9) > form:nth-child(6) > button:nth-child(5) {
+        position: relative;
+        left: 500px;
+        cursor: pointer;
+        bottom: 55px;
+        background: #808DAD;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        border: 2px solid #927733;
+        border-radius: 70px;
+        width: 100px;
+        height: 30px;
+        font-weight: bold;
+        color: #FFFFFF;
+
+    }
+
+    /*Add social links*/
+    /*add flex for add email,name,phone and social images*/
+    body > main > section:nth-child(9) > address {
+        /*border: 1px solid red;*/
+        width: auto;
+        height: 50px;
+    }
+
+    /*add border and width and height for all image(gmail,location,phone) div*/
+    body > main > section:nth-child(9) > address > div:nth-child(1) {
+        height: 50px;
+        width: 50px;
+        position: relative;
+        /*border: 1px solid yellow;*/
+        bottom: 150px;
+        left: 40px;
+    }
+
+    /*add all image(gmail,location,phone)  into div*/
+    body > main > section:nth-child(9) > address > div:nth-child(1) > img {
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        left: 10px;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    /*add div for all p tags in contact info*/
+    body > main > section:nth-child(9) > address > div:nth-child(2) {
+        width: 100%;
+        text-align: left;
+        position: relative;
+        bottom: 22px;
+    }
+
+    /*add styles for all p tags in contact info*/
+    body > main > section:nth-child(9) > address > div:nth-child(2) > p {
+        color: #808DAD;
+        font-family: 'Nunito', sans-serif;
+        font-style: normal;
+        display: inline-block;
+        position: relative;
+        left: 130px;
+        bottom:170px
+    }
+
+    /*Add social links*/
+    body > main > section:nth-child(9) > div:nth-child(1) > a > img{
+        width: 50px;
+        height: auto;
+        top: 100px;
+        left: 20px;
+        position: relative;
+
+    }
 }
 
