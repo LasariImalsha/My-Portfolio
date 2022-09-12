@@ -8,6 +8,10 @@
     background-color: gray;
 }
 
+body {
+    position: relative;
+}
+
 /*HEADER SECTION*/
 /*Add Header*/
 header{
