@@ -12,9 +12,22 @@
             left: 950px;
             bottom:170px
         }
+
+        body > section:nth-child(7) > div > button{
+            position: relative;
+            left: 1150px;
+            bottom:208px
+        }
+
+        body > section:nth-child(8) > div > button{
+            position: relative;
+            left: 950px;
+            bottom:190px
+        }
     </style>
 </head>
 <body>
+    <!--Header-->
     <header>
         <nav class="navbar navbar-expand-lg bg-dark" >
             <div class="container-fluid">
@@ -62,11 +75,13 @@
 
     </header>
     <br>
+    <!--Headline-->
     <div>
         <h1 class="container-fluid"><span class="headline_part1">Manage</span> <span
                 class="headline_part2">Customer</span></h1>
     </div>
     <br>
+    <!--Search-->
     <section class="row">
             <div class="card col-xxl-5">
                 <div class="card-header bg-success text-white">
@@ -82,7 +97,7 @@
                 </div>
         </div>
     </section>
-
+    <!--Add New Customer Button-->
     <section class="row">
         <div >
             <button class="btn btn-info text-white" data-bs-target="#staticBackdropforaddnewcustomer"
@@ -90,7 +105,23 @@
                     type="button">Add New Customer</button>
         </div>
     </section>
-
+    <!--Update Customer Button-->
+    <section class="row">
+        <div >
+            <button class="btn btn-warning text-white" data-bs-target="#staticBackdropforaddnewcustomer"
+                    data-bs-toggle="modal"
+                    type="button">Update Customer</button>
+        </div>
+    </section>
+    <!--Delete Customer Button-->
+    <section class="row">
+        <div >
+            <button class="btn btn-danger text-white" data-bs-target="#staticBackdropforaddnewcustomer"
+                    data-bs-toggle="modal"
+                    type="button">Delete Customer</button>
+        </div>
+    </section>
+    <!--Add new Customer Form-->
     <section>
         <div aria-hidden="true" aria-labelledby="staticBackdropLabel" class="modal fade"
              data-bs-backdrop="static" data-bs-keyboard="false" id="staticBackdropforaddnewcustomer" tabindex="-1">
@@ -149,7 +180,7 @@
             </div>
         </div>
     </section>
-
+    <!--Table-->
     <section class="container-fluid">
         <table class="table table-bordered table-hover">
             <thead class="bg-primary text-white">
@@ -179,6 +210,24 @@
             <td>Galle</td>
             <td>075-6407926</td>
             <td>78000</td>
+            </tbody>
+
+            <tbody>
+            <td>C003</td>
+            <td>96587412</td>
+            <td>Imalsha</td>
+            <td>Galle</td>
+            <td>076-6407926</td>
+            <td>78000</td>
+            </tbody>
+
+            <tbody>
+            <td>C004</td>
+            <td>45872669</td>
+            <td>Kaveesha</td>
+            <td>Galle</td>
+            <td>071-6407926</td>
+            <td>80000</td>
             </tbody>
         </table>
     </section>
