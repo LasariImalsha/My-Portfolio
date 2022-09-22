@@ -2,9 +2,187 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Customer</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Ceylon Grocery</title>
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body > section:nth-child(6) > div > button{
+            position: relative;
+            left: 950px;
+            bottom:170px
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark" >
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../assets/images/icon.png" alt="icon" width="50" height="50">
+                </a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item ">
+                            <a class="nav-link active text-white"  aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" href="../pages/customer.html">Customer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" href="../pages/item.html">Item</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" href="../pages/order.html">Order</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" href="../pages/other.html">Others</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
+            <nav class="navbar bg-dark">
+                <div class="container">
+                    <a class="navbar-brand" href="../pages/signIn.html">
+                        <img alt="Bootstrap" height="40" src="../assets/images/signin.png" width="40">
+                    </a>
+                </div>
+            </nav>
+
+            <nav class="navbar bg-dark">
+                <div class="container">
+                    <a class="navbar-brand" href="../pages/logout.html">
+                        <img alt="Bootstrap" height="40" src="../assets/images/logout.png" width="40">
+                    </a>
+                </div>
+            </nav>
+
+        </nav>
+
+    </header>
+    <br>
+    <div>
+        <h1 class="container-fluid"><span class="headline_part1">Manage</span> <span
+                class="headline_part2">Customer</span></h1>
+    </div>
+    <br>
+    <section class="row">
+            <div class="card col-xxl-5">
+                <div class="card-header bg-success text-white">
+                    Search Customer
+                </div>
+                <div class="card-body" style="border-color: green">
+                    <form class="d-flex" role="search">
+                        <input aria-label="Search" class="form-control me-2 " placeholder="CustomerID/NIC/Name"
+                               type="search">
+                    </form>
+                    <br>
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </div>
+        </div>
+    </section>
+
+    <section class="row">
+        <div >
+            <button class="btn btn-info text-white" data-bs-target="#staticBackdropforaddnewcustomer"
+                    data-bs-toggle="modal"
+                    type="button">Add New Customer</button>
+        </div>
+    </section>
+
+    <section>
+        <div aria-hidden="true" aria-labelledby="staticBackdropLabel" class="modal fade"
+             data-bs-backdrop="static" data-bs-keyboard="false" id="staticBackdropforaddnewcustomer" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropforaddnewcustomerLable">Add New Customer</h5>
+                        <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+                    </div>
+                    <div class="modal-body">
+
+                        <!-- start form here -->
+                        <form id="addNewCustomerForm">
+
+                            <div class="form-floating mb-2">
+                                <input class="form-control" id="floatingCustomerID" placeholder="C-001" type="text">
+                                <label for="floatingCustomerID">Customer ID</label>
+                            </div>
+
+                            <div class="form-floating mb-2">
+                                <input class="form-control" id="floatingCustomerNIC" placeholder="C-001"
+                                       type="text">
+                                <label for="floatingCustomerNIC">Customer NIC</label>
+                            </div>
+
+                            <div class="form-floating mb-2">
+                                <input class="form-control" id="floatingName" placeholder="Lasari Imalsha"
+                                       type="text">
+                                <label for="floatingName">Name</label>
+                            </div>
+
+                            <div class="form-floating mb-2">
+                                <input class="form-control" id="floatingAddress" placeholder="Galle"
+                                       type="text">
+                                <label for="floatingAddress">Address</label>
+                            </div>
+
+                            <div class="form-floating mb-2">
+                                <input class="form-control" id="floatingContact" placeholder="071-6729818"
+                                       type="text">
+                                <label for="floatingContact">Contact</label>
+                            </div>
+
+                            <div class="form-floating mb-2">
+                                <input class="form-control" id="floatingSalary" placeholder="24" type="number">
+                                <label for="floatingSalary">Salary</label>
+                            </div>
+                        </form>
+                        <!-- end form here -->
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-danger" data-bs-dismiss="modal" type="button">Close</button>
+                        <button class="btn btn-primary" type="button">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid">
+        <table class="table table-bordered table-hover">
+            <thead class="bg-primary text-white">
+            <tr>
+                <td>Customer Id</td>
+                <td>NIC</td>
+                <td>Name</td>
+                <td>Address</td>
+                <td>Contact</td>
+                <td>Salary</td>
+            </tr>
+
+            </thead>
+            <tbody>
+            <td>C001</td>
+            <td>12548435</td>
+            <td>Lasari</td>
+            <td>Galle</td>
+            <td>071-6729181</td>
+            <td>80000.00</td>
+            </tbody>
+
+            <tbody>
+            <td>C002</td>
+            <td>45872669</td>
+            <td>Binuka</td>
+            <td>Galle</td>
+            <td>075-6407926</td>
+            <td>78000</td>
+            </tbody>
+        </table>
+    </section>
+
+<script src="../assets/js/bootstrap.min.js"></script>
 </body>
 </html>
