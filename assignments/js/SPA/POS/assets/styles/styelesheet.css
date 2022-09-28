@@ -1,3 +1,21 @@
 body > header > nav > div > div:nth-child(2) > ul{
     color: white;
 }
+
+body > section:nth-child(6) > div > button{
+     position: relative;
+     left: 850px;
+     bottom:170px
+ }
+
+body > section:nth-child(7) > div > button{
+    position: relative;
+    left: 1018px;
+    bottom:208px
+}
+
+body > section:nth-child(8) > div > button{
+    position: relative;
+    left: 1500px;
+    bottom:350px
+}

@@ -6,8 +6,11 @@
     <title>Ceylon Grocery</title>
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/styles/styelesheet.css" rel="stylesheet">
+
 </head>
 <body>
+<main>
+<!-----------------------------------Header---------------------------------------------------------------------------------->
     <header>
             <nav class="navbar navbar-expand-lg bg-dark" >
                 <div class="container-fluid">
@@ -46,6 +49,7 @@
             </nav>
 
     </header>
+<!---------------------------------------------Home Page--------------------------------------------------------------------------->
     <section>
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
             <div class="carousel-indicators">
@@ -89,7 +93,282 @@
     <section>
 
     </section>
+</main>
+<!--------------------------------------Customer Page------------------------------------------------------------------------->
+<!--Headline-->
+<div>
+    <h1 class="container-fluid"><span class="headline_part1">Manage</span> <span
+            class="headline_part2">Customer</span></h1>
+</div>
+<br>
+<!--Search-->
+<section class="row">
+    <div class="card col-xxl-5">
+        <div class="card-header bg-success text-white">
+            Search Customer
+        </div>
+        <div class="card-body" style="border-color: green">
+            <form class="d-flex" role="search">
+                <input aria-label="Search" class="form-control me-2 " placeholder="CustomerID/NIC/Name"
+                       type="search">
+            </form>
+            <br>
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </div>
+    </div>
+</section>
+<!--Add New Customer Button-->
+<section class="row">
+    <div >
+        <button class="btn btn-info text-white" data-bs-target="#staticBackdropforaddnewcustomer"
+                data-bs-toggle="modal"
+                type="button">Add New Customer</button>
+    </div>
+</section>
+<!--Update Customer Button-->
+<section class="row">
+    <div >
+        <button class="btn btn-warning text-white" data-bs-target="#staticBackdropforupdatecustomer"
+                data-bs-toggle="modal"
+                type="button">Update Customer</button>
+    </div>
+</section>
+<!--Delete Customer Button-->
+<section class="row">
+    <div >
+        <button class="btn btn-danger text-white" data-bs-target="#staticBackdropForDeleteCustomer"
+                data-bs-toggle="modal"
+                type="button">Delete Customer</button>
+    </div>
+</section>
+<!--Add new Customer Form-->
+<section>
+    <div aria-hidden="true" aria-labelledby="staticBackdropLabel" class="modal fade"
+         data-bs-backdrop="static" data-bs-keyboard="false" id="staticBackdropforaddnewcustomer" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropforaddnewcustomerLable">Add New Customer</h5>
+                    <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+                </div>
+                <div class="modal-body">
 
+                    <!-- start form here -->
+                    <form id="addNewCustomerForm">
+
+                        <div class="form-floating mb-2">
+                            <input class="form-control" id="floatingCustomerID1" placeholder="C-001" type="text">
+                            <label for="floatingCustomerID1">Customer ID</label>
+                        </div>
+
+                        <div class="form-floating mb-2">
+                            <input class="form-control" id="floatingCustomerNIC1" placeholder="C-001"
+                                   type="text">
+                            <label for="floatingCustomerNIC1">Customer NIC</label>
+                        </div>
+
+                        <div class="form-floating mb-2">
+                            <input class="form-control" id="floatingName1" placeholder="Lasari Imalsha"
+                                   type="text">
+                            <label for="floatingName1">Name</label>
+                        </div>
+
+                        <div class="form-floating mb-2">
+                            <input class="form-control" id="floatingAddress1" placeholder="Galle"
+                                   type="text">
+                            <label for="floatingAddress1">Address</label>
+                        </div>
+
+                        <div class="form-floating mb-2">
+                            <input class="form-control" id="floatingContact1" placeholder="071-6729818"
+                                   type="text">
+                            <label for="floatingContact1">Contact</label>
+                        </div>
+
+                        <div class="form-floating mb-2">
+                            <input class="form-control" id="floatingSalary1" placeholder="24" type="number">
+                            <label for="floatingSalary1">Salary</label>
+                        </div>
+                    </form>
+                    <!-- end form here -->
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger" data-bs-dismiss="modal" type="button">Close</button>
+                    <button class="btn btn-primary" type="button">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Update Customer Form-->
+<section>
+    <div aria-hidden="true" aria-labelledby="staticBackdropLabel" class="modal fade"
+         data-bs-backdrop="static" data-bs-keyboard="false" id="staticBackdropforupdatecustomer" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropforupdatecustomerLable">Update Customer</h5>
+                    <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+                </div>
+                <div class="modal-body">
+
+                    <!-- start form here -->
+                    <form id="UpdateCustomerForm">
+
+                        <div class="form-floating mb-2">
+                            <input class="form-control" id="floatingCustomerID2" placeholder="C-001" type="text">
+                            <label for="floatingCustomerID2">Customer ID</label>
+                        </div>
+
+                        <div class="form-floating mb-2">
+                            <input class="form-control" id="floatingCustomerNIC2" placeholder="C-001"
+                                   type="text">
+                            <label for="floatingCustomerNIC2">Customer NIC</label>
+                        </div>
+
+                        <div class="form-floating mb-2">
+                            <input class="form-control" id="floatingName2" placeholder="Lasari Imalsha"
+                                   type="text">
+                            <label for="floatingName2">Name</label>
+                        </div>
+
+                        <div class="form-floating mb-2">
+                            <input class="form-control" id="floatingAddress2" placeholder="Galle"
+                                   type="text">
+                            <label for="floatingAddress2">Address</label>
+                        </div>
+
+                        <div class="form-floating mb-2">
+                            <input class="form-control" id="floatingContact2" placeholder="071-6729818"
+                                   type="text">
+                            <label for="floatingContact2">Contact</label>
+                        </div>
+
+                        <div class="form-floating mb-2">
+                            <input class="form-control" id="floatingSalary2" placeholder="24" type="number">
+                            <label for="floatingSalary2">Salary</label>
+                        </div>
+                    </form>
+                    <!-- end form here -->
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger" data-bs-dismiss="modal" type="button">Close</button>
+                    <button class="btn btn-primary" type="button">Update</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Delete Customer Form-->
+<section>
+    <div aria-hidden="true" aria-labelledby="staticBackdropLabel" class="modal fade"
+         data-bs-backdrop="static" data-bs-keyboard="false" id="staticBackdropForDeleteCustomer" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropForDeleteCustomerLable">Delete Customer</h5>
+                    <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+                </div>
+                <div class="modal-body">
+
+                    <!-- start form here -->
+                    <form id="DeleteCustomerForm">
+
+                        <div class="form-floating mb-2">
+                            <input class="form-control" id="floatingCustomerID3" placeholder="C-001" type="text">
+                            <label for="floatingCustomerID3">Customer ID</label>
+                        </div>
+
+                        <div class="form-floating mb-2">
+                            <input class="form-control" id="floatingCustomerNIC3" placeholder="C-001"
+                                   type="text">
+                            <label for="floatingCustomerNIC3">Customer NIC</label>
+                        </div>
+
+                        <div class="form-floating mb-2">
+                            <input class="form-control" id="floatingName3" placeholder="Lasari Imalsha"
+                                   type="text">
+                            <label for="floatingName3">Name</label>
+                        </div>
+
+                        <div class="form-floating mb-2">
+                            <input class="form-control" id="floatingAddress3" placeholder="Galle"
+                                   type="text">
+                            <label for="floatingAddress3">Address</label>
+                        </div>
+
+                        <div class="form-floating mb-2">
+                            <input class="form-control" id="floatingContact3" placeholder="071-6729818"
+                                   type="text">
+                            <label for="floatingContact3">Contact</label>
+                        </div>
+
+                        <div class="form-floating mb-2">
+                            <input class="form-control" id="floatingSalary3" placeholder="24" type="number">
+                            <label for="floatingSalary3">Salary</label>
+                        </div>
+                    </form>
+                    <!-- end form here -->
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger" data-bs-dismiss="modal" type="button">Close</button>
+                    <button class="btn btn-primary" type="button">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Table-->
+<section class="container-fluid">
+    <table class="table table-bordered table-hover">
+        <thead class="bg-primary text-white">
+        <tr>
+            <td>Customer Id</td>
+            <td>NIC</td>
+            <td>Name</td>
+            <td>Address</td>
+            <td>Contact</td>
+            <td>Salary</td>
+        </tr>
+
+        </thead>
+        <tbody>
+        <td>C001</td>
+        <td>12548435</td>
+        <td>Lasari</td>
+        <td>Galle</td>
+        <td>071-6729181</td>
+        <td>80000.00</td>
+        </tbody>
+
+        <tbody>
+        <td>C002</td>
+        <td>45872669</td>
+        <td>Binuka</td>
+        <td>Galle</td>
+        <td>075-6407926</td>
+        <td>78000</td>
+        </tbody>
+
+        <tbody>
+        <td>C003</td>
+        <td>96587412</td>
+        <td>Imalsha</td>
+        <td>Galle</td>
+        <td>076-6407926</td>
+        <td>78000</td>
+        </tbody>
+
+        <tbody>
+        <td>C004</td>
+        <td>45872669</td>
+        <td>Kaveesha</td>
+        <td>Galle</td>
+        <td>071-6407926</td>
+        <td>80000</td>
+        </tbody>
+    </table>
+</section>
 <script src="assets/js/bootstrap.min.js"></script>
 </body>
 </html>
