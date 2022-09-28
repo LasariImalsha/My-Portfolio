@@ -8,36 +8,108 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="row justify-content-center py-5">
-            <div class="col-4">
-                <form name="calculator">
-                   <input class="form-control bg-light text-primary" id="cal1" name="display" readonly type="text">
+<div class="container">
+    <div class="row justify-content-center py-5">
+        <div class="col-4">
+            <form name="calculator">
+                <input class="form-control bg-light text-primary" id="cal1" name="display" readonly type="text">
 
-                    <input class="btn bg-dark text-white col-6" id="btn1" onclick="click1()" type="button" value="1">
-                    <input class="btn bg-dark text-white" onclick="click2()" type="button" value="2">
-                    <input class="btn bg-dark text-white" onclick="click3()" type="button" value="3">
-                    <input class="btn bg-dark text-white" onclick="click4()" type="button" value="4">
-                    <input class="btn bg-dark text-white" onclick="click5()" type="button" value="5">
-                    <input class="btn bg-dark text-white" onclick="click6()" type="button" value="6">
-                    <input class="btn bg-dark text-white" onclick="click7()" type="button" value="7">
-                    <input class="btn bg-dark text-white" onclick="click8()" type="button" value="8">
-                    <input class="btn bg-dark text-white" onclick="click9()" type="button" value="9">
-                    <input class="btn bg-dark text-white" onclick="click0()" type="button" value="0">
-                    <input class="btn bg-dark text-white" onclick="clickadd()" type="button" value="+">
-                    <input class="btn bg-dark text-white" onclick="clicksub()" type="button" value="-">
-                    <input class="btn bg-dark text-white" onclick="clickmulti()" type="button" value="*">
-                    <input class="btn bg-dark text-white" onclick="clickdiv()" type="button" value="/">
-                    <input class="btn bg-dark text-white" onclick="clickclr()" type="button" value="clr">
-                    <input class="btn bg-dark text-white" onclick="clickeql()" type="button" value="=">
-                    <input class="btn bg-dark text-white" onclick="clickdot()" type="button" value=".">
+                <input class="btn bg-dark text-white col-6" id="btn1" onclick="click1()" type="button" value="1">
+                <input class="btn bg-dark text-white" onclick="click2()" type="button" value="2">
+                <input class="btn bg-dark text-white" onclick="click3()" type="button" value="3">
+                <input class="btn bg-dark text-white" onclick="click4()" type="button" value="4">
+                <input class="btn bg-dark text-white" onclick="click5()" type="button" value="5">
+                <input class="btn bg-dark text-white" onclick="click6()" type="button" value="6">
+                <input class="btn bg-dark text-white" onclick="click7()" type="button" value="7">
+                <input class="btn bg-dark text-white" onclick="click8()" type="button" value="8">
+                <input class="btn bg-dark text-white" onclick="click9()" type="button" value="9">
+                <input class="btn bg-dark text-white" onclick="click0()" type="button" value="0">
+                <input class="btn bg-dark text-white" onclick="clickadd()" type="button" value="+">
+                <input class="btn bg-dark text-white" onclick="clicksub()" type="button" value="-">
+                <input class="btn bg-dark text-white" onclick="clickmulti()" type="button" value="*">
+                <input class="btn bg-dark text-white" onclick="clickdiv()" type="button" value="/">
+                <input class="btn bg-dark text-white" onclick="clickclr()" type="button" value="clr">
+                <input class="btn bg-dark text-white" onclick="clickeql()" type="button" value="=">
+                <input class="btn bg-dark text-white" onclick="clickdot()" type="button" value=".">
 
-                </form>
-            </div>
+            </form>
         </div>
     </div>
+</div>
+
 
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/jquery-3.6.1.min.js"></script>
+
+<script>
+    function click1() {
+        document.calculator.display.value += 1;
+    }
+
+    function click2() {
+        document.calculator.display.value += 2;
+    }
+
+    function click3() {
+        document.calculator.display.value += 3;
+    }
+
+    function click4() {
+        document.calculator.display.value += 4;
+    }
+
+    function click5() {
+        document.calculator.display.value += 5;
+    }
+
+    function click6() {
+        document.calculator.display.value += 6;
+    }
+
+    function click7() {
+        document.calculator.display.value += 7;
+    }
+
+    function click8() {
+        document.calculator.display.value += 8;
+    }
+
+    function click9() {
+        document.calculator.display.value += 9;
+    }
+
+    function click0() {
+        document.calculator.display.value += 0;
+    }
+
+    function clickadd() {
+        document.calculator.display.value += "+";
+    }
+
+    function clicksub() {
+        document.calculator.display.value += "-";
+    }
+
+    function clickmulti() {
+        document.calculator.display.value += "*";
+    }
+
+    function clickdiv() {
+        document.calculator.display.value += "/";
+    }
+
+    function clickclr() {
+        document.calculator.display.value += "";
+    }
+
+    function clickeql() {
+        document.calculator.display.value += "=";
+    }
+
+    function clickdot() {
+        document.calculator.display.value += ".";
+    }
+</script>
+
 </body>
 </html>
