@@ -2,9 +2,289 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Item</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Ceylon Grocery</title>
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body > section > div:nth-child(1){
+            position: relative;
+            bottom: 45px;
+            left: 450px;
+        }
+
+        body > section > div:nth-child(2){
+            position: relative;
+            bottom: 83px;
+            left: 580px;
+        }
+
+        body > section > div:nth-child(3){
+            position: relative;
+            bottom: 121px;
+            left: 696px;
+        }
+
+    </style>
 </head>
 <body>
+<!--Start Header-->
+<header>
+    <nav class="navbar navbar-expand-lg bg-dark" >
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../assets/images/icon.png" alt="icon" width="50" height="50">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item ">
+                        <a class="nav-link active text-white"  aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" href="../pages/customer.html">Customer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" href="../pages/item.html">Item</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" href="../pages/order.html">Order</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" href="../pages/other.html">Others</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
+        <nav class="navbar bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="../pages/signIn.html">
+                    <img alt="Bootstrap" height="40" src="../assets/images/signin.png" width="40">
+                </a>
+            </div>
+        </nav>
+
+        <nav class="navbar bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="../pages/logout.html">
+                    <img alt="Bootstrap" height="40" src="../assets/images/logout.png" width="40">
+                </a>
+            </div>
+        </nav>
+
+    </nav>
+</header>
+<br>
+<!--Page Heading-->
+<div>
+    <h1 class="container-fluid"><span class="headline_part1">Manage</span> <span
+            class="headline_part2">Item</span></h1>
+</div>
+<br>
+<!--Item Search-->
+<nav class="navbar bg-white">
+    <div class="container-fluid">
+        <!-- start customer search-->
+        <form class="d-flex" role="search">
+            <input aria-label="Search" class="form-control me-2 " placeholder="ItemCode/Name" type="search">
+            <button class="btn btn-success" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+
+<!--Button-->
+<section >
+    <!--Add Item Button-->
+    <div >
+        <button class="btn btn-primary text-white" data-bs-target="#staticBackdropforaddnewitem"
+                data-bs-toggle="modal"
+                type="button">Add New Item</button>
+    </div>
+    <!--Update Item Button-->
+    <div >
+        <button class="btn btn-warning text-white" data-bs-target="#staticBackdropforupdateitem"
+                data-bs-toggle="modal"
+                type="button">Update Item</button>
+    </div>
+    <!--Delete Button-->
+    <div >
+        <button class="btn btn-danger text-white" data-bs-target="#staticBackdropfordeleteitem"
+                data-bs-toggle="modal"
+                type="button">Delete Item</button>
+    </div>
+</section>
+
+<!--Add Item popup form-->
+<section>
+    <div aria-hidden="true" aria-labelledby="staticBackdropLabel" class="modal fade" data-bs-backdrop="static"
+         data-bs-keyboard="false" id="staticBackdropforaddnewitem" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropforaddnewitemlable">Add New Item</h5>
+                    <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+                </div>
+                <div class="modal-body">
+
+                    <!-- start form here -->
+                    <form id="addNewItemForm">
+
+                        <div class="form-floating mb-2">
+                            <input class="form-control" id="txtItemCode" placeholder="I-001" type="text">
+                            <label for="txtItemCode">Item Code</label>
+                        </div>
+
+                        <div class="form-floating mb-2">
+                            <input class="form-control" id="txtItemName" placeholder="chocolate biscuit"
+                                   type="text">
+                            <label for="txtItemName">Item Name</label>
+                        </div>
+
+                        <div class="form-floating mb-2">
+                            <input class="form-control" id="txtItemQTYOnHand" placeholder="100"
+                                   type="number">
+                            <label for="txtItemQTYOnHand">QTY On Hand</label>
+                        </div>
+
+                        <div class="form-floating mb-2">
+                            <input class="form-control" id="txtItemPrice" placeholder="100.00"
+                                   type="number">
+                            <label for="txtItemPrice">Price</label>
+                        </div>
+                    </form>
+                    <!-- end form here -->
+                    <button class="btn btn-success" id="getAll" type="button">Get All</button>
+
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Close</button>
+                    <button class="btn btn-primary" id="btnClear" type="button">Clear</button>
+                    <button class="btn btn-primary" id="btnSaveItem" type="button">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Update Item popup form-->
+<section>
+    <div aria-hidden="true" aria-labelledby="staticBackdropLabel" class="modal fade" data-bs-backdrop="static"
+         data-bs-keyboard="false" id="staticBackdropforupdateitem" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropforupdateitemlable">Update Item</h5>
+                    <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+                </div>
+                <div class="modal-body">
+
+                    <!-- start form here -->
+                    <form id="updateItemForm">
+
+                        <div class="form-floating mb-2">
+                            <input class="form-control" id="txtItemCode2" placeholder="I-001" type="text">
+                            <label for="txtItemCode">Item Code</label>
+                        </div>
+
+                        <div class="form-floating mb-2">
+                            <input class="form-control" id="txtItemName2" placeholder="chocolate biscuit"
+                                   type="text">
+                            <label for="txtItemName">Item Name</label>
+                        </div>
+
+                        <div class="form-floating mb-2">
+                            <input class="form-control" id="txtItemQTYOnHand2" placeholder="100"
+                                   type="number">
+                            <label for="txtItemQTYOnHand">QTY On Hand</label>
+                        </div>
+
+                        <div class="form-floating mb-2">
+                            <input class="form-control" id="txtItemPrice2" placeholder="100.00"
+                                   type="number">
+                            <label for="txtItemPrice">Price</label>
+                        </div>
+                    </form>
+                    <!-- end form here -->
+                    <button class="btn btn-success" id="getAll2" type="button">Get All</button>
+
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Close</button>
+                    <button class="btn btn-primary" id="btnClear2" type="button">Clear</button>
+                    <button class="btn btn-primary" id="btnSaveItem2" type="button">Update</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Delete Item popup form-->
+<section>
+    <div aria-hidden="true" aria-labelledby="staticBackdropLabel" class="modal fade" data-bs-backdrop="static"
+         data-bs-keyboard="false" id="staticBackdropfordeleteitem" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropfordeleteitemlable">Delete Item</h5>
+                    <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+                </div>
+                <div class="modal-body">
+
+                    <!-- start form here -->
+                    <form id="deleteItemForm">
+
+                        <div class="form-floating mb-2">
+                            <input class="form-control" id="txtItemCode3" placeholder="I-001" type="text">
+                            <label for="txtItemCode">Item Code</label>
+                        </div>
+
+                        <div class="form-floating mb-2">
+                            <input class="form-control" id="txtItemName3" placeholder="chocolate biscuit"
+                                   type="text">
+                            <label for="txtItemName">Item Name</label>
+                        </div>
+
+                        <div class="form-floating mb-2">
+                            <input class="form-control" id="txtItemQTYOnHand3" placeholder="100"
+                                   type="number">
+                            <label for="txtItemQTYOnHand">QTY On Hand</label>
+                        </div>
+
+                        <div class="form-floating mb-2">
+                            <input class="form-control" id="txtItemPrice3" placeholder="100.00"
+                                   type="number">
+                            <label for="txtItemPrice">Price</label>
+                        </div>
+                    </form>
+                    <!-- end form here -->
+                    <button class="btn btn-success" id="getAll3" type="button">Get All</button>
+
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Close</button>
+                    <button class="btn btn-primary" id="btnClear3" type="button">Clear</button>
+                    <button class="btn btn-primary" id="btnSaveItem3" type="button">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+<section class="container-fluid">
+        <table class="table table-bordered table-hover">
+            <thead class="bg-info">
+            <tr class="table-active text-white">
+                <td>Item Code</td>
+                <td>Name</td>
+                <td>QtyOnHand</td>
+                <td>Price</td>
+                <td>Action</td>
+            </tr>
+            </thead>
+
+            <tbody id="tblItem">
+
+            </tbody>
+        </table>
+</section>
+<script src="../assets/js/bootstrap.min.js"></script>
 </body>
 </html>
