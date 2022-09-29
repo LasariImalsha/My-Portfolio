@@ -2,20 +2,24 @@ body > header > nav > div > div:nth-child(2) > ul{
     color: white;
 }
 
-body > section:nth-child(6) > div > button{
+body > main:nth-child(2) > section:nth-child(3) > div > div:nth-child(2) > button{
+    position: relative;
+}
+
+body > main:nth-child(2) > section:nth-child(4) > div > button{
     position: relative;
     left: 850px;
-    bottom:170px
+    bottom:180px
 }
 
-body > section:nth-child(7) > div > button{
+body > main:nth-child(2) > section:nth-child(5) > div > button{
     position: relative;
     left: 1018px;
-    bottom:208px
+    bottom:218px
 }
 
-body > section:nth-child(8) > div > button{
+body > main:nth-child(2) > section:nth-child(6) > div > button{
     position: relative;
-    left: 1173px;
-    bottom:246px
+    left: 1172px;
+    bottom:256px
 }
