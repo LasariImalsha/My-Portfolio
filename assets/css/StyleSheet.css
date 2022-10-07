@@ -89,7 +89,9 @@ body > main > section:nth-child(1) {
 body > main > section > nav {
     display: flex;
 }
-
+body > main > section:nth-child(2) > dfn {
+    font-style: normal;
+}
 /*Add profile pic into Home Section*/
 body > main > section:nth-child(1) > img {
     width: 350px;
@@ -4382,6 +4384,27 @@ body > main > section:nth-child(9) > div:nth-child(1) > a > img{
         border-radius: 50px;
     }
 
+    /*View all butten*/
+    /*body > main > section:nth-child(7) > div:last-child >img {*/
+    /*    width: 120px;*/
+    /*    height: 40px;*/
+
+    /*    position: absolute;*/
+    /*    left: 0;*/
+    /*    right: 0;*/
+    /*    bottom: 8px;*/
+    /*    margin: auto;*/
+
+    /*    border-radius: 30px;*/
+    /*    transition: transform 0.3s ease;*/
+    /*    cursor: pointer;*/
+    /*}*/
+
+    /*body > main > section:nth-child(7) > div:last-child > img:hover{*/
+    /*    transform: translate(-12px, -12px);*/
+    /*}*/
+
+
     /*Portfolio - Assignments*/
     body > main > section:nth-child(8) {
         background-color: #0E1630;
@@ -4586,7 +4609,7 @@ body > main > section:nth-child(9) > div:nth-child(1) > a > img{
     }
 
     /*Testimonial Description*/
-    body > main > section:nth-child(9) > aside:nth-child(1) > p:nth-child(3){
+    body > main > section:nth-child(9) > aside:nth-child(2) > p:nth-child(3){
         position: relative;
         left: 300px;
         bottom: 160px;
@@ -4597,7 +4620,7 @@ body > main > section:nth-child(9) > div:nth-child(1) > a > img{
     }
 
     /*Testimonial Description*/
-    body > main > section:nth-child(9) > aside:nth-child(1) > p:nth-child(4){
+    body > main > section:nth-child(9) > aside:nth-child(2) > p:nth-child(4){
         position: relative;
         left: 300px;
         bottom: 160px;
@@ -4608,7 +4631,7 @@ body > main > section:nth-child(9) > div:nth-child(1) > a > img{
     }
 
     /*Testimonial Description*/
-    body > main > section:nth-child(9) > aside:nth-child(1) > p:nth-child(5){
+    body > main > section:nth-child(9) > aside:nth-child(2) > p:nth-child(5){
         position: relative;
         left: 300px;
         bottom: 220px;
@@ -4619,7 +4642,7 @@ body > main > section:nth-child(9) > div:nth-child(1) > a > img{
     }
 
     /*Contact-Heading*/
-    body > main > section:nth-child(9) > h2:nth-child(2){
+    body > main > section:nth-child(9) > h2:nth-child(3){
         position: absolute;
         font-size: 35px;
         display: inline-block;
