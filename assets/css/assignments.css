@@ -1,0 +1,433 @@
+/*scroll settings*/
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: seashell;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: gray;
+}
+
+/*--------------------------------------------------------------------------*/
+body {
+    position: relative;
+}
+/*add header*/
+body > header {
+    background-color: #5B657C;
+    width: 100%;
+    height: 70px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+/*!*add Headline Project*!*/
+.headline {
+    position: absolute;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    left: 0;
+    right: 0;
+    bottom:-26px;
+}
+
+/*!*add font to Project*!*/
+.headline h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*-------------------------------------------------------------------------------*/
+/*CSS Basics Section*/
+.css_basics {
+    /*border: 1px solid red;*/
+    position: relative;
+    display: grid;
+    top: 0px;
+    width: 100%;
+    height: 600px;
+    background-color: #0E1630;
+
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns:repeat(3, 1fr);
+}
+
+/*css basics headline */
+.CSS_Basics_headline {
+    color: #927733;
+    font-family: 'Nunito', sans-serif;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 20px;
+    position: relative;
+    top: 0px;
+    left: 700px;
+
+}
+
+/*add styles for css basics article*/
+.css_basics_main_articles {
+    /*border: 1px solid blue;*/
+    width: 100%;
+    height: 100%;
+}
+
+/*all css basics assignment h4 styles*/
+.css_basics_main_articles h4:nth-child(1) {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 16px;
+    color: #808DAD;
+}
+
+/*add border for add all css basics image*/
+.css_basics_main_articles div:nth-child(2) {
+    /*border: 1px solid green;*/
+    width: 100%;
+    height: 180px;
+    position: relative;
+}
+
+/*add all assignment image*/
+.css_basics_main_articles div:nth-child(2) > img {
+    width: 190px;
+    height: 140px;
+    filter: drop-shadow(0px 4px 4px rgba(255, 192, 192, 0.8));
+    border-radius: 20px;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/*add view button for all css basics*/
+.prview_img {
+    cursor: pointer;
+    border-radius: 100%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 40px;
+    height: 40px;
+    position: relative;
+    left: 210px;
+    top: 6px;
+}
+
+/*add hover view for button for all css basics*/
+.prview_img:hover {
+    transition: 0.3s;
+    width: 43px;
+    height: 43px;
+}
+
+/*-------------------------------------------------------------------------------*/
+/*CSS Transitions Section*/
+.css_transitions {
+    /*border: 1px solid red;*/
+    position: relative;
+    display: grid;
+    top: 0px;
+    width: 100%;
+    height: 300px;
+    background-color: #0E1630;
+
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns:repeat(2, 1fr);
+}
+
+/*css Transitions headline */
+.CSS_Transition_headline {
+    color: #927733;
+    font-family: 'Nunito', sans-serif;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 20px;
+    position: relative;
+    top: 0px;
+    left: 700px;
+    width: 200px;
+}
+
+/*add styles for css basics article*/
+.css_transition_main_articles {
+    /*border: 1px solid blue;*/
+    width: 100%;
+    height: 100%;
+}
+
+/*all css transitions assignment h4 styles*/
+.css_transition_main_articles h4:nth-child(1) {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 16px;
+    color: #808DAD;
+}
+
+/*add border for add all css transitions image*/
+.css_transition_main_articles div:nth-child(2) {
+    /*border: 1px solid green;*/
+    width: 100%;
+    height: 180px;
+    position: relative;
+}
+
+/*add all assignment image*/
+.css_transition_main_articles div:nth-child(2) > img {
+    width: 190px;
+    height: 140px;
+    filter: drop-shadow(0px 4px 4px rgba(255, 219, 28, 0.8));
+    border-radius: 20px;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/*add view button for all css assignment*/
+.prview_img {
+    cursor: pointer;
+    border-radius: 100%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 40px;
+    height: 40px;
+    transition: 0.3s;
+    position: relative;
+    left: 330px;
+    top: 6px;
+}
+
+/*add hover view for button for all css transitions*/
+.prview_img:hover {
+    transition: 0.3s;
+    width: 43px;
+    height: 43px;
+}
+
+/*add color and size view icon for all css transitions*/
+.Transitions_view_button a > i {
+    font-size: 20px;
+    color: #0E1630;
+}
+
+/*-------------------------------------------------------------------------------*/
+/*CSS Animations Section*/
+.css_animations {
+    /*border: 1px solid red;*/
+    position: relative;
+    display: grid;
+    top: 0px;
+    width: 100%;
+    height: 600px;
+    background-color: #0E1630;
+
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns:repeat(3, 1fr);
+}
+
+/*css basics headline */
+.CSS-Animation_headline {
+    color: #927733;
+    font-family: 'Nunito', sans-serif;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 20px;
+    position: relative;
+    top: 0px;
+    left: 700px;
+    width: 200px;
+}
+
+
+/*add styles for css animations article*/
+.css_animations_main_articles {
+    /*border: 1px solid blue;*/
+    width: 100%;
+    height: 100%;
+}
+
+/*all css animations assignments h4 styles*/
+.css_animations_main_articles h4:nth-child(1) {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 16px;
+    color: #808DAD;
+}
+
+/*add border for add all css animations image*/
+.css_animations_main_articles div:nth-child(2) {
+    /*border: 1px solid green;*/
+    width: 100%;
+    height: 180px;
+    position: relative;
+}
+
+/*add all assignment image*/
+.css_animations_main_articles div:nth-child(2) > img {
+    width: 190px;
+    height: 140px;
+    filter: drop-shadow(0px 4px 4px rgba(251, 196, 252, 0.8));
+    border-radius: 20px;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/*add view button for all css basics*/
+.prview_img {
+    cursor: pointer;
+    border-radius: 100%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 40px;
+    height: 40px;
+    transition: 0.3s;
+    position: relative;
+    left: 210px;
+    top: 6px;
+}
+
+/*add hover view for button for all css basics*/
+.animations_view_button:hover {
+    transition: 0.3s;
+    width: 43px;
+    height: 43px;
+}
+
+/*-------------------------------------------------------------------------------*/
+/*Java Script Section*/
+.Java_script {
+    /*border: 1px solid red;*/
+    position: relative;
+    display: grid;
+    top: 520px;
+    width: 100%;
+    height: 300px;
+
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns:repeat(3, 1fr);
+}
+
+/*Java Script headline */
+.Java_Script_headline {
+    color: #0E1630;
+    font-family: 'Nunito', sans-serif;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 20px;
+    position: relative;
+    top: 520px;
+    left: 650px;
+    width: 200px;
+}
+
+/*add styles for java Script article*/
+.java_script_main_articles {
+    /*border: 1px solid blue;*/
+    width: 100%;
+    height: 100%;
+}
+
+/*all css animations assignment h4 styles*/
+.java_script_main_articles h4:nth-child(1) {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 16px;
+}
+
+/*add border for add all java script image*/
+.java_script_main_articles div:nth-child(2) {
+    /*border: 1px solid green;*/
+    width: 100%;
+    height: 180px;
+    position: relative;
+}
+
+/*add all assignment image*/
+.java_script_main_articles div:nth-child(2) > img {
+    width: 190px;
+    height: 140px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 20px;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/*add view button for all java script basics*/
+.java-script_view_button {
+    cursor: pointer;
+    border-radius: 100%;
+    border: 1px solid white;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 40px;
+    height: 40px;
+    transition: 0.3s;
+    position: relative;
+    left: 210px;
+    top: 6px;
+}
+
+/*add hover view for button for all java script*/
+.java-script_view_button:hover {
+    transition: 0.3s;
+    width: 41px;
+    height: 41px;
+}
+
+/*add color and size view icon for all java script*/
+.java-script_view_button a > i {
+    font-size: 20px;
+    color: #0E1630;
+}
+/*--------------------------------------------------------------------------------------*/
+
+/*footer Section*/
+/*add colors and height into footer*/
+body > footer {
+    position: relative;
+    height: 70px;
+    top: 610px;
+    width: 100%;
+    background-color: #5B657C;
+}
+
+.back_png {
+    /*border: 1px solid red;*/
+    position: absolute;
+    left: 0;
+    top: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    right: 0;
+    margin: auto;
+    border: 1px solid white;
+    transition: 1.3s;
+}
+
+.back_png:hover {
+    width: 41px;
+    height: 41px;
+    transition: 1.3s;
+}
+
+.back_png .fa-solid {
+    font-size: 30px;
+    position: relative;
+    left: -2px;
+    top: 1px;
+    color: white;
+}
