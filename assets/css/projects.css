@@ -7,6 +7,9 @@
     background-color: gray;
 }
 /*-------------------------------------------------------------------*/
+body {
+    position: relative;
+}
 /*add header*/
 body > header {
     width: 100%;
@@ -25,7 +28,7 @@ body > header {
     color: white;
     left: 0;
     right: 0;
-    bottom:-8px;
+    bottom:-26px;
 }
 
 /*!*add font to Project*!*/
@@ -39,9 +42,9 @@ main > section {
     /*border: 1px solid red;*/
     display: flex;
     width: 100%;
-    height: 650px;
+    height: 600px;
     position: relative;
-    top: 110px;
+    top: 0px;
     background-color: #0E1630;
     color: #808DAD;
 }
@@ -51,6 +54,7 @@ main > section {
     /*border: 1px solid blue;*/
     width: 100%;
     height: 100%;
+
 }
 
 /*add styles for all headings*/
@@ -82,19 +86,33 @@ main > section {
 }
 
 /*add all projects view button*/
-.Pview_btn {
+/*.Pview_btn {*/
+/*    position: relative;*/
+/*    left: 355px;*/
+/*    bottom: 10px;*/
+/*    border-radius: 100%;*/
+/*    !*border: 1px solid red;*!*/
+/*    width: 30px;*/
+/*    height: 30px;*/
+/*    border: 1px solid white;*/
+/*    background: #FFFFFF;*/
+/*    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
+/*    cursor: pointer;*/
+/*    transition: 0.3s;*/
+/*}*/
+
+.prview_img {
     position: relative;
-    left: 320px;
-    bottom: 35px;
+    left: 350px;
+    bottom: 1px;
+    width: 40px;
+    height: 40px;
     border-radius: 100%;
-    /*border: 1px solid red;*/
-    width: 30px;
-    height: 30px;
-    border: 1px solid white;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    cursor: pointer;
-    transition: 0.3s;
+}
+
+.prview_img :hover{
+    width:43px;
+    height: 43px;
 }
 
 /*add all projects view button hover*/
@@ -114,7 +132,7 @@ main > section {
 }
 
 /*add introduction hostel management system*/
-.hostelmanagement_project_introduction{
+.hostel_project_introduction{
     /*border: 1px solid red;*/
     font-family: 'Nunito', sans-serif;
     font-size: 16px;
@@ -230,7 +248,7 @@ body > footer {
     background-color: #5B657C;
 }
 
-.footer_btn_home {
+.back_png {
     /*border: 1px solid red;*/
     position: absolute;
     left: 0;
@@ -244,17 +262,17 @@ body > footer {
     transition: 1.3s;
 }
 
-.footer_btn_home:hover {
+.back_png:hover {
     width: 41px;
     height: 41px;
     transition: 1.3s;
 }
 
-.footer_btn_home .fa-solid {
+.back_png .fa-solid {
     font-size: 30px;
     position: relative;
     left: -2px;
     top: 1px;
-    color: black;
+    color: white;
 }
 
