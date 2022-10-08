@@ -146,6 +146,7 @@
 
     //Save Item
     $('#btnSaveItem').click(function () {
+
         let itemCode = $('#txtItemCode').val();
         let itemName = $('#txtItemName').val();
         let itemQtyOnHand = $('#txtItemQTYOnHand').val();
@@ -163,8 +164,9 @@
         //add the item object to the array
         items.push(itemObject);
 
-
         loadAllItems();
+
+        textFieldDataCLear();
 
         bindRowClickEvents();
     });
@@ -198,6 +200,22 @@
 
         });
     }
+
+    //btn clear data
+    $('#btnClearItem').click(function (){
+        textFieldDataCLear();
+    });
+
+    //clear data function
+    function textFieldDataCLear(){
+        $('#txtItemCode').val('');
+        $('#txtItemName').val('');
+        $('#txtItemQTYOnHand').val('');
+        $('#txtItemPrice').val('');
+
+        $('#txtItemCode').focus();
+    }
+
 
     //Item Search Bar
     $('#myInput').on('keyup', function () {
