@@ -180,6 +180,7 @@
             $('#tblItem').append(row);
         }
 
+        saveAlert();
     }
 
     //when click table row data auto fill into text fields
@@ -205,6 +206,17 @@
             $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
         });
     });
+
+    //Save Alert
+    function saveAlert() {
+        Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Your work has been saved',
+            showConfirmButton: false,
+            timer: 1500
+        })
+    }
 
     //Focus
     $('#txtItemCode').on('keydown', function (event) {
