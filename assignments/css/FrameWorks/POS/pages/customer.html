@@ -132,7 +132,53 @@
         </section>
 
     </section>
-
 </main>
+
+<!--Import js for bootstrap-->
+<script src="../assets/js/bootstrap.min.js"></script>
+<script src="../assets/js/jquery-3.6.1.min.js"></script>
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+
+    $('#txtCustomerID').focus();
+
+    let customers = [];
+
+    $('#btnSaveCustomer').click(function () {
+
+        let customerID = $('#txtCustomerID').val();
+        let customerName = $('#txtCustomerName').val();
+        let customerAddress = $('#txtCustomerAddress').val();
+        let customerSalary = $('#txtCustomerSalary').val();
+
+        var customerObject = {
+            id: customerID,
+            name: customerName,
+            address: customerAddress,
+            salary: customerSalary
+        }
+
+        //add the customer object to the array
+        customers.push(customerObject);
+
+        loadAllCustomers();
+
+    });
+
+    //function for add data to table
+    function loadAllCustomers() {
+        $('#tblCustomer').empty();
+
+        for(var customer of customers){
+            var row = `<tr><td>${customer.id}</td><td>${customer.name}</td><td>${customer.address}</td><td>${customer.salary}</td></tr>`;
+
+            //then add it to the table body of customer table
+            $('#tblCustomer').append(row);
+        }
+    }
+
+</script>
 </body>
 </html>
