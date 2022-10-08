@@ -69,6 +69,7 @@ body > header {
     /*border: 1px solid blue;*/
     width: 100%;
     height: 100%;
+    top:100px;
 }
 
 /*all css basics assignment h4 styles*/
