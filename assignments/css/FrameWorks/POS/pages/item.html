@@ -134,9 +134,53 @@
     </section>
     <!-- End Item Here-->
 
-
-
 </main>
 <script src="../assets/js/bootstrap.min.js"></script>
+<script src="../assets/js/jquery-3.6.1.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+    $('#txtItemCode').focus();
+
+    let items = [];
+
+    //Save Item
+    $('#btnSaveItem').click(function () {
+        let itemCode = $('#txtItemCode').val();
+        let itemName = $('#txtItemName').val();
+        let itemQtyOnHand = $('#txtItemQTYOnHand').val();
+        let itemPrice = $('#txtItemPrice').val();
+
+
+        var itemObject = {
+            code: itemCode,
+            name: itemName,
+            qtyonhand: itemQtyOnHand,
+            price: itemPrice
+
+        }
+
+        //add the item object to the array
+        items.push(itemObject);
+
+        loadAllItems();
+
+    });
+
+    //function for add data to table
+    function loadAllItems() {
+        $('#tblItem').empty();
+
+        for (item of items) {
+            var row = `<tr><td>${item.code}</td><td>${item.name}</td><td>${item.qtyonhand}</td><td>${item.price}</td></tr>`
+
+            //then add it to the table body of item table
+            $('#tblItem').append(row);
+        }
+
+    }
+
+
+</script>
 </body>
 </html>
