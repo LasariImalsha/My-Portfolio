@@ -141,7 +141,6 @@
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <script>
-
     $('#txtCustomerID').focus();
 
     let customers = [];
@@ -165,6 +164,9 @@
 
         loadAllCustomers();
 
+        textFieldDataCLear();
+
+        bindRowClickEvents();
     });
 
     //function for add data to table
@@ -178,6 +180,68 @@
             $('#tblCustomer').append(row);
         }
     }
+
+    //when click table row data auto fill into text fields
+    function bindRowClickEvents(){
+        $('#tblCustomer>tr').click(function (){
+            let id = $(this).children(':eq(0)').text();
+            let name = $(this).children(':eq(1)').text();
+            let address = $(this).children(':eq(2)').text();
+            let salary = $(this).children(':eq(3)').text();
+
+            $('#txtCustomerID').val(id);
+            $('#txtCustomerName').val(name);
+            $('#txtCustomerAddress').val(address);
+            $('#txtCustomerSalary').val(salary);
+        });
+    }
+
+    //btn clear data
+    $('#btnClearCustomer').click(function (){
+        textFieldDataCLear();
+    });
+
+    //clear data function
+    function textFieldDataCLear(){
+        $('#txtCustomerID').val('');
+        $('#txtCustomerName').val('');
+        $('#txtCustomerAddress').val('');
+        $('#txtCustomerSalary').val('');
+
+        $('#txtCustomerID').focus();
+    }
+
+
+
+    //focus
+    $('#txtCustomerID').on('keydown',function (event){
+        if(event.which == 13){
+            $('#txtCustomerName').focus();
+        }
+    });
+
+    $('#txtCustomerName').on('keydown',function (event){
+        if(event.which == 13){
+            $('#txtCustomerAddress').focus();
+        }
+    });
+
+
+    $('#txtCustomerAddress').on('keydown',function (event){
+        if(event.which == 13){
+            $('#txtCustomerSalary').focus();
+        }
+    });
+
+
+    //added Item Search
+    $('#myInput').on('keyup', function () {
+        var value = $(this).val().toLowerCase();
+        $('#tblCustomer>tr').filter(function () {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+    });
+
 
 </script>
 </body>
