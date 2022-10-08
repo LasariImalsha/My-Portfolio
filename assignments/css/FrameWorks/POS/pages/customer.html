@@ -179,6 +179,8 @@
             //then add it to the table body of customer table
             $('#tblCustomer').append(row);
         }
+
+        saveAlert();
     }
 
     //when click table row data auto fill into text fields
@@ -211,7 +213,16 @@
         $('#txtCustomerID').focus();
     }
 
-
+    //Save Alert
+    function saveAlert() {
+        Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Your work has been saved',
+            showConfirmButton: false,
+            timer: 1500
+        })
+    }
 
     //focus
     $('#txtCustomerID').on('keydown',function (event){
