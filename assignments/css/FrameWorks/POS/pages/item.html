@@ -163,8 +163,10 @@
         //add the item object to the array
         items.push(itemObject);
 
+
         loadAllItems();
 
+        bindRowClickEvents();
     });
 
     //function for add data to table
@@ -180,6 +182,48 @@
 
     }
 
+    //when click table row data auto fill into text fields
+    function bindRowClickEvents() {
+        $('#tblItem>tr').click(function () {
+            let code = $(this).children(':eq(0)').text();
+            let name = $(this).children(':eq(1)').text();
+            let qtyonhand = $(this).children(':eq(2)').text();
+            let price = $(this).children(':eq(3)').text();
+
+            $('#txtItemCode').val(code);
+            $('#txtItemName').val(name);
+            $('#txtItemQTYOnHand').val(qtyonhand);
+            $('#txtItemPrice').val(price);
+
+        });
+    }
+
+    //Item Search Bar
+    $('#myInput').on('keyup', function () {
+        var value = $(this).val().toLowerCase();
+        $('#tblItem>tr').filter(function () {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+    });
+
+    //Focus
+    $('#txtItemCode').on('keydown', function (event) {
+        if (event.which == 13) {
+            $('#txtItemName').focus();
+        }
+    });
+
+    $('#txtItemName').on('keydown', function (event) {
+        if (event.which == 13) {
+            $('#txtItemQTYOnHand').focus();
+        }
+    });
+
+    $('#txtItemQTYOnHand').on('keydown', function (event) {
+        if (event.which == 13) {
+            $('#txtItemPrice').focus();
+        }
+    });
 
 </script>
 </body>
