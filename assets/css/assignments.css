@@ -302,6 +302,91 @@ body > header {
     height: 43px;
 }
 
+/*CSS FrameWorks Section*/
+.css_frameworks {
+    /*border: 1px solid red;*/
+    position: relative;
+    display: grid;
+    top: 0px;
+    width: 100%;
+    height: 300px;
+    background-color: #0E1630;
+
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns:repeat(3, 1fr);
+}
+
+/*css frameworks headline */
+.CSS_Frameworks_headline {
+    color: #927733;
+    font-family: 'Nunito', sans-serif;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 20px;
+    position: relative;
+    top: 0px;
+    left: 700px;
+    width: 200px;
+}
+
+/*add styles for css_frameworks article*/
+.css_frameworks_main_articles {
+    /*border: 1px solid blue;*/
+    width: 100%;
+    height: 100%;
+}
+
+/*all css frameworks assignment h4 styles*/
+.css_frameworks_main_articles h4:nth-child(1) {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 16px;
+    color: #808DAD;
+}
+
+/*add border for add all css_frameworks image*/
+.css_frameworks_main_articles div:nth-child(2) {
+    /*border: 1px solid green;*/
+    width: 100%;
+    height: 180px;
+    position: relative;
+}
+
+/*add all assignment image*/
+.css_frameworks_main_articles div:nth-child(2) > img {
+    width: 190px;
+    height: 140px;
+    filter: drop-shadow(0px 4px 4px rgba(39, 123, 245, 0.8));
+    border-radius: 20px;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/*add view button for all css_framework basics*/
+.prview_img {
+    cursor: pointer;
+    border-radius: 100%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 40px;
+    height: 40px;
+    transition: 0.3s;
+    position: relative;
+    left: 210px;
+    top: 6px;
+}
+
+/*add hover view for button for all frameworks*/
+.prview_img:hover {
+    transition: 0.3s;
+    width: 43px;
+    height: 43px;
+}
+
 /*-------------------------------------------------------------------------------*/
 /*Java Script Section*/
 .Java_script {
