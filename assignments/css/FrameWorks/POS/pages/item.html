@@ -185,6 +185,20 @@
         saveAlert();
     }
 
+    //Btn Delete Item
+    $("#btnItemDelete").click(function () {
+        let deleteItemID = $("#txtItemCode").val();
+        if (deleteItem(deleteItemID)) {
+            clearItemTextField();
+            deleteCustomerAlert();
+            $('#txtItemCode').focus();
+        } else {
+            deleteErrorCustomerAlert();
+            $('#txtItemCode').focus();
+        }
+
+    });
+
     //when click table row data auto fill into text fields
     function bindRowClickEvents() {
         $('#tblItem>tr').click(function () {
@@ -235,6 +249,27 @@
             timer: 1500
         })
     }
+
+    //delete alert
+    function deleteCustomerAlert() {
+        Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Item Deleted',
+            showConfirmButton: false,
+            timer: 1500
+        })
+    }
+
+    //delete error Alert
+    function deleteErrorCustomerAlert() {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Something went wrong!',
+        })
+    }
+
 
     //Focus
     $('#txtItemCode').on('keydown', function (event) {
