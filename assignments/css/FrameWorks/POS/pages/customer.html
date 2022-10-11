@@ -145,6 +145,7 @@
 
     let customers = [];
 
+    //Save Customer
     $('#btnSaveCustomer').click(function () {
 
         let customerID = $('#txtCustomerID').val();
@@ -167,6 +168,8 @@
         textFieldDataCLear();
 
         bindRowClickEvents();
+
+        $('#txtCustomerID').focus();
     });
 
     //function for add data to table
@@ -183,6 +186,19 @@
         saveAlert();
     }
 
+    //Btn Delete Customer
+    $("#btnDeleteCustomer").click(function () {
+        let deleteCustomerID = $('#txtCustomerID').val();
+        if (deleteCustomer(deleteCustomerID)) {
+            deleteCustomerAlert();
+            clearCustomerTextField();
+            $('#txtCustomerID').focus();
+        } else {
+            deleteErrorCustomerAlert();
+            $('#txtCustomerID').focus();
+        }
+
+    });
     //when click table row data auto fill into text fields
     function bindRowClickEvents(){
         $('#tblCustomer>tr').click(function (){
@@ -221,6 +237,26 @@
             title: 'Your work has been saved',
             showConfirmButton: false,
             timer: 1500
+        })
+    }
+
+    //delete alert
+    function deleteCustomerAlert() {
+        Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Customer Deleted',
+            showConfirmButton: false,
+            timer: 1500
+        })
+    }
+
+    //delete error Alert
+    function deleteErrorCustomerAlert() {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Something went wrong!',
         })
     }
 
