@@ -146,7 +146,6 @@
 
     //Save Item
     $('#btnSaveItem').click(function () {
-
         let itemCode = $('#txtItemCode').val();
         let itemName = $('#txtItemName').val();
         let itemQtyOnHand = $('#txtItemQTYOnHand').val();
@@ -164,11 +163,14 @@
         //add the item object to the array
         items.push(itemObject);
 
+
         loadAllItems();
 
-        textFieldDataCLear();
-
         bindRowClickEvents();
+
+        clearItemTextField();
+
+        $('#txtItemCode').focus();
     });
 
     //function for add data to table
@@ -182,7 +184,7 @@
             $('#tblItem').append(row);
         }
 
-        saveAlert();
+        saveItemAlert();
     }
 
     //Btn Delete Item
@@ -199,6 +201,7 @@
 
     });
 
+
     //Btn Update Item
     $("#btnItemUpdate").click(function () {
         let itemID = $("#txtItemCode").val();
@@ -211,37 +214,6 @@
         }
     });
 
-    //when click table row data auto fill into text fields
-    function bindRowClickEvents() {
-        $('#tblItem>tr').click(function () {
-            let code = $(this).children(':eq(0)').text();
-            let name = $(this).children(':eq(1)').text();
-            let qtyonhand = $(this).children(':eq(2)').text();
-            let price = $(this).children(':eq(3)').text();
-
-            $('#txtItemCode').val(code);
-            $('#txtItemName').val(name);
-            $('#txtItemQTYOnHand').val(qtyonhand);
-            $('#txtItemPrice').val(price);
-
-        });
-    }
-
-    //btn clear data
-    $('#btnClearItem').click(function (){
-        textFieldDataCLear();
-    });
-
-    //clear data function
-    function textFieldDataCLear(){
-        $('#txtItemCode').val('');
-        $('#txtItemName').val('');
-        $('#txtItemQTYOnHand').val('');
-        $('#txtItemPrice').val('');
-
-        $('#txtItemCode').focus();
-    }
-
 
     //Item Search Bar
     $('#myInput').on('keyup', function () {
@@ -251,34 +223,21 @@
         });
     });
 
+
+    //btn Clear Text Field Data
+    $('#btnClearItem').on(function () {
+        clearItemTextField();
+    });
+
+
     //Save Alert
-    function saveAlert() {
+    function saveItemAlert() {
         Swal.fire({
             position: 'top-end',
             icon: 'success',
-            title: 'Your work has been saved',
+            title: 'Item saved',
             showConfirmButton: false,
             timer: 1500
-        })
-    }
-
-    //delete alert
-    function deleteCustomerAlert() {
-        Swal.fire({
-            position: 'top-end',
-            icon: 'success',
-            title: 'Item Deleted',
-            showConfirmButton: false,
-            timer: 1500
-        })
-    }
-
-    //delete error Alert
-    function deleteErrorCustomerAlert() {
-        Swal.fire({
-            icon: 'error',
-            title: 'Oops...',
-            text: 'Something went wrong!',
         })
     }
 
@@ -302,24 +261,113 @@
         })
     }
 
-    //Focus
-    $('#txtItemCode').on('keydown', function (event) {
+    //delete alert
+    function deleteCustomerAlert() {
+        Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Item Deleted',
+            showConfirmButton: false,
+            timer: 1500
+        })
+    }
+
+    //delete error Alert
+    function deleteErrorCustomerAlert() {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Something went wrong!',
+        })
+    }
+
+
+    //when click table row data auto fill into text fields
+    function bindRowClickEvents() {
+        $('#tblItem>tr').click(function () {
+            let code = $(this).children(':eq(0)').text();
+            let name = $(this).children(':eq(1)').text();
+            let qtyonhand = $(this).children(':eq(2)').text();
+            let price = $(this).children(':eq(3)').text();
+
+            $('#txtItemCode').val(code);
+            $('#txtItemName').val(name);
+            $('#txtItemQTYOnHand').val(qtyonhand);
+            $('#txtItemPrice').val(price);
+
+        });
+    }
+
+
+    $("#txtItemCode").on('keydown', function (event) {
         if (event.which == 13) {
-            $('#txtItemName').focus();
+            let itemId = $("#txtItemCode").val();
+            let item = searchItem(itemId);
+            if (item != null) {
+                setItemTextFieldValues(item.code, item.name, item.qtyonhand, item.price);
+            } else {
+                alert("There is no item available For That" + itemId);
+                $('#txtItemName').val('');
+                $('#txtItemQTYOnHand').val('');
+                $('#txtItemPrice').val('');
+            }
         }
     });
 
-    $('#txtItemName').on('keydown', function (event) {
-        if (event.which == 13) {
-            $('#txtItemQTYOnHand').focus();
+    //Search Item function
+    function searchItem(itemCode) {
+        for (let item of items) {
+            if (item.code == itemCode) {
+                return item;
+            }
         }
-    });
+        return null;
+    }
 
-    $('#txtItemQTYOnHand').on('keydown', function (event) {
-        if (event.which == 13) {
-            $('#txtItemPrice').focus();
+    function setItemTextFieldValues(code, name, qtyonhand, price) {
+        $('#txtItemCode').val(code);
+        $('#txtItemName').val(name);
+        $('#txtItemQTYOnHand').val(qtyonhand);
+        $('#txtItemPrice').val(price);
+    }
+
+    //Clear text field Function
+    function clearItemTextField() {
+        $('#txtItemCode').val('');
+        $('#txtItemName').val('');
+        $('#txtItemQTYOnHand').val('');
+        $('#txtItemPrice').val('');
+    }
+
+
+    //Delete item function
+    function deleteItem(itemCode) {
+        let item = searchItem(itemCode);
+        if (item != null) {
+            let itemIndexNumber = items.indexOf(item);
+            items.splice(itemIndexNumber, 1);
+            loadAllItems();
+            return true;
+        } else {
+            return false;
         }
-    });
+
+    }
+
+    //update Item function
+    function updateItem(itemCode) {
+        let item = searchItem(itemCode);
+        if(item!= null){
+            item.code = $("#txtItemCode").val();
+            item.name = $("#txtItemName").val();
+            item.qtyonhand = $("#txtItemQTYOnHand").val();
+            item.price = $("#txtItemPrice").val();
+            loadAllItems();
+            return true;
+        }else {
+            return false;
+        }
+    }
 
 </script>
 </body>
