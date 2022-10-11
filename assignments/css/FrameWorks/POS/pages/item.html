@@ -369,6 +369,138 @@
         }
     }
 
+    //Validation
+    // customer regular expressions
+    const itemIDRegEx = /^(I)[0-9]{3}$/;
+    const itemNameRegEx = /^[A-z ]{5,20}$/;
+    const itemQtyOnHandRegEx = /^[0-9]{1,}[.]?[0-9]{1,2}$/;
+    const itemPriceRegEx = /^[0-9]{1,}[.]?[0-9]{1,2}$/;
+
+    let itemValidations = [];
+
+    itemValidations.push({
+        reg: itemIDRegEx,
+        field: $('#txtItemCode'),
+        error: 'Item Code Pattern is Wrong : I001'
+    });
+    itemValidations.push({
+        reg: itemNameRegEx,
+        field: $('#txtItemName'),
+        error: 'Item Name Pattern is Wrong : A-z 5-20'
+    });
+    itemValidations.push({
+        reg: itemQtyOnHandRegEx,
+        field: $('#txtItemQTYOnHand'),
+        error: 'Item QTY On Hand Pattern is Wrong : 1 or 100'
+    });
+    itemValidations.push({
+        reg: itemPriceRegEx,
+        field: $('#txtItemPrice'),
+        error: 'Item Price Pattern is Wrong : 100 or 100.00'
+    });
+
+    //disable tab key of all four text fields using grouping selector in CSS
+    $("#txtItemCode,#txtItemName,#txtItemQTYOnHand,#txtItemPrice").on('keydown', function (event) {
+        if (event.key == "Tab") {
+            event.preventDefault();
+        }
+    });
+
+    $("#txtItemCode,#txtItemName,#txtItemQTYOnHand,#txtItemPrice").on('keyup', function (event) {
+        checkValidity();
+    });
+
+    $("#txtItemCode,#txtItemName,#txtItemQTYOnHand,#txtItemPrice").on('blur', function (event) {
+        checkValidity();
+    });
+
+    $("#txtItemCode").on('keydown', function (event) {
+        if (event.key == "Enter" && check(itemIDRegEx, $("#txtItemCode"))) {
+            $("#txtItemName").focus();
+        } else {
+            focusText($("#txtItemCode"));
+        }
+    });
+
+
+     $("#txtItemName").on('keydown', function (event) {
+         if (event.key == "Enter" && check(itemNameRegEx, $("#txtItemName"))) {
+             $("#txtItemName").focus();
+         }
+     });
+
+
+     $("#txtItemQTYOnHand").on('keydown', function (event) {
+         if (event.key == "Enter" && check(itemQtyOnHandRegEx, $("#txtItemQTYOnHand"))) {
+             $("#txtItemQTYOnHand").focus();
+         }
+     });
+
+
+    $("#txtItemPrice").on('keydown', function (event) {
+        if (event.key == "Enter" && check(itemPriceRegEx, $("#txtItemPrice"))) {
+            let res = confirm("Do you want to add this item?");
+            if (res) {
+                $('#btnSaveItem').click();
+            }
+        }
+    });
+
+    function checkValidity() {
+        let errorCount = 0;
+        for (let validation of itemValidations) {
+            if (validation.reg.test(validation.field.val())) {
+                textSuccess(validation.field, "");
+            } else {
+                errorCount = errorCount + 1;
+                setTextError(validation.field, validation.error);
+            }
+        }
+        setButtonState(errorCount);
+    }
+
+    function check(regex, txtField) {
+        let inputValue = txtField.val();
+        return regex.test(inputValue) ? true : false;
+    }
+
+    function setTextError(txtField, error) {
+        if (txtField.val().length <= 0) {
+            defaultText(txtField, "");
+        } else {
+            txtField.css('border', '2px solid red');
+            txtField.parent().children('span').text(error);
+        }
+
+    }
+
+    function textSuccess(txtField, error) {
+        if (txtField.val().length <= 0) {
+            defaultText(txtField, "");
+        } else {
+            txtField.css('border', '2px solid green');
+            txtField.parent().children('span').text(error);
+        }
+    }
+
+    function defaultText(txtField, error) {
+        txtField.css("border", "1px solid #ced4da");
+        txtField.parent().children('span').text(error);
+    }
+
+    function focusText(txtField) {
+        txtField.focus();
+    }
+
+    function setButtonState(value) {
+        if (value > 0) {
+            $("#btnItem").attr('disabled', true);
+        } else {
+            $("#btnItem").attr('disabled', false);
+        }
+    }
+
+
 </script>
 </body>
 </html>
