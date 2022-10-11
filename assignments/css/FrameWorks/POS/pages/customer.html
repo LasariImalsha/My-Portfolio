@@ -199,6 +199,19 @@
         }
 
     });
+
+    //Btn Update Customer
+    $("#btnUpdateCustomer").click(function () {
+        let customerID = $("#txtCustomerID").val();
+        let response = updateCustomer(customerID);
+        if (response) {
+            updateCustomerAlert();
+            clearCustomerTextField();
+        } else {
+            updateErrorCustomerAlert();
+        }
+    });
+
     //when click table row data auto fill into text fields
     function bindRowClickEvents(){
         $('#tblCustomer>tr').click(function (){
@@ -253,6 +266,26 @@
 
     //delete error Alert
     function deleteErrorCustomerAlert() {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Something went wrong!',
+        })
+    }
+
+    //update Alert
+    function updateCustomerAlert() {
+        Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Customer Updated',
+            showConfirmButton: false,
+            timer: 1500
+        })
+    }
+
+    //update error Alert
+    function updateErrorCustomerAlert() {
         Swal.fire({
             icon: 'error',
             title: 'Oops...',
