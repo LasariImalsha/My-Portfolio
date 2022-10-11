@@ -199,6 +199,18 @@
 
     });
 
+    //Btn Update Item
+    $("#btnItemUpdate").click(function () {
+        let itemID = $("#txtItemCode").val();
+        let response = updateItem(itemID);
+        if(response){
+            updateItemAlert();
+            clearItemTextField();
+        }else {
+            updateErrorItemAlert();
+        }
+    });
+
     //when click table row data auto fill into text fields
     function bindRowClickEvents() {
         $('#tblItem>tr').click(function () {
@@ -270,6 +282,25 @@
         })
     }
 
+    //update Alert
+    function updateItemAlert() {
+        Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Item Updated',
+            showConfirmButton: false,
+            timer: 1500
+        })
+    }
+
+    //error Alert
+    function updateErrorItemAlert(){
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Something went wrong!',
+        })
+    }
 
     //Focus
     $('#txtItemCode').on('keydown', function (event) {
