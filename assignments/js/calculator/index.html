@@ -100,16 +100,18 @@
     }
 
     function clickclr() {
-        document.calculator.display.value += "";
+        document.calculator.display.value = "";
     }
 
     function clickeql() {
-        document.calculator.display.value += "=";
+        var answr = eval(document.calculator.display.value);
+        document.calculator.display.value = answr;
     }
 
     function clickdot() {
         document.calculator.display.value += ".";
     }
+
 </script>
 
 </body>

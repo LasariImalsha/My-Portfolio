@@ -56,7 +56,7 @@
                 class="headline_part2">Customer</span></h1>
     </div>
 
-    <section class="container-fluid mt-3" id="customerContent">
+    <section class="container-fluid mt-3 col-12" id="customerContent">
         <!--Start customer data form -->
         <section class="container-fluid mt-5">
 
@@ -141,8 +141,6 @@
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <script>
-
-    $('#txtCustomerID').focus();
 
     let customers = [];
 
@@ -356,6 +354,7 @@
         }
     }
 
+    //validation
     //update Customer function
     function updateCustomer(customerID) {
         let customer = searchCustomer(customerID);
