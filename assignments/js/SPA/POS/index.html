@@ -558,6 +558,57 @@
     </section>
 </section>
 <!----------------------------------------Other Page------------------------------------------->
+<section id="dashboard">
+    <!--Dashboard Headline-->
+    <div class="mb-5 ">
+        <h1 class="container-fluid "><span class="headline_part1">System</span> <span
+                class="headline_part2">Dashboard</span></h1>
+    </div>
+
+    <!--start Dashboard-->
+    <main class="container-fluid mb-5">
+        <section class="row container-fluid justify-content-around ">
+
+            <div class="mb-5 col-6 col-lg-3">
+                <div class="card">
+                    <div class="card-header bg-dark text-white">Customers</div>
+                    <div class="card-body">
+                        <div><i class="fa-solid fa-user"></i></div>
+                    </div>
+                    <div class="card-footer">
+                        <div><h2>50</h2></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3">
+                <div class="card">
+                    <div class="card-header bg-dark text-white">Items</div>
+                    <div class="card-body">
+                        <div><i class="fa-solid fa-cubes-stacked"></i></div>
+                    </div>
+                    <div class="card-footer">
+                        <div><h2>100</h2></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3">
+                <div class="card">
+                    <div class="card-header bg-dark text-white">Orders</div>
+                    <div class="card-body">
+                        <div><i class="fa-solid fa-cart-shopping"></i></div>
+                    </div>
+                    <div class="card-footer">
+                        <div><h2>58</h2></div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <!--end Dashboard-->
+</section>
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/jquery-3.6.1.min.js"></script>
 
@@ -569,7 +620,7 @@
         $('#itemSection').hide();
         $('#orderSection').hide();
         $('#orderDetailsSection').hide();
-        $('#oth2').hide();
+        $('#dashboard').hide();
     });
 
     /*Home click other section hide*/
@@ -579,7 +630,7 @@
         $('#itemSection').css('display', 'none');
         $('#orderSection').css('display', 'none');
         $('#orderSection').css('display', 'none');
-        $('#oth2').css('display', 'none');
+        $('#dashboard').css('display', 'none');
     });
 
     /*Customer click other section hide*/
@@ -589,7 +640,7 @@
         $('#itemSection').css('display', 'none');
         $('#orderSection').css('display', 'none');
         $('#orderDetailsSection').css('display', 'none');
-        $('#oth2').css('display', 'none');
+        $('#dashboard').css('display', 'none');
     });
 
     /*Item click other section hide*/
@@ -599,7 +650,7 @@
         $('#itemSection').css('display', 'block');
         $('#orderSection').css('display', 'none');
         $('#orderDetailsSection').css('display', 'none');
-        $('#oth2').css('display', 'none');
+        $('#dashboard').css('display', 'none');
     });
 
     /*Order click other section hide*/
@@ -609,7 +660,7 @@
         $('#itemSection').css('display', 'none');
         $('#orderSection').css('display', 'block');
         $('#orderDetailsSection').css('display', 'none');
-        $('#oth2').css('display', 'none');
+        $('#dashboard').css('display', 'none');
     });
 
     /*Order-Details click other section hide*/
@@ -619,9 +670,18 @@
         $('#itemSection').css('display', 'none');
         $('#orderSection').css('display', 'none');
         $('#orderDetailsSection').css('display', 'block');
-        $('#oth2').css('display', 'none');
+        $('#dashboard').css('display', 'none');
     });
 
+    /*Order-Details click other section hide*/
+    $('#othrbtttn').click(function () {
+        $('#home').css('display', 'none')
+        $('#customerSection').css('display', 'none');
+        $('#itemSection').css('display', 'none');
+        $('#orderSection').css('display', 'none');
+        $('#orderDetailsSection').css('display', 'none');
+        $('#dashboard').css('display', 'block');
+    });
 </script>
 </body>
 </html>
