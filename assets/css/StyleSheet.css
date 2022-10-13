@@ -7805,7 +7805,7 @@ body > main > section:nth-child(9) > div:nth-child(1) > a > img{
     }
 
     /*Contact-Heading*/
-    body > main > section:nth-child(9) > h2:nth-child(2){
+    body > main > section:nth-child(9) > h2:nth-child(1){
         position: absolute;
         font-size: 35px;
         display: inline-block;
