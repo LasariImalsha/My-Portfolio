@@ -1,4 +1,4 @@
-$('#customer').click(function (){
+$('#custbttn').click(function (){
     focusCustomerID()
 });
 

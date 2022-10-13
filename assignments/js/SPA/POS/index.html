@@ -611,77 +611,18 @@
 </section>
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/jquery-3.6.1.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!--import sweetalert js file-->
 
-<script>
-    /*Start hide sections*/
-    $(document).ready(function () {
-        $('#home').show();
-        $('#customerSection').hide();
-        $('#itemSection').hide();
-        $('#orderSection').hide();
-        $('#orderDetailsSection').hide();
-        $('#dashboard').hide();
-    });
 
-    /*Home click other section hide*/
-    $('#hmebttn').click(function () {
-        $('#home').css('display', 'block')
-        $('#customerSection').css('display', 'none');
-        $('#itemSection').css('display', 'none');
-        $('#orderSection').css('display', 'none');
-        $('#orderSection').css('display', 'none');
-        $('#dashboard').css('display', 'none');
-    });
+<script src="controllers/CustomerController.js"></script>
+<script src="controllers/ItemController.js"></script>
 
-    /*Customer click other section hide*/
-    $('#custbttn').click(function () {
-        $('#home').css('display', 'none')
-        $('#customerSection').css('display', 'block');
-        $('#itemSection').css('display', 'none');
-        $('#orderSection').css('display', 'none');
-        $('#orderDetailsSection').css('display', 'none');
-        $('#dashboard').css('display', 'none');
-    });
 
-    /*Item click other section hide*/
-    $('#itmbttn').click(function () {
-        $('#home').css('display', 'none')
-        $('#customerSection').css('display', 'none');
-        $('#itemSection').css('display', 'block');
-        $('#orderSection').css('display', 'none');
-        $('#orderDetailsSection').css('display', 'none');
-        $('#dashboard').css('display', 'none');
-    });
+<script src="db/db.js"></script>
 
-    /*Order click other section hide*/
-    $('#ordrbttn').click(function () {
-        $('#home').css('display', 'none')
-        $('#customerSection').css('display', 'none');
-        $('#itemSection').css('display', 'none');
-        $('#orderSection').css('display', 'block');
-        $('#orderDetailsSection').css('display', 'none');
-        $('#dashboard').css('display', 'none');
-    });
+<script src="model/Customer.js"></script>
+<script src="model/Item.js"></script>
 
-    /*Order-Details click other section hide*/
-    $('#ordrDetlbttn').click(function () {
-        $('#home').css('display', 'none')
-        $('#customerSection').css('display', 'none');
-        $('#itemSection').css('display', 'none');
-        $('#orderSection').css('display', 'none');
-        $('#orderDetailsSection').css('display', 'block');
-        $('#dashboard').css('display', 'none');
-    });
 
-    /*Order-Details click other section hide*/
-    $('#othrbtttn').click(function () {
-        $('#home').css('display', 'none')
-        $('#customerSection').css('display', 'none');
-        $('#itemSection').css('display', 'none');
-        $('#orderSection').css('display', 'none');
-        $('#orderDetailsSection').css('display', 'none');
-        $('#dashboard').css('display', 'block');
-    });
-</script>
 </body>
 </html>
