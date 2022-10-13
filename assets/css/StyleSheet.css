@@ -89,9 +89,7 @@ body > main > section:nth-child(1) {
 body > main > section > nav {
     display: flex;
 }
-body > main > section:nth-child(2) > dfn {
-    font-style: normal;
-}
+
 /*Add profile pic into Home Section*/
 body > main > section:nth-child(1) > img {
     width: 350px;
@@ -104,7 +102,7 @@ body > main > section:nth-child(1) > img {
 }
 
 /*h1 "Hello "*/
-body > main > section:nth-child(1) > h1:nth-child(2){
+body > main > section:nth-child(1) > h1:nth-child(1){
     position: absolute;
     font-weight: bold;
     display: inline-block;
@@ -116,7 +114,7 @@ body > main > section:nth-child(1) > h1:nth-child(2){
 }
 
 /*h1 "I'M LASARI WIJAYAWARDHANA"*/
-body > main > section:nth-child(1) > h1:nth-child(3){
+body > main > section:nth-child(1) > h1:nth-child(2){
     position: absolute;
     font-weight: bold;
     display: inline-block;
@@ -128,7 +126,7 @@ body > main > section:nth-child(1) > h1:nth-child(3){
 }
 
 /*h1 "UI & UX Designer"*/
-body > main > section:nth-child(1) > h1:nth-child(4){
+body > main > section:nth-child(1) > h1:nth-child(3){
     position: absolute;
     font-weight: bold;
     display: inline-block;
@@ -140,7 +138,7 @@ body > main > section:nth-child(1) > h1:nth-child(4){
 }
 
 /*Download*/
-body > main > section:nth-child(1) > a:nth-child(5){
+body > main > section:nth-child(1) > a:nth-child(4){
     position: absolute;
     font-weight: bold;
     display: inline-block;
@@ -152,7 +150,7 @@ body > main > section:nth-child(1) > a:nth-child(5){
 }
 
 /*remove undeline*/
-body > main > section:nth-child(1) > a:nth-child(5) {
+body > main > section:nth-child(1) > a:nth-child(4) {
     text-decoration: none;
     color: #0000;
 }
@@ -265,7 +263,7 @@ body > main > section:nth-child(2) {
     background-color: #0E1630;
 }
 
-body > main > section:nth-child(2) > h2:nth-child(2){
+body > main > section:nth-child(2) > h2:nth-child(1){
     position: absolute;
     font-size: 35px;
     display: inline-block;
@@ -299,7 +297,7 @@ section > nav > article > a:hover {
 }
 
 /*Add gallery images */
-body > main > section:nth-child(2) > aside:nth-child(4) > img:nth-child(1) {
+body > main > section:nth-child(2) > aside:nth-child(3) > img:nth-child(1) {
     width: 200px;
     height: auto;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -309,7 +307,7 @@ body > main > section:nth-child(2) > aside:nth-child(4) > img:nth-child(1) {
     top: 100px;
 }
 
-body > main > section:nth-child(2) > aside:nth-child(4) > img:nth-child(2) {
+body > main > section:nth-child(2) > aside:nth-child(3) > img:nth-child(2) {
     width: auto;
     height: 250px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -318,7 +316,7 @@ body > main > section:nth-child(2) > aside:nth-child(4) > img:nth-child(2) {
     left: 225px;
     top: 95px;
 }
-body > main > section:nth-child(2) > aside:nth-child(4) > img:nth-child(3) {
+body > main > section:nth-child(2) > aside:nth-child(3) > img:nth-child(3) {
     width: 150px;
     height: auto;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -328,7 +326,7 @@ body > main > section:nth-child(2) > aside:nth-child(4) > img:nth-child(3) {
     top: 372px;
 }
 
-body > main > section:nth-child(2) > aside:nth-child(4) > img:nth-child(4) {
+body > main > section:nth-child(2) > aside:nth-child(3) > img:nth-child(4) {
     width: 250px;
     height: auto;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -339,7 +337,7 @@ body > main > section:nth-child(2) > aside:nth-child(4) > img:nth-child(4) {
 }
 
 /*My intro*/
-body > main > section:nth-child(2) > p:nth-child(5) {
+body > main > section:nth-child(2) > p:nth-child(4) {
     position: relative;
     display: inline-block;
     left: 640px ;
@@ -351,7 +349,7 @@ body > main > section:nth-child(2) > p:nth-child(5) {
 }
 
 /*add border to add my details*/
-body > main > section:nth-child(2) > div:nth-child(6) {
+body > main > section:nth-child(2) > div:nth-child(5) {
     /*border: 1px solid blue;*/
     position: relative;
     width: 43vw;
@@ -361,7 +359,7 @@ body > main > section:nth-child(2) > div:nth-child(6) {
 }
 
 /*!*add positions for all p inside div*!*/
-body > main > section:nth-child(2) > div:nth-child(6) > p {
+body > main > section:nth-child(2) > div:nth-child(5) > p {
     position: absolute;
     display: inline-block;
     font-size: 20px;
@@ -369,11 +367,11 @@ body > main > section:nth-child(2) > div:nth-child(6) > p {
 }
 
 /*!*Maintain my details p tags*!*/
-body > main > section:nth-child(2) > div:nth-child(6) > p:nth-child(1) {
+body > main > section:nth-child(2) > div:nth-child(5) > p:nth-child(1) {
     left: 0;
 }
 
-body > main > section:nth-child(2) > div:nth-child(6) > p:nth-child(2) {
+body > main > section:nth-child(2) > div:nth-child(5) > p:nth-child(2) {
     height: 30px;
     left: 0;
     top: 0;
@@ -381,24 +379,24 @@ body > main > section:nth-child(2) > div:nth-child(6) > p:nth-child(2) {
     margin: auto;
 }
 
-body > main > section:nth-child(2) > div:nth-child(6) > p:nth-child(3) {
+body > main > section:nth-child(2) > div:nth-child(5) > p:nth-child(3) {
     left: 0;
     bottom: 0;
 }
 
-body > main > section:nth-child(2) > div:nth-child(6) > p:nth-child(4) {
+body > main > section:nth-child(2) > div:nth-child(5) > p:nth-child(4) {
     right: 0;
     top: 0;
 }
 
-body > main > section:nth-child(2) > div:nth-child(6) > p:nth-child(5) {
+body > main > section:nth-child(2) > div:nth-child(5) > p:nth-child(5) {
     height: 30px;
     right: 0;
     top: 0;
     bottom: 0;
     margin:auto;
 }
-body > main > section:nth-child(2) > div:nth-child(6) > p:nth-child(6) {
+body > main > section:nth-child(2) > div:nth-child(5) > p:nth-child(6) {
     right: 0;
     bottom: 0;
 }
@@ -417,7 +415,7 @@ body > main > section:nth-child(3) {
     background-color: #0E1630;
 }
 
-body > main > section:nth-child(3) > h2:nth-child(2){
+body > main > section:nth-child(3) > h2:nth-child(1){
     position: absolute;
     font-size: 35px;
     display: inline-block;
@@ -547,14 +545,14 @@ section > nav > article > a:hover {
     margin: auto;
 }
 
-body > main > section:nth-child(3) > aside:nth-child(5) > h3:nth-child(1){
+body > main > section:nth-child(3) > aside:nth-child(4) > h3:nth-child(1){
     top: 450px;
     font-weight: bold;
     color: white;
     font-family: 'Nunito', sans-serif;
 }
 
-body > main > section:nth-child(3) > aside:nth-child(5) > h3:nth-child(2){
+body > main > section:nth-child(3) > aside:nth-child(4) > h3:nth-child(2){
     top: 475px;
     font-weight: normal;
     color: #808DAD;
@@ -562,27 +560,27 @@ body > main > section:nth-child(3) > aside:nth-child(5) > h3:nth-child(2){
 }
 
 
-body > main > section:nth-child(3) > aside:nth-child(5){
+body > main > section:nth-child(3) > aside:nth-child(4){
     bottom:50px;
     left: 890px;
     position: relative;
 }
-body > main > section:nth-child(3) > aside:nth-child(5) > img:nth-child(3){
+body > main > section:nth-child(3) > aside:nth-child(4) > img:nth-child(3){
     width: 40px;
     height: auto;
 
 }
-body > main > section:nth-child(3) > aside:nth-child(5) > img:nth-child(4){
+body > main > section:nth-child(3) > aside:nth-child(4) > img:nth-child(4){
     width: 60px;
     height: auto;
 
 }
-body > main > section:nth-child(3) > aside:nth-child(5) >img:nth-child(5){
+body > main > section:nth-child(3) > aside:nth-child(4) >img:nth-child(5){
     width: 30px;
     height: 40px;
 
 }
-body > main > section:nth-child(3) > img:nth-child(6){
+body > main > section:nth-child(3) > img:nth-child(5){
     width: 250px;
     height: auto;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -592,7 +590,7 @@ body > main > section:nth-child(3) > img:nth-child(6){
     top: 220px;
 }
 
-body > main > section:nth-child(3) > img:nth-child(7){
+body > main > section:nth-child(3) > img:nth-child(6){
     width: 250px;
     height: auto;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -607,7 +605,7 @@ body > main > section:nth-child(4) {
     background-color: #0E1630;
 }
 
-body > main > section:nth-child(4) > h2:nth-child(2){
+body > main > section:nth-child(4) > h2:nth-child(1){
     position: absolute;
     font-size: 35px;
     display: inline-block;
@@ -641,7 +639,7 @@ section > nav > article > a:hover {
 }
 
 /*Add subheadings - 1 */
-body > main > section:nth-child(4) > p:nth-child(4){
+body > main > section:nth-child(4) > p:nth-child(3){
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
     font-size: 25px;
@@ -653,7 +651,7 @@ body > main > section:nth-child(4) > p:nth-child(4){
 }
 
 /*Add grid box for language*/
-body > main > section:nth-child(4) > section:nth-child(5){
+body > main > section:nth-child(4) > section:nth-child(4){
     top: 110px;
     left: 20px;
     position: relative;
@@ -665,7 +663,7 @@ body > main > section:nth-child(4) > section:nth-child(5){
 }
 
 /* Add little div box for languages*/
-body > main > section:nth-child(4) > section:nth-child(5) > div {
+body > main > section:nth-child(4) > section:nth-child(4) > div {
     background: #0E1630;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     position: relative;
@@ -680,7 +678,7 @@ body > main > section:nth-child(4) > section:nth-child(5) > div {
 }
 
 /*add over effect on skills*/
-body > main > section:nth-child(4) > section:nth-child(5) > div:hover {
+body > main > section:nth-child(4) > section:nth-child(4) > div:hover {
     background: linear-gradient(45deg, #0E1630, #927733);
     /*color: white;*/
     /*border-radius: 25px;*/
@@ -689,7 +687,7 @@ body > main > section:nth-child(4) > section:nth-child(5) > div:hover {
 }
 
 /*add languages  & tools image*/
-body > main > section:nth-child(4) > section:nth-child(5) > div > img {
+body > main > section:nth-child(4) > section:nth-child(4) > div > img {
     width: 50px;
     height: 50px;
     position: relative;
@@ -702,7 +700,7 @@ body > main > section:nth-child(4) > section:nth-child(5) > div > img {
 
 
 /*add languages  & tools names */
-body > main > section:nth-child(4) > section:nth-child(5) > div > p {
+body > main > section:nth-child(4) > section:nth-child(4) > div > p {
     font-size: 16px;
     color: white;
     font-family: 'Poppins', sans-serif;
@@ -717,7 +715,7 @@ body > main > section:nth-child(4) > section:nth-child(5) > div > p {
 }
 
 /*Add subheadings - 2*/
-body > main > section:nth-child(4) > p:nth-child(6){
+body > main > section:nth-child(4) > p:nth-child(5){
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
     font-size: 25px;
@@ -729,7 +727,7 @@ body > main > section:nth-child(4) > p:nth-child(6){
 }
 
 /*Add grid box for language*/
-body > main > section:nth-child(4) > section:nth-child(7){
+body > main > section:nth-child(4) > section:nth-child(6){
     bottom: 40px;
     left: 20px;
     position: relative;
@@ -741,7 +739,7 @@ body > main > section:nth-child(4) > section:nth-child(7){
 }
 
 /* Add little div box for languages*/
-body > main > section:nth-child(4) > section:nth-child(7) > div {
+body > main > section:nth-child(4) > section:nth-child(6) > div {
     background: #0E1630;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     position: relative;
@@ -756,7 +754,7 @@ body > main > section:nth-child(4) > section:nth-child(7) > div {
 }
 
 /*add over effect on skills*/
-body > main > section:nth-child(4) > section:nth-child(7) > div:hover {
+body > main > section:nth-child(4) > section:nth-child(6) > div:hover {
     background: linear-gradient(45deg, #0E1630, #927733);
     color: white;
     /*border-radius: 25px;*/
@@ -765,7 +763,7 @@ body > main > section:nth-child(4) > section:nth-child(7) > div:hover {
 }
 
 /*add languages  & tools image*/
-body > main > section:nth-child(4) > section:nth-child(7) > div > img {
+body > main > section:nth-child(4) > section:nth-child(6) > div > img {
     width: 50px;
     height: 50px;
     position: relative;
@@ -778,7 +776,7 @@ body > main > section:nth-child(4) > section:nth-child(7) > div > img {
 
 
 /*add languages  & tools names */
-body > main > section:nth-child(4) > section:nth-child(7) > div > p {
+body > main > section:nth-child(4) > section:nth-child(6) > div > p {
     font-size: 15px;
     color: white;
     font-family: 'Poppins', sans-serif;
@@ -797,7 +795,7 @@ body > main > section:nth-child(5) {
     background-color: #0E1630;
 }
 
-body > main > section:nth-child(5) > h2:nth-child(2){
+body > main > section:nth-child(5) > h2:nth-child(1){
     position: absolute;
     font-size: 35px;
     display: inline-block;
@@ -831,7 +829,7 @@ section > nav > article > a:hover {
 }
 
 /*Add subheadings - 1 */
-body > main > section:nth-child(5) > p:nth-child(4){
+body > main > section:nth-child(5) > p:nth-child(3){
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
     font-size: 25px;
@@ -842,7 +840,7 @@ body > main > section:nth-child(5) > p:nth-child(4){
     opacity: 70%;
 }
 /*Add flex box for add my services*/
-body > main > section:nth-child(5) > article:nth-child(5) {
+body > main > section:nth-child(5) > article:nth-child(4) {
     display: flex;
     position: relative;
     width: 98.9vw;
@@ -853,14 +851,14 @@ body > main > section:nth-child(5) > article:nth-child(5) {
 }
 
 /*Add sizes all divs in flex box*/
-body > main > section:nth-child(5) > article:nth-child(5) > div {
+body > main > section:nth-child(5) > article:nth-child(4) > div {
     /*border: 1px solid orange;*/
     width: 100%;
     height: 650px;
 }
 
 /*add style planing h3*/
-body > main > section:nth-child(5) > article:nth-child(5) > div:nth-child(1) > h3 {
+body > main > section:nth-child(5) > article:nth-child(4) > div:nth-child(1) > h3 {
     position: relative;
     text-align: center;
     font-size: 31px;
@@ -873,7 +871,7 @@ body > main > section:nth-child(5) > article:nth-child(5) > div:nth-child(1) > h
 }
 
 /*add image into planing*/
-body > main > section:nth-child(5) > article:nth-child(5) > div:nth-child(1) > img {
+body > main > section:nth-child(5) > article:nth-child(4) > div:nth-child(1) > img {
     height: 228px;
     width: 228px;
     display: block;
@@ -884,7 +882,7 @@ body > main > section:nth-child(5) > article:nth-child(5) > div:nth-child(1) > i
 }
 
 /*description styles planing*/
-body > main > section:nth-child(5) > article:nth-child(5) > div:nth-child(1) > pre {
+body > main > section:nth-child(5) > article:nth-child(4) > div:nth-child(1) > pre {
     position: relative;
     text-align: center;
     display: inline-block;
@@ -897,7 +895,7 @@ body > main > section:nth-child(5) > article:nth-child(5) > div:nth-child(1) > p
 }
 
 /*add styles UI&UX h3*/
-body > main > section:nth-child(5) > article:nth-child(5) > div:nth-child(2) > h3 {
+body > main > section:nth-child(5) > article:nth-child(4) > div:nth-child(2) > h3 {
     position: relative;
     text-align: center;
     font-size: 31px;
@@ -910,7 +908,7 @@ body > main > section:nth-child(5) > article:nth-child(5) > div:nth-child(2) > h
 }
 
 /*add image into UI&UX*/
-body > main > section:nth-child(5) > article:nth-child(5) > div:nth-child(2) > img {
+body > main > section:nth-child(5) > article:nth-child(4) > div:nth-child(2) > img {
     height: 228px;
     width: 228px;
     display: block;
@@ -921,7 +919,7 @@ body > main > section:nth-child(5) > article:nth-child(5) > div:nth-child(2) > i
 }
 
 /*description styles UI&UX*/
-body > main > section:nth-child(5) > article:nth-child(5) > div:nth-child(2) > pre {
+body > main > section:nth-child(5) > article:nth-child(4) > div:nth-child(2) > pre {
     position: relative;
     text-align: center;
     display: inline-block;
@@ -934,7 +932,7 @@ body > main > section:nth-child(5) > article:nth-child(5) > div:nth-child(2) > p
 }
 
 /*add style graphic design h3*/
-body > main > section:nth-child(5) > article:nth-child(5) > div:nth-child(3) > h3 {
+body > main > section:nth-child(5) > article:nth-child(4) > div:nth-child(3) > h3 {
     position: relative;
     text-align: center;
     font-size: 31px;
@@ -947,7 +945,7 @@ body > main > section:nth-child(5) > article:nth-child(5) > div:nth-child(3) > h
 }
 
 /*add image into graphic design*/
-body > main > section:nth-child(5) > article:nth-child(5) > div:nth-child(3) > img {
+body > main > section:nth-child(5) > article:nth-child(4) > div:nth-child(3) > img {
     height: 280px;
     width: 220px;
     display: block;
@@ -958,7 +956,7 @@ body > main > section:nth-child(5) > article:nth-child(5) > div:nth-child(3) > i
 }
 
 /*description styles graphic design*/
-body > main > section:nth-child(5) > article:nth-child(5) > div:nth-child(3) > pre {
+body > main > section:nth-child(5) > article:nth-child(4) > div:nth-child(3) > pre {
     position: relative;
     text-align: center;
     display: inline-block;
@@ -975,7 +973,7 @@ body > main > section:nth-child(6) {
     background-color: #0E1630;
 }
 
-body > main > section:nth-child(6) > h2:nth-child(2){
+body > main > section:nth-child(6) > h2:nth-child(1){
     position: absolute;
     font-size: 35px;
     display: inline-block;
@@ -1009,7 +1007,7 @@ section > nav > article > a:hover {
 }
 
 /*Add subheadings - 1 */
-body > main > section:nth-child(6) > p:nth-child(4){
+body > main > section:nth-child(6) > p:nth-child(3){
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
     font-size: 25px;
@@ -1021,7 +1019,7 @@ body > main > section:nth-child(6) > p:nth-child(4){
 }
 
 /*Add description*/
-body > main > section:nth-child(6) > section:nth-child(5) > p{
+body > main > section:nth-child(6) > section:nth-child(4) > p{
     color: white;
     position: relative;
     top:120px;
@@ -1032,7 +1030,7 @@ body > main > section:nth-child(6) > section:nth-child(5) > p{
 
 }
 /*Add images*/
-body > main > section:nth-child(6) > aside:nth-child(6) > img:nth-child(1){
+body > main > section:nth-child(6) > aside:nth-child(5) > img:nth-child(1){
     position: relative;
     height: 220px;
     bottom:200px;
@@ -1041,7 +1039,7 @@ body > main > section:nth-child(6) > aside:nth-child(6) > img:nth-child(1){
     left: 700px;
 }
 
-body > main > section:nth-child(6) > aside:nth-child(6) > img:nth-child(2){
+body > main > section:nth-child(6) > aside:nth-child(5) > img:nth-child(2){
     height: 200px;
     width: auto;
     position: relative;
@@ -1055,7 +1053,7 @@ body > main > section:nth-child(7) {
     background-color: #0E1630;
 }
 
-body > main > section:nth-child(7) > h2:nth-child(2){
+body > main > section:nth-child(7) > h2:nth-child(1){
     position: absolute;
     font-size: 35px;
     display: inline-block;
@@ -1089,7 +1087,7 @@ section > nav > article > a:hover {
 }
 
 /*Add subheadings - 1 */
-body > main > section:nth-child(7) > p:nth-child(4){
+body > main > section:nth-child(7) > p:nth-child(3){
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
     font-size: 25px;
@@ -1101,7 +1099,7 @@ body > main > section:nth-child(7) > p:nth-child(4){
 }
 
 /*Add flexbox into my project*/
-body > main > section:nth-child(7) > section:nth-child(5) {
+body > main > section:nth-child(7) > section:nth-child(4) {
     /*border: 1px solid green;*/
     display: flex;
     position: relative;
@@ -1112,14 +1110,14 @@ body > main > section:nth-child(7) > section:nth-child(5) {
 }
 
 /*div projects boxes*/
-body > main > section:nth-child(7) > section:nth-child(5) > div {
+body > main > section:nth-child(7) > section:nth-child(4) > div {
     /*border: 1px solid orange;*/
     width: 100%;
     height: 650px;
 }
 
 /*add all projects names p tags styles*/
-body > main > section:nth-child(7) > section:nth-child(5) > div > p:nth-child(1) {
+body > main > section:nth-child(7) > section:nth-child(4) > div > p:nth-child(1) {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: 'Nunito', sans-serif;
     color: #808DAD;
@@ -1132,7 +1130,7 @@ body > main > section:nth-child(7) > section:nth-child(5) > div > p:nth-child(1)
 }
 
 /*Hostel-Management-System project image*/
-body > main > section:nth-child(7) > section:nth-child(5) > div:nth-child(1) > img:nth-child(2) {
+body > main > section:nth-child(7) > section:nth-child(4) > div:nth-child(1) > img:nth-child(2) {
     width: 373px;
     height: 260px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -1142,13 +1140,13 @@ body > main > section:nth-child(7) > section:nth-child(5) > div:nth-child(1) > i
 }
 
 /*add hover to Hostel-Management-System project image*/
-body > main > section:nth-child(7) > section:nth-child(5) > div:nth-child(1) > img:nth-child(2):hover {
+body > main > section:nth-child(7) > section:nth-child(4) > div:nth-child(1) > img:nth-child(2):hover {
     width: 376px;
     height: 266px;
 }
 
 /*add Git hyper image into  Hostel-Management-System */
-body > main > section:nth-child(7) > section:nth-child(5) > div:nth-child(1) > a:nth-child(3) > img {
+body > main > section:nth-child(7) > section:nth-child(4) > div:nth-child(1) > a:nth-child(3) > img {
     width: 50px;
     height: 50px;
     position: absolute;
@@ -1160,13 +1158,13 @@ body > main > section:nth-child(7) > section:nth-child(5) > div:nth-child(1) > a
 }
 
 /*add  Hostel-Management-System Git hover*/
-body > main > section:nth-child(7) > section:nth-child(5) > div:nth-child(1) > a:nth-child(3) > img:hover {
+body > main > section:nth-child(7) > section:nth-child(4) > div:nth-child(1) > a:nth-child(3) > img:hover {
     width: 53px;
     height: 53px;
 }
 
 /*Hardware Management System project image*/
-body > main > section:nth-child(7) > section:nth-child(5) > div:nth-child(2) > img:nth-child(2) {
+body > main > section:nth-child(7) > section:nth-child(4) > div:nth-child(2) > img:nth-child(2) {
     width: 370px;
     height: 250px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -1176,13 +1174,13 @@ body > main > section:nth-child(7) > section:nth-child(5) > div:nth-child(2) > i
 }
 
 /*add hover to Hardware Management System project image*/
-body > main > section:nth-child(7) > section:nth-child(5) > div:nth-child(2) > img:nth-child(2):hover {
+body > main > section:nth-child(7) > section:nth-child(4) > div:nth-child(2) > img:nth-child(2):hover {
     width: 376px;
     height: 256px;
 }
 
 /*add git hyper image into  Hardware Management System project */
-body > main > section:nth-child(7) > section:nth-child(5) > div:nth-child(2) > a:nth-child(3) > img {
+body > main > section:nth-child(7) > section:nth-child(4) > div:nth-child(2) > a:nth-child(3) > img {
     width: 50px;
     height: 50px;
     position: absolute;
@@ -1194,13 +1192,13 @@ body > main > section:nth-child(7) > section:nth-child(5) > div:nth-child(2) > a
 }
 
 /*add  Hardware Management System  Git hover*/
-body > main > section:nth-child(7) > section:nth-child(5) > div:nth-child(2) > a:nth-child(3) > img:hover {
+body > main > section:nth-child(7) > section:nth-child(4) > div:nth-child(2) > a:nth-child(3) > img:hover {
     width: 53px;
     height: 53px;
 }
 
 /*Super Market Manage System project image*/
-body > main > section:nth-child(7) > section:nth-child(5) > div:nth-child(3) > img:nth-child(2) {
+body > main > section:nth-child(7) > section:nth-child(4) > div:nth-child(3) > img:nth-child(2) {
     width: 342px;
     height: 250px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -1210,13 +1208,13 @@ body > main > section:nth-child(7) > section:nth-child(5) > div:nth-child(3) > i
 }
 
 /*add hover to Super Market Manage System project image*/
-body > main > section:nth-child(7) > section:nth-child(5) > div:nth-child(3) > img:nth-child(2):hover {
+body > main > section:nth-child(7) > section:nth-child(4) > div:nth-child(3) > img:nth-child(2):hover {
     width: 348px;
     height: 256px;
 }
 
 /*add git hyper image into Super Market Manage System project */
-body > main > section:nth-child(7) > section:nth-child(5) > div:nth-child(3) > a:nth-child(3) > img {
+body > main > section:nth-child(7) > section:nth-child(4) > div:nth-child(3) > a:nth-child(3) > img {
     width: 50px;
     height: 50px;
     position: absolute;
@@ -1232,7 +1230,7 @@ body > main > section:nth-child(8) {
     background-color: #0E1630;
 }
 
-body > main > section:nth-child(8) > h2:nth-child(2){
+body > main > section:nth-child(8) > h2:nth-child(1){
     position: absolute;
     font-size: 35px;
     display: inline-block;
@@ -1266,7 +1264,7 @@ section > nav > article > a:hover {
 }
 
 /*Add subheadings - 1 */
-body > main > section:nth-child(8) > p:nth-child(4){
+body > main > section:nth-child(8) > p:nth-child(3){
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
     font-size: 25px;
@@ -1278,7 +1276,7 @@ body > main > section:nth-child(8) > p:nth-child(4){
 }
 
 /*Add flexbox into my assignments*/
-body > main > section:nth-child(8) > section:nth-child(5) {
+body > main > section:nth-child(8) > section:nth-child(4) {
     /*border: 1px solid green;*/
     display: flex;
     position: relative;
@@ -1289,14 +1287,14 @@ body > main > section:nth-child(8) > section:nth-child(5) {
 }
 
 /*div projects boxes*/
-body > main > section:nth-child(8) > section:nth-child(5) > div {
+body > main > section:nth-child(8) > section:nth-child(4) > div {
     /*border: 1px solid orange;*/
     width: 100%;
     height: 650px;
 }
 
 /*add all assignment names p tags styles*/
-body > main > section:nth-child(8) > section:nth-child(5) > div > p:nth-child(1) {
+body > main > section:nth-child(8) > section:nth-child(4) > div > p:nth-child(1) {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: 'Nunito', sans-serif;
     color: #808DAD;
@@ -1309,7 +1307,7 @@ body > main > section:nth-child(8) > section:nth-child(5) > div > p:nth-child(1)
 }
 
 /*assignment1 image*/
-body > main > section:nth-child(8) > section:nth-child(5) > div:nth-child(1) > img:nth-child(2) {
+body > main > section:nth-child(8) > section:nth-child(4) > div:nth-child(1) > img:nth-child(2) {
     width: 373px;
     height: 260px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -1319,13 +1317,13 @@ body > main > section:nth-child(8) > section:nth-child(5) > div:nth-child(1) > i
 }
 
 /*add hover to assignment1 image*/
-body > main > section:nth-child(8) > section:nth-child(5) > div:nth-child(1) > img:nth-child(2):hover {
+body > main > section:nth-child(8) > section:nth-child(4) > div:nth-child(1) > img:nth-child(2):hover {
     width: 376px;
     height: 266px;
 }
 
 /*add Git hyper image into  assignment1 */
-body > main > section:nth-child(8) > section:nth-child(5) > div:nth-child(1) > a:nth-child(3) > img {
+body > main > section:nth-child(8) > section:nth-child(4) > div:nth-child(1) > a:nth-child(3) > img {
     width: 50px;
     height: 50px;
     position: absolute;
@@ -1337,13 +1335,13 @@ body > main > section:nth-child(8) > section:nth-child(5) > div:nth-child(1) > a
 }
 
 /*add  assignment1 Git hover*/
-body > main > section:nth-child(8) > section:nth-child(5) > div:nth-child(1) > a:nth-child(3) > img:hover {
+body > main > section:nth-child(8) > section:nth-child(4) > div:nth-child(1) > a:nth-child(3) > img:hover {
     width: 53px;
     height: 53px;
 }
 
 /*assignment image*/
-body > main > section:nth-child(8) > section:nth-child(5) > div:nth-child(2) > img:nth-child(2) {
+body > main > section:nth-child(8) > section:nth-child(4) > div:nth-child(2) > img:nth-child(2) {
     width: 370px;
     height: 250px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -1353,13 +1351,13 @@ body > main > section:nth-child(8) > section:nth-child(5) > div:nth-child(2) > i
 }
 
 /*add hover to assignment2 image*/
-body > main > section:nth-child(8) > section:nth-child(5) > div:nth-child(2) > img:nth-child(2):hover {
+body > main > section:nth-child(8) > section:nth-child(4) > div:nth-child(2) > img:nth-child(2):hover {
     width: 376px;
     height: 256px;
 }
 
 /*add git hyper image into assignment2 */
-body > main > section:nth-child(8) > section:nth-child(5) > div:nth-child(2) > a:nth-child(3) > img {
+body > main > section:nth-child(8) > section:nth-child(4) > div:nth-child(2) > a:nth-child(3) > img {
     width: 50px;
     height: 50px;
     position: absolute;
@@ -1371,13 +1369,13 @@ body > main > section:nth-child(8) > section:nth-child(5) > div:nth-child(2) > a
 }
 
 /*add  assignment2 Git hover*/
-body > main > section:nth-child(8) > section:nth-child(5) > div:nth-child(2) > a:nth-child(3) > img:hover {
+body > main > section:nth-child(8) > section:nth-child(4) > div:nth-child(2) > a:nth-child(3) > img:hover {
     width: 53px;
     height: 53px;
 }
 
 /*assignment3 image*/
-body > main > section:nth-child(8) > section:nth-child(5) > div:nth-child(3) > img:nth-child(2) {
+body > main > section:nth-child(8) > section:nth-child(4) > div:nth-child(3) > img:nth-child(2) {
     width: 342px;
     height: 250px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -1387,13 +1385,13 @@ body > main > section:nth-child(8) > section:nth-child(5) > div:nth-child(3) > i
 }
 
 /*add hover to assignment3 image*/
-body > main > section:nth-child(8) > section:nth-child(5) > div:nth-child(3) > img:nth-child(2):hover {
+body > main > section:nth-child(8) > section:nth-child(4) > div:nth-child(3) > img:nth-child(2):hover {
     width: 348px;
     height: 256px;
 }
 
 /*add git hyper image into assignment3 */
-body > main > section:nth-child(8) > section:nth-child(5) > div:nth-child(3) > a:nth-child(3) > img {
+body > main > section:nth-child(8) > section:nth-child(4) > div:nth-child(3) > a:nth-child(3) > img {
     width: 50px;
     height: 50px;
     position: absolute;
@@ -1410,7 +1408,7 @@ body > main > section:nth-child(9) {
 }
 
 /*Testimonial*/
-body > main > section:nth-child(9) > aside:nth-child(2) > h3{
+body > main > section:nth-child(9) > aside:nth-child(1) > h3{
     top: 10px;
     color: white;
     opacity: 80%;
@@ -1421,7 +1419,7 @@ body > main > section:nth-child(9) > aside:nth-child(2) > h3{
 }
 
 /*Testimonial image*/
-body > main > section:nth-child(9) > aside:nth-child(2) > img{
+body > main > section:nth-child(9) > aside:nth-child(1) > img{
     top: 15px;
     height: 150px;
     width: auto;
@@ -1431,7 +1429,7 @@ body > main > section:nth-child(9) > aside:nth-child(2) > img{
 }
 
 /*Testimonial Description*/
-body > main > section:nth-child(9) > aside:nth-child(2) > p:nth-child(3){
+body > main > section:nth-child(9) > aside:nth-child(1) > p:nth-child(3){
     position: relative;
     left: 300px;
     bottom: 160px;
@@ -1442,7 +1440,7 @@ body > main > section:nth-child(9) > aside:nth-child(2) > p:nth-child(3){
 }
 
 /*Testimonial Description*/
-body > main > section:nth-child(9) > aside:nth-child(2) > p:nth-child(4){
+body > main > section:nth-child(9) > aside:nth-child(1) > p:nth-child(4){
     position: relative;
     left: 300px;
     bottom: 160px;
@@ -1453,7 +1451,7 @@ body > main > section:nth-child(9) > aside:nth-child(2) > p:nth-child(4){
 }
 
 /*Testimonial Description*/
-body > main > section:nth-child(9) > aside:nth-child(2) > p:nth-child(5){
+body > main > section:nth-child(9) > aside:nth-child(1) > p:nth-child(5){
     position: relative;
     left: 300px;
     bottom: 220px;
@@ -1464,7 +1462,7 @@ body > main > section:nth-child(9) > aside:nth-child(2) > p:nth-child(5){
 }
 
 /*Contact-Heading*/
-body > main > section:nth-child(9) > h2:nth-child(2){
+body > main > section:nth-child(9) > h2:nth-child(1){
     position: absolute;
     font-size: 35px;
     display: inline-block;
@@ -1475,20 +1473,20 @@ body > main > section:nth-child(9) > h2:nth-child(2){
 }
 
 /*Add form*/
-body > main > section:nth-child(9) > form:nth-child(7) {
+body > main > section:nth-child(9) > form:nth-child(6) {
     position: absolute;
     right: 250px;
     top: 320px;
 }
 
 /*!*add space in between form sections*!*/
-body > main > section:nth-child(9) > form:nth-child(7) > div {
+body > main > section:nth-child(9) > form:nth-child(6) > div {
     position: relative;
     padding-bottom: 20px;
 }
 
 /*styles name, email, subject as a group selector*/
-body > main > section:nth-child(9) > form:nth-child(7) > div > input {
+body > main > section:nth-child(9) > form:nth-child(6) > div > input {
     width: 450px;
     height: 40px;
     border: none;
@@ -1501,7 +1499,7 @@ body > main > section:nth-child(9) > form:nth-child(7) > div > input {
 }
 
 /*add styles message area*/
-body > main > section:nth-child(9) > form:nth-child(7) > div:nth-child(4) > textarea {
+body > main > section:nth-child(9) > form:nth-child(6) > div:nth-child(4) > textarea {
     height: 70px;
     width: 450px;
     border: none;
@@ -1516,7 +1514,7 @@ body > main > section:nth-child(9) > form:nth-child(7) > div:nth-child(4) > text
 }
 
 /*send button*/
-body > main > section:nth-child(9) > form:nth-child(7) > button:nth-child(5) {
+body > main > section:nth-child(9) > form:nth-child(6) > button:nth-child(5) {
     position: relative;
     left: 500px;
     cursor: pointer;
