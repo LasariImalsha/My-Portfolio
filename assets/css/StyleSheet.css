@@ -1232,6 +1232,9 @@ body > main > section:nth-child(7) > section:nth-child(4) > a:nth-child(4) > img
     bottom: 130px;
     right: -15px;
 
+    box-shadow: inset 0px 4px 4px rgba(189, 241, 245, 0.8);
+    border-radius: 50px;
+
 }
 
 /*Portfolio - Assignments*/
