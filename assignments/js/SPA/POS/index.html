@@ -27,7 +27,7 @@
                                 <a class="nav-link active text-white" id="custbttn" onclick="generateCustomerID()">Customer</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active text-white" id="itmbttn" onclick="generateItemId">Item</a>
+                                <a class="nav-link active text-white" id="itmbttn" onclick="generateItemID()">Item</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active text-white" id="ordrbttn" onclick="generateOrderID()">Order</a>
@@ -567,9 +567,8 @@
     </div>
 
     <!--start Dashboard-->
-    <main class="container-fluid mb-5">
-        <section class="row container-fluid justify-content-around ">
-
+    <main class="container-fluid">
+        <section class="row container-fluid justify-content-around mb-3">
             <div class="mb-5 col-6 col-lg-3">
                 <div class="card">
                     <div class="card-header bg-dark text-white">Customers</div>
@@ -577,7 +576,7 @@
                         <div><i class="fa-solid fa-user"></i></div>
                     </div>
                     <div class="card-footer">
-                        <div><h2>50</h2></div>
+                        <div><h2 id="customersCount">0</h2></div>
                     </div>
                 </div>
             </div>
@@ -589,7 +588,7 @@
                         <div><i class="fa-solid fa-cubes-stacked"></i></div>
                     </div>
                     <div class="card-footer">
-                        <div><h2>100</h2></div>
+                        <div><h2 id="itemsCount">0</h2></div>
                     </div>
                 </div>
             </div>
@@ -601,12 +600,13 @@
                         <div><i class="fa-solid fa-cart-shopping"></i></div>
                     </div>
                     <div class="card-footer">
-                        <div><h2>58</h2></div>
+                        <div><h2 id="ordersCount">0</h2></div>
                     </div>
                 </div>
             </div>
 
         </section>
+
     </main>
     <!--end Dashboard-->
 </section>
