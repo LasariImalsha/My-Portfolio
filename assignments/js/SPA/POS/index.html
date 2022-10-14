@@ -30,10 +30,10 @@
                                 <a class="nav-link active text-white" id="itmbttn">Item</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active text-white" id="ordrbttn">Order</a>
+                                <a class="nav-link active text-white" id="ordrbttn" onclick="generateOrderID()">Order</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active text-white" id="ordrDetlbttn">Order Details</a>
+                                <a class="nav-link active text-white" id="ordrDetlbttn" onclick="loadOrderDetailsTable()">Order Details</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active text-white" id="othrbtttn">Others</a>
@@ -616,12 +616,14 @@
 
 <script src="controllers/CustomerController.js"></script>
 <script src="controllers/ItemController.js"></script>
+<script src="controllers/OrderController.js"></script>
 
 
 <script src="db/db.js"></script>
 
 <script src="model/Customer.js"></script>
 <script src="model/Item.js"></script>
+<script src="model/Order.js"></script>
 
 
 </body>
