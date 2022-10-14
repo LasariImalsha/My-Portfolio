@@ -229,6 +229,7 @@ $('#inputItemID').change(function () {
 $('#btnPlaceOrderButton').click(function () {
     placeOrder();
     generateOrderID();
+    setOrdersCount();
     cart.splice(0, cart.length);
     $('#tblCart').empty();
 
@@ -271,8 +272,8 @@ function placeOrder() {
         }
         let discount = $('#txtDiscount').val();
         let cname = $('#txtCusName').val();
-        let cid = $('#txtCusID').val();
-
+        // let cid = $('#txtCusID').val();
+        let cid = $('#inputCustomerID').val();
 
         for (let c of cart) {
             let odeetails = orderDetailsModel(c.CartOid, date, cid, cname, c.cartICode, c.cartIName, c.cartOrderQty, discount, c.cartTotal);
