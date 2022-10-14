@@ -246,7 +246,7 @@ function updateItem(itemCode) {
 
 //Validation
 // item regular expressions
-const itemIDRegEx = /^(I)[0-9]{3}$/;
+const itemIDRegEx = /^(I-)[0-9]{3}$/;
 const itemNameRegEx = /^[A-z ]{4,20}$/;
 const itemQtyOnHandRegEx = /^[1-9][0-9]*$/;
 const itemPriceRegEx = /^[0-9]{1,}[.]?[0-9]{1,2}$/;
@@ -256,7 +256,7 @@ let itemValidations = [];
 itemValidations.push({
     reg: itemIDRegEx,
     field: $('#txtItemCode'),
-    error: 'Item Code Pattern is Wrong : I001'
+    error: 'Item Code Pattern is Wrong : I-001'
 });
 
 itemValidations.push({
@@ -388,13 +388,13 @@ function generateItemID() {
         let lastOId = items[items.length - 1].code;
         let newOId = parseInt(lastOId.substring(4, 7)) + 1;
         if (newOId < 10) {
-            $("#txtItemCode").val("I00" + newOId);
+            $("#txtItemCode").val("I-00" + newOId);
         } else if (newOId < 100) {
-            $("#txtItemCode").val("I0" + newOId);
+            $("#txtItemCode").val("I-0" + newOId);
         } else {
-            $("#txtItemCode").val("I" + newOId);
+            $("#txtItemCode").val("I-" + newOId);
         }
     } catch (e) {
-        $("#txtItemCode").val("I001");
+        $("#txtItemCode").val("I-001");
     }
 }

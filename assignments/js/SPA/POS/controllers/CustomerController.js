@@ -250,7 +250,7 @@ function updateCustomer(customerID) {
 
 //Validation
 // customer regular expressions
-const cusIDRegEx = /^(C)[0-9]{3}$/;
+const cusIDRegEx = /^(C-)[0-9]{3}$/;
 const cusNameRegEx = /^[A-z ]{3,20}$/;
 const cusAddressRegEx = /^[0-9/A-z. ,]{7,}$/;
 const cusSalaryRegEx = /^[0-9]{1,}[.]?[0-9]{1,2}$/;
@@ -260,7 +260,7 @@ let customerValidations = [];
 customerValidations.push({
     reg: cusIDRegEx,
     field: $('#txtCustomerID'),
-    error: 'Customer ID Pattern is Wrong : C001'
+    error: 'Customer ID Pattern is Wrong : C-001'
 });
 
 customerValidations.push({
@@ -393,14 +393,14 @@ function generateCustomerID() {
         let lastOId = customers[customers.length - 1].id;
         let newOId = parseInt(lastOId.substring(4, 7)) + 1;
         if (newOId < 10) {
-            $("#txtCustomerID").val("C00" + newOId);
+            $("#txtCustomerID").val("C-00" + newOId);
         } else if (newOId < 100) {
-            $("#txtCustomerID").val("C0" + newOId);
+            $("#txtCustomerID").val("C-0" + newOId);
         } else {
-            $("#txtCustomerID").val("C" + newOId);
+            $("#txtCustomerID").val("C-" + newOId);
         }
     } catch (e) {
-        $("#txtCustomerID").val("C001");
+        $("#txtCustomerID").val("C-001");
     }
 }
 
