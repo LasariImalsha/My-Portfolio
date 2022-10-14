@@ -114,7 +114,7 @@
             <div class="row">
                 <div class="mb-3 col">
                     <label class="form-label" for="txtCustomerID">Customer ID</label>
-                    <input class="form-control customer_form" id="txtCustomerID" placeholder="C001" type="text">
+                    <input class="form-control customer_form" id="txtCustomerID" placeholder="C-001" type="text">
                     <span class="control-error" id="lblcusid"></span>
                 </div>
 
@@ -132,7 +132,7 @@
                 <div class="mb-3 col">
                     <label class="form-label" for="txtCustomerAddress">Customer Address</label>
                     <input class="form-control customer_form" id="txtCustomerAddress"
-                           placeholder="Galle" type="text">
+                           placeholder="Colombo" type="text">
                     <span class="control-error" id="lblcusaddress"></span>
                 </div>
 
@@ -150,9 +150,9 @@
         <!-- Buttons Section -->
         <section class="container-fluid mt-1 button mb-5 co-12">
             <button class="btn btn-primary" id="btnSaveCustomer" type="button">Save Customer</button>
+            <button class="btn btn-success" id="btnClearCustomer" type="button">Clear Fields</button>
             <button class="btn btn-warning" id="btnUpdateCustomer" type="button">Update Customer</button>
             <button class="btn btn-danger" id="btnDeleteCustomer" type="button">Delete Customer</button>
-            <button class="btn btn-success" id="btnClearCustomer" type="button">Clear fields</button>
         </section>
 
         <!-- Search Bar -->
@@ -161,7 +161,7 @@
                 <input aria-label="Search" class="form-control me-2 " id="customermyInput"
                        placeholder="CustomerID/NIC/Name"
                        type="search">
-                <!--<button class="btn btn-outline-success" type="submit">Search</button>-->
+                <!--                <button class="btn btn-outline-success" type="submit">Search</button>-->
             </form>
         </section>
 
@@ -208,7 +208,7 @@
             <div class="row">
                 <div class="mb-3 col">
                     <label class="form-label" for="txtItemCode">Item Code</label>
-                    <input class="form-control item_form" id="txtItemCode" placeholder="I001" type="text">
+                    <input class="form-control item_form" id="txtItemCode" placeholder="I-001" type="text">
                     <span class="control-error" id="lblitemid"></span>
                 </div>
 
@@ -232,7 +232,7 @@
 
                 <div class="mb-3 col">
                     <label class="form-label" for="txtItemPrice">Price</label>
-                    <input class="form-control item_form" id="txtItemPrice" placeholder="280" type="number">
+                    <input class="form-control item_form" id="txtItemPrice" placeholder="200" type="number">
                     <span class="control-error" id="lblitemPrice"></span>
                 </div>
             </div>
@@ -243,9 +243,9 @@
         <!-- Buttons Section -->
         <section class="container-fluid mt-1 button mb-5">
             <button class="btn btn-primary" id="btnSaveItem" type="button">Save Item</button>
+            <button class="btn btn-success" id="btnClearItem" type="button">Clear Fields</button>
             <button class="btn btn-warning" id="btnItemUpdate" type="button">Update Item</button>
             <button class="btn btn-danger" id="btnItemDelete" type="button">Delete Item</button>
-            <button class="btn btn-success" id="btnClearItem" type="button">Clear Item</button>
         </section>
 
         <!-- Search Bar -->
@@ -253,7 +253,7 @@
             <form class="d-flex col-5" role="search">
                 <input aria-label="Search" class="form-control me-2 " id="itemmyInput" placeholder="ItemCode/Name"
                        type="search">
-                <!--<button class="btn btn-outline-success" type="submit">Search</button>-->
+                <!--                <button class="btn btn-outline-success" type="submit">Search</button>-->
             </form>
 
         </section>
@@ -303,12 +303,13 @@
 
                     <!-- start Invoice form here -->
                     <form id="Invoice Details">
+
                         <!--Start 1st row -->
                         <div class="row g-3 mb-4">
                             <!--Start Order ID -->
                             <div class="col">
                                 Order ID:
-                                <input id="txtOrderID" aria-label="Order ID" class="form-control" placeholder=""
+                                <input aria-label="Order ID" class="form-control" id="txtOrderID" placeholder=""
                                        type="text">
                             </div>
                             <!--End Order ID -->
@@ -316,7 +317,8 @@
                             <!--Start Date -->
                             <div class="col">
                                 Date:
-                                <input id="txtDate" aria-label="Date" class="form-control" placeholder="" type="date">
+                                <input aria-label="Date" class="form-control" id="txtDate" placeholder=""
+                                       type="date">
                             </div>
                             <!--End Date -->
                         </div>
@@ -336,7 +338,8 @@
                             <!--Start Customer name -->
                             <div class="col">
                                 Customer Name:
-                                <input id="txtCusName" aria-label="Customer Name" class="form-control" placeholder=""
+                                <input aria-label="Customer Name" class="form-control" id="txtCusName"
+                                       placeholder=""
                                        type="text">
                             </div>
                             <!--End Customer name -->
@@ -348,20 +351,20 @@
                             <!--Start Customer Address -->
                             <div class="col">
                                 Customer Address:
-                                <input id="txtCusAddress" aria-label="Customer Address" class="form-control"
+                                <input aria-label="Customer Address" class="form-control" id="txtCusAddress"
                                        placeholder=""
                                        type="text">
                             </div>
                             <!--End Customer Address -->
 
-                            <!--Start Customer Contact -->
+                            <!--Start Customer Salary -->
                             <div class="col">
                                 Customer Salary:
-                                <input id="txtCusSalary" aria-label="Customer Salary" class="form-control"
+                                <input aria-label="Customer Salary" class="form-control" id="txtCusSalary"
                                        placeholder=""
                                        type="number">
                             </div>
-                            <!--ENd Customer Contact -->
+                            <!--ENd Customer Salary -->
                         </div>
                         <!--End 3rd row -->
                     </form>
@@ -397,7 +400,7 @@
                             <!-- Start Item Name-->
                             <div class="col">
                                 Item Name:
-                                <input id="itemName" aria-label="Item Name" class="form-control" placeholder=""
+                                <input aria-label="Item Name" class="form-control" id="itemName" placeholder=""
                                        type="text">
                             </div>
                             <!-- End Item Name-->
@@ -409,7 +412,7 @@
                             <!-- Start Item QTYOnHand-->
                             <div class="col">
                                 onHand:
-                                <input id="itemonHand" aria-label="QTYOnHand" class="form-control" placeholder=""
+                                <input aria-label="QTYOnHand" class="form-control" id="itemonHand" placeholder=""
                                        type="number">
                             </div>
                             <!-- End Item QTYOnHand-->
@@ -417,14 +420,15 @@
                             <!-- Start Item Price-->
                             <div class="col">
                                 Price:
-                                <input id="itemPrice" aria-label="Price" class="form-control" placeholder="" type="number">
+                                <input aria-label="Price" class="form-control" id="itemPrice" placeholder=""
+                                       type="number">
                             </div>
                             <!-- End Item Price-->
 
                             <!-- Start Order QTY-->
                             <div class="col">
                                 OrderQTY:
-                                <input id="itemorderQty" aria-label="Order QTY" class="form-control" placeholder=""
+                                <input aria-label="Order QTY" class="form-control" id="itemorderQty" placeholder=""
                                        type="number">
                             </div>
                         </div>
@@ -432,9 +436,10 @@
 
                         <!--Start Add to Cart Button and Clear button-->
                         <div>
-                            <button id="btnAddToCart" class="btn btn-primary" type="button">Add to Cart</button>
+                            <button class="btn btn-primary" id="btnAddToCart" type="button">Add to Cart
+                            </button>
 
-                            <button id="btnClear" class="btn btn-warning" type="button">Clear</button>
+                            <button class="btn btn-warning" id="btnClear" type="button">Clear</button>
                         </div>
                         <!--End Add to Cart Button-->
                     </form>
@@ -471,23 +476,25 @@
             <div class="row g-3 mb-4">
                 <!-- Start Item Code-->
                 <div class="col">
-                    <input id="txtCash" aria-label="Cash" class="form-control" placeholder="Cash" type="text">
+                    <input aria-label="Cash" class="form-control" id="txtCash" placeholder="Cash" type="text">
                 </div>
                 <!-- End Item Code-->
 
                 <!-- Start Item Name-->
                 <div class="col">
-                    <input id="txtDiscount" aria-label="Discount" class="form-control" placeholder="Discount" type="number">
+                    <input aria-label="Discount" class="form-control" id="txtDiscount" placeholder="Discount"
+                           type="number">
                 </div>
                 <!-- End Item Name-->
             </div>
             <!-- End cash and discount Row-->
 
             <div class="col">
-                <input id="txtBalance" aria-label="Balance" class="form-control mb-3" placeholder="Balance" type="number">
+                <input aria-label="Balance" class="form-control mb-3" id="txtBalance" placeholder="Balance"
+                       type="number">
             </div>
 
-            <button id="btnPlaceOrderButton" class="btn btn-success" type="button">Place Order</button>
+            <button class="btn btn-success" id="btnPlaceOrderButton" type="button">Place Order</button>
 
         </section>
         <!-- End Total calculate Form-->
@@ -538,7 +545,7 @@
     <section class="row container-fluid">
         <div class="container-fluid col-12">
             <table class="table table-hover table-bordered table-striped" id="orderDetailsTable_Main">
-                <thead class="bg-info text-white">
+                <thead class="bg-success text-white">
                 <tr class="">
                     <th>Order ID</th>
                     <th>Date</th>
@@ -551,7 +558,7 @@
                     <th>Total</th>
                 </tr>
                 </thead>
-                <tbody id="orderDetailTable" class="table-light">
+                <tbody class="table-light" id="orderDetailTable">
 
                 </tbody>
             </table>
@@ -620,6 +627,8 @@
 <script src="controllers/OrderController.js"></script>
 <script src="controllers/OrderDetail.js"></script>
 <script src="controllers/PageLoadingController.js"></script>
+<script src="controllers/OtherPageController.js"></script>
+
 
 
 <script src="db/db.js"></script>
