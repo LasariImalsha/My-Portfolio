@@ -1225,6 +1225,15 @@ body > main > section:nth-child(7) > section:nth-child(4) > div:nth-child(3) > a
     border-radius: 50px;
 }
 
+/*add next image into projects */
+body > main > section:nth-child(7) > section:nth-child(4) > a:nth-child(4) > img {
+
+    position: absolute;
+    bottom: 130px;
+    right: -15px;
+
+}
+
 /*Portfolio - Assignments*/
 body > main > section:nth-child(8) {
     background-color: #0E1630;
@@ -1399,6 +1408,17 @@ body > main > section:nth-child(8) > section:nth-child(4) > div:nth-child(3) > a
     right: 220px;
 
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+}
+
+/*add next image into assignments */
+body > main > section:nth-child(8) > section:nth-child(4) > a:nth-child(4) > img {
+
+    position: absolute;
+    bottom: 130px;
+    right: -15px;
+
+    box-shadow: inset 0px 4px 4px rgba(189, 241, 245, 0.8);
     border-radius: 50px;
 }
 
@@ -2809,6 +2829,16 @@ body > main > section:nth-child(9) > div:nth-child(1) > a > img{
         border-radius: 50px;
     }
 
+    /*add next image into projects */
+    body > main > section:nth-child(7) > section:nth-child(4) > a:nth-child(4) > img {
+
+        position: absolute;
+        bottom: 130px;
+        right: -15px;
+
+        box-shadow: inset 0px 4px 4px rgba(189, 241, 245, 0.8);
+        border-radius: 50px;
+    }
     /*Portfolio - Assignments*/
     body > main > section:nth-child(8) {
         background-color: #0E1630;
@@ -2983,6 +3013,17 @@ body > main > section:nth-child(9) > div:nth-child(1) > a > img{
         right: 220px;
 
         box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 50px;
+    }
+
+    /*add next image into assignments */
+    body > main > section:nth-child(8) > section:nth-child(4) > a:nth-child(4) > img {
+
+        position: absolute;
+        bottom: 130px;
+        right: -15px;
+
+        box-shadow: inset 0px 4px 4px rgba(189, 241, 245, 0.8);
         border-radius: 50px;
     }
 
@@ -4388,26 +4429,16 @@ body > main > section:nth-child(9) > div:nth-child(1) > a > img{
         border-radius: 50px;
     }
 
-    /*View all butten*/
-    /*body > main > section:nth-child(7) > div:last-child >img {*/
-    /*    width: 120px;*/
-    /*    height: 40px;*/
+    /*add next image into projects */
+    body > main > section:nth-child(7) > section:nth-child(4) > a:nth-child(4) > img {
 
-    /*    position: absolute;*/
-    /*    left: 0;*/
-    /*    right: 0;*/
-    /*    bottom: 8px;*/
-    /*    margin: auto;*/
+        position: absolute;
+        bottom: 130px;
+        right: -15px;
 
-    /*    border-radius: 30px;*/
-    /*    transition: transform 0.3s ease;*/
-    /*    cursor: pointer;*/
-    /*}*/
-
-    /*body > main > section:nth-child(7) > div:last-child > img:hover{*/
-    /*    transform: translate(-12px, -12px);*/
-    /*}*/
-
+        box-shadow: inset 0px 4px 4px rgba(189, 241, 245, 0.8);
+        border-radius: 50px;
+    }
 
     /*Portfolio - Assignments*/
     body > main > section:nth-child(8) {
@@ -4583,6 +4614,17 @@ body > main > section:nth-child(9) > div:nth-child(1) > a > img{
         right: 220px;
 
         box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 50px;
+    }
+
+    /*add next image into assignments */
+    body > main > section:nth-child(8) > section:nth-child(4) > a:nth-child(4) > img {
+
+        position: absolute;
+        bottom: 130px;
+        right: -15px;
+
+        box-shadow: inset 0px 4px 4px rgba(189, 241, 245, 0.8);
         border-radius: 50px;
     }
 
@@ -5989,6 +6031,17 @@ body > main > section:nth-child(9) > div:nth-child(1) > a > img{
         border-radius: 50px;
     }
 
+    /*add next image into projects */
+    body > main > section:nth-child(7) > section:nth-child(4) > a:nth-child(4) > img {
+
+        position: absolute;
+        bottom: 130px;
+        right: -15px;
+
+        box-shadow: inset 0px 4px 4px rgba(189, 241, 245, 0.8);
+        border-radius: 50px;
+    }
+
     /*Portfolio - Assignments*/
     body > main > section:nth-child(8) {
         background-color: #0E1630;
@@ -6163,6 +6216,17 @@ body > main > section:nth-child(9) > div:nth-child(1) > a > img{
         right: 220px;
 
         box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 50px;
+    }
+
+    /*add next image into assignments */
+    body > main > section:nth-child(8) > section:nth-child(4) > a:nth-child(4) > img {
+
+        position: absolute;
+        bottom: 130px;
+        right: -15px;
+
+        box-shadow: inset 0px 4px 4px rgba(189, 241, 245, 0.8);
         border-radius: 50px;
     }
 
@@ -7568,6 +7632,17 @@ body > main > section:nth-child(9) > div:nth-child(1) > a > img{
         border-radius: 50px;
     }
 
+    /*add next image into projects */
+    body > main > section:nth-child(7) > section:nth-child(4) > a:nth-child(4) > img {
+
+        position: absolute;
+        bottom: 130px;
+        right: -15px;
+
+        box-shadow: inset 0px 4px 4px rgba(189, 241, 245, 0.8);
+        border-radius: 50px;
+    }
+
     /*Portfolio - Assignments*/
     body > main > section:nth-child(8) {
         background-color: #0E1630;
@@ -7742,6 +7817,17 @@ body > main > section:nth-child(9) > div:nth-child(1) > a > img{
         right: 220px;
 
         box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 50px;
+    }
+
+    /*add next image into assignments */
+    body > main > section:nth-child(8) > section:nth-child(4) > a:nth-child(4) > img {
+
+        position: absolute;
+        bottom: 130px;
+        right: -15px;
+
+        box-shadow: inset 0px 4px 4px rgba(189, 241, 245, 0.8);
         border-radius: 50px;
     }
 
@@ -7932,4 +8018,3 @@ body > main > section:nth-child(9) > div:nth-child(1) > a > img{
 
     }
 }
-
