@@ -1,15 +1,16 @@
-$('#custbttn').click(function (){
+$('#custbttn').click(function () {
     focusCustomerID()
 });
 
 
-function focusCustomerID(){
+function focusCustomerID() {
     $('#txtCustomerID').focus();
 }
 
 //Save Customer
 $('#btnSaveCustomer').click(function () {
     saveCustomer();
+
 
 });
 
@@ -27,13 +28,18 @@ function saveCustomer() {
 
     loadAllCustomers();
 
+    bindCustomerRowClickEvents();
+
     clearCustomerTextField();
 
-    bindRowClickEvents();
-
-    loadAllCustomersForOption();
-
     focusCustomerID();
+
+    generateCustomerID();
+
+    setCusCount();
+
+    //load customerID to combo box
+    loadAllCustomersForOption();
 }
 
 //function for add data to table
@@ -57,6 +63,7 @@ $("#btnDeleteCustomer").click(function () {
     if (deleteCustomer(deleteCustomerID)) {
         deleteCustomerAlert();
         clearCustomerTextField();
+        generateCustomerID();
         $('#txtCustomerID').focus();
     } else {
         deleteErrorCustomerAlert();
@@ -73,6 +80,7 @@ $("#btnUpdateCustomer").click(function () {
     if (response) {
         updateCustomerAlert();
         clearCustomerTextField();
+        generateCustomerID();
         $('#txtCustomerID').focus();
     } else {
         updateErrorCustomerAlert();
@@ -93,6 +101,7 @@ $('#customermyInput').on('keyup', function () {
 //btn Clear Text Field Data
 $('#btnClearCustomer').click(function () {
     clearCustomerTextField();
+    generateCustomerID();
     $('#txtCustomerID').focus();
 });
 
@@ -149,12 +158,14 @@ function deleteErrorCustomerAlert() {
 
 
 //when click table row data auto fill into text fields
-function bindRowClickEvents() {
+function bindCustomerRowClickEvents() {
     $('#tblCustomer>tr').click(function () {
         let id = $(this).children(':eq(0)').text();
         let name = $(this).children(':eq(1)').text();
         let address = $(this).children(':eq(2)').text();
         let salary = $(this).children(':eq(3)').text();
+
+        console.log(id, name, address, salary);
 
         $('#txtCustomerID').val(id);
         $('#txtCustomerName').val(name);
@@ -239,7 +250,7 @@ function updateCustomer(customerID) {
 
 //Validation
 // customer regular expressions
-const cusIDRegEx = /^(C)[0-9]{3}$/;
+const cusIDRegEx = /^(C-)[0-9]{3}$/;
 const cusNameRegEx = /^[A-z ]{3,20}$/;
 const cusAddressRegEx = /^[0-9/A-z. ,]{7,}$/;
 const cusSalaryRegEx = /^[0-9]{1,}[.]?[0-9]{1,2}$/;
@@ -284,6 +295,8 @@ $("#txtCustomerID,#txtCustomerName,#txtCustomerAddress,#txtCustomerSalary").on('
 $("#txtCustomerID,#txtCustomerName,#txtCustomerAddress,#txtCustomerSalary").on('blur', function (event) {
     checkCustomerValidity();
 });
+
+
 
 $("#txtCustomerID").on('keydown', function (event) {
     if (event.key == "Enter" && checkCustomer(cusIDRegEx, $("#txtCustomerID"))) {
@@ -343,7 +356,7 @@ function setCustomerTextError(txtField, error) {
     } else {
         txtField.css('border', '2px solid red');
         txtField.parent().children('span').text(error);
-        txtField.parent().children('span').css('color','red');
+        txtField.parent().children('span').css('color', 'red');
     }
 
 }
@@ -372,4 +385,41 @@ function setCustomerButtonState(value) {
     } else {
         $("#btnSaveCustomer").attr('disabled', false);
     }
+}
+
+//Generate Order ID
+function generateCustomerID() {
+    try {
+        let lastOId = customers[customers.length - 1].id;
+        let newOId = parseInt(lastOId.substring(4, 7)) + 1;
+        if (newOId < 10) {
+            $("#txtCustomerID").val("CID-00" + newOId);
+        } else if (newOId < 100) {
+            $("#txtCustomerID").val("CID-0" + newOId);
+        } else {
+            $("#txtCustomerID").val("CID-" + newOId);
+        }
+    } catch (e) {
+        $("#txtCustomerID").val("CID-001");
+    }
+}
+
+//when double click table row delete
+function removeCustomerInTable() {
+    $("#tblCustomer>tr").on('dblclick', function () {
+        $(this).remove();
+        let totAfterRemove = $('#total').text();
+        let newVal = totAfterRemove - parseFloat($($(this).children(this).get(5)).text());
+        $('#total').text(newVal).append('.00');
+
+        $('#txtCash').val('');
+        $('#txtDiscount').val('');
+        $('#txtBalance').val('');
+
+
+        if ($("#txtDiscount").val() === "") {
+            $('#subTotal').text(newVal);
+        }
+    });
+
 }

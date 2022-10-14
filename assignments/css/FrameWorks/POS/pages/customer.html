@@ -354,6 +354,21 @@
         }
     }
 
+    //update Customer function
+    function updateCustomer(customerID) {
+        let customer = searchCustomer(customerID);
+        if (customer != null) {
+            customer.id = $('#txtCustomerID').val();
+            customer.name = $('#txtCustomerName').val();
+            customer.address = $('#txtCustomerAddress').val();
+            customer.salary = $('#txtCustomerSalary').val();
+            loadAllCustomers();
+            return true;
+        } else {
+            return false;
+        }
+    }
+
     //validation
     //update Customer function
     function updateCustomer(customerID) {
