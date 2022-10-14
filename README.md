@@ -34,12 +34,15 @@ https://www.gloomaps.com/hGbTmZ4svX
 
 ️️🖼️ Mock Up: https://www.figma.com/file/k2K5Yn6UaJwkUHw4Sh1amv/Untitled?node-id=1%3A2
 
-
+---
 ### Languages
-*HTML
-*CSS
-*Java Script
-*Bootstrap
+
+* HTML
+* CSS
+* Java Script
+* Bootstrap
+---
+
 
 
 
