@@ -1,4 +1,4 @@
-$('#itmbttn').click(function (){
+$('#itmbttn').click(function () {
     $('#txtItemCode').focus();
 });
 
@@ -8,28 +8,33 @@ $('#btnSaveItem').click(function () {
     saveItem();
 });
 
-function saveItem(){
+function saveItem() {
     let itemCode = $('#txtItemCode').val();
     let itemName = $('#txtItemName').val();
     let itemQtyOnHand = $('#txtItemQTYOnHand').val();
     let itemPrice = $('#txtItemPrice').val();
 
 
-    var itemObject =ItemModel(itemCode,itemName,itemQtyOnHand,itemPrice);
+    var itemObject = ItemModel(itemCode, itemName, itemQtyOnHand, itemPrice);
 
     //add the item object to the array
     items.push(itemObject);
 
-
     loadAllItems();
+
+    bindItemRowClickEvents();
 
     clearItemTextField();
 
-    bindRowClickEvents();
+    $('#txtItemCode').focus();
 
+    generateItemID();
+
+    setItemsCount();
+
+    //load itemCode to combo box
     loadAllItemsForOption();
 
-    $('#txtItemCode').focus();
 }
 
 
@@ -52,8 +57,9 @@ function loadAllItems() {
 $("#btnItemDelete").click(function () {
     let deleteItemID = $("#txtItemCode").val();
     if (deleteItem(deleteItemID)) {
-        clearItemTextField();
         deleteItemAlert();
+        clearItemTextField();
+        generateItemID();
         $('#txtItemCode').focus();
     } else {
         deleteErrorItemAlert();
@@ -67,11 +73,12 @@ $("#btnItemDelete").click(function () {
 $("#btnItemUpdate").click(function () {
     let itemID = $("#txtItemCode").val();
     let response = updateItem(itemID);
-    if(response){
+    if (response) {
         updateItemAlert();
         clearItemTextField();
+        generateItemID();
         $('#txtItemCode').focus();
-    }else {
+    } else {
         updateErrorItemAlert();
         $('#txtItemCode').focus();
     }
@@ -90,6 +97,7 @@ $('#itemmyInput').on('keyup', function () {
 //btn Clear Text Field Data
 $('#btnClearItem').click(function () {
     clearItemTextField();
+    generateItemID();
     $('#txtItemCode').focus();
 });
 
@@ -117,7 +125,7 @@ function updateItemAlert() {
 }
 
 //error Alert
-function updateErrorItemAlert(){
+function updateErrorItemAlert() {
     Swal.fire({
         icon: 'error',
         title: 'Oops...',
@@ -147,7 +155,7 @@ function deleteErrorItemAlert() {
 
 
 //when click table row data auto fill into text fields
-function bindRowClickEvents() {
+function bindItemRowClickEvents() {
     $('#tblItem>tr').click(function () {
         let code = $(this).children(':eq(0)').text();
         let name = $(this).children(':eq(1)').text();
@@ -223,14 +231,14 @@ function deleteItem(itemCode) {
 //update Item function
 function updateItem(itemCode) {
     let item = searchItem(itemCode);
-    if(item!= null){
+    if (item != null) {
         item.code = $("#txtItemCode").val();
         item.name = $("#txtItemName").val();
         item.qtyonhand = $("#txtItemQTYOnHand").val();
         item.price = $("#txtItemPrice").val();
         loadAllItems();
         return true;
-    }else {
+    } else {
         return false;
     }
 }
@@ -239,33 +247,33 @@ function updateItem(itemCode) {
 //Validation
 // item regular expressions
 const itemIDRegEx = /^(I)[0-9]{3}$/;
-const itemNameRegEx = /^[A-z ]{5,20}$/;
-const itemQtyOnHandRegEx = /^[1-9]{1,}$/;
+const itemNameRegEx = /^[A-z ]{4,20}$/;
+const itemQtyOnHandRegEx = /^[1-9][0-9]*$/;
 const itemPriceRegEx = /^[0-9]{1,}[.]?[0-9]{1,2}$/;
 
-let itemValidations =[];
+let itemValidations = [];
 
 itemValidations.push({
-    reg:itemIDRegEx,
-    field:$('#txtItemCode'),
+    reg: itemIDRegEx,
+    field: $('#txtItemCode'),
     error: 'Item Code Pattern is Wrong : I001'
 });
 
 itemValidations.push({
-    reg:itemNameRegEx,
-    field:$('#txtItemName'),
+    reg: itemNameRegEx,
+    field: $('#txtItemName'),
     error: 'Item Name Pattern is Wrong : A-z 5-20'
 });
 
 itemValidations.push({
-    reg:itemQtyOnHandRegEx,
-    field:$('#txtItemQTYOnHand'),
+    reg: itemQtyOnHandRegEx,
+    field: $('#txtItemQTYOnHand'),
     error: 'Item Salary Pattern is Wrong : 1 or 100'
 });
 
 itemValidations.push({
-    reg:itemPriceRegEx,
-    field:$('#txtItemPrice'),
+    reg: itemPriceRegEx,
+    field: $('#txtItemPrice'),
     error: 'Item  Pattern is Wrong : 1 or 100.00'
 });
 
@@ -371,5 +379,22 @@ function setItemButtonState(value) {
         $("#btnSaveItem").attr('disabled', true);
     } else {
         $("#btnSaveItem").attr('disabled', false);
+    }
+}
+
+//Generate Order ID
+function generateItemID() {
+    try {
+        let lastOId = items[items.length - 1].code;
+        let newOId = parseInt(lastOId.substring(4, 7)) + 1;
+        if (newOId < 10) {
+            $("#txtItemCode").val("I00" + newOId);
+        } else if (newOId < 100) {
+            $("#txtItemCode").val("I0" + newOId);
+        } else {
+            $("#txtItemCode").val("I" + newOId);
+        }
+    } catch (e) {
+        $("#txtItemCode").val("I001");
     }
 }
