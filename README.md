@@ -7,7 +7,7 @@ https://www.gloomaps.com/hGbTmZ4svX
 
 🕸️ Wire-Frame: https://wireframe.cc/uTgbMo
 
-️️🖼️ Mock Up: https://www.figma.com/file/dcnDBMDldGN8Z3bgiEhHNV/portfolio?node-id=137%3A2
+️️🖼️ Mock Up: https://www.figma.com/file/kQubaLrNALusIFF26GbgcR/Untitled?node-id=0%3A1
 
 🌐 Infinity Free: http:http://lasdemogdse.epizy.com/
 
