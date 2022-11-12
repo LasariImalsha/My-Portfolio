@@ -68,7 +68,34 @@
 
 <script src="js/jquery-3.6.1.min.js"></script>
 <script>
+    var queData={
+        persons:[
+            {name:'Lasari',colour:'blue'},
+            {name:'Jithmi',colour:'red'},
+            {name:'Hiruni',colour:'orange'}
+        ],
+        nextPerson:function () {
+            var lastPerson = this.persons.pop();
+            this.persons.unshift(lastPerson);
+        }
+    }
 
+    function renderQue() {
+        $(`#container`).empty();
+        for (let i=0; i<queData.persons.length; i++){
+            $(`#container`).append(`<div style="background-color: ${queData.persons[i].colour}"><h1>${queData.persons[i].name}</h1></div>`);
+        }
+        queData.nextPerson();
+    }
+
+    setInterval(renderQue,500)
+
+    $(`#btnAdd`).click(function () {
+        let name=$(`#txtName`).val();
+        let colour=$(`#txtColor`).val();
+
+        queData.persons.unshift({name: name,colour: colour});
+    });
 
 </script>
 </body>
