@@ -6,6 +6,7 @@
 
 ::-webkit-scrollbar-thumb{
     background-color: gray;
+    
 }
 
 body {
@@ -36,7 +37,7 @@ header > nav > img{
 }
 
 /*Add header headlines and styles*/
-header > nav > article {
+header > nav > section {
     position: absolute;
     right: 25px;
     top : 22px;
@@ -47,19 +48,19 @@ header > nav > article {
 }
 
 /*Remove headlines underlines and add paddings*/
-body > header > nav > article > a, u{
+body > header > nav > section > a, u{
     text-decoration: none;
     color: aliceblue;
     padding-right: 20px;
 }
 
 /*Added hover colors into header nav*/
-body > header > nav > article > a:hover {
+body > header > nav > section > a:hover {
     color: #927733;
 }
 
 /*Hire button*/
-body > header > nav > article > button {
+body > header > nav > section > button {
     background: #808DAD;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border: 2px solid #927733;

@@ -85,22 +85,6 @@ main > section {
     margin: auto;
 }
 
-/*add all projects view button*/
-/*.Pview_btn {*/
-/*    position: relative;*/
-/*    left: 355px;*/
-/*    bottom: 10px;*/
-/*    border-radius: 100%;*/
-/*    !*border: 1px solid red;*!*/
-/*    width: 30px;*/
-/*    height: 30px;*/
-/*    border: 1px solid white;*/
-/*    background: #FFFFFF;*/
-/*    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
-/*    cursor: pointer;*/
-/*    transition: 0.3s;*/
-/*}*/
-
 .prview_img {
     position: relative;
     left: 350px;
@@ -276,3 +260,1067 @@ body > footer {
     color: white;
 }
 
+/*Laptop large*/
+@media all and (max-width:1024px) {
+    ::-webkit-scrollbar {
+        width: 10px;
+        background-color: seashell;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: gray;
+    }
+    /*-------------------------------------------------------------------*/
+    body {
+        position: relative;
+    }
+    /*add header*/
+    body > header {
+        width: 100%;
+        height: 70px;
+        position: sticky;
+        top: 0;
+        z-index: 15;
+        background: #5B657C;
+    }
+
+    /*!*add Headline Project*!*/
+    .headline_div {
+        position: absolute;
+        font-size: 30px;
+        text-align: center;
+        color: white;
+        left: 0;
+        right: 0;
+        bottom:-26px;
+    }
+
+    /*!*add font to Project*!*/
+    .headline_div h2 {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    /*-----------------------------------------------------------------------------------------------------*/
+    /*add styles for all Sections*/
+    main > section {
+        /*border: 1px solid red;*/
+        display: flex;
+        width: 100%;
+        height: 600px;
+        position: relative;
+        top: 0px;
+        background-color: #0E1630;
+        color: #808DAD;
+    }
+
+    /*add styles under section main div*/
+    .project_maindiv {
+        /*border: 1px solid blue;*/
+        width: 100%;
+        height: 100%;
+
+    }
+
+    /*add styles for all headings*/
+    .heading {
+        color: #927733;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-family: 'Nunito', sans-serif;
+        font-size: 20px;
+        text-align: center;
+    }
+    /*add hostel management system div*/
+    .hostel_management_system_image_div {
+        position: relative;
+        /*border: 1px solid green;*/
+        width: 100%;
+        height: 300px;
+    }
+
+    /*add hostel management system image*/
+    .hostel_management_system_image_div > img {
+        width: 390px;
+        height: 240px;
+        position: absolute;
+        left: 0;
+        top: -20px;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .prview_img {
+        position: relative;
+        left: 350px;
+        bottom: 1px;
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+    }
+
+    .prview_img :hover{
+        width:43px;
+        height: 43px;
+    }
+
+    /*add all projects view button hover*/
+    .Pview_btn:hover {
+        width: 31px;
+        height: 31px;
+        transition: 0.3s;
+    }
+
+    /*add eye icon in view button*/
+    .Pview_btn .fa-solid {
+        font-size: 20px;
+        left: 3px;
+        bottom: 4px;
+        position: absolute;
+        color: black;
+    }
+
+    /*add introduction hostel management system*/
+    .hostel_project_introduction{
+        /*border: 1px solid red;*/
+        font-family: 'Nunito', sans-serif;
+        font-size: 16px;
+        width: 430px;
+        position: relative;
+        top: 50px;
+        left: 140px;
+        text-align: center;
+    }
+
+    /*Hardware system div*/
+    .hardware_management_system_image_div {
+        position: relative;
+        /*border: 1px solid green;*/
+        width: 100%;
+        height: 300px;
+    }
+
+    /*add hardware management system image*/
+    .hardware_management_system_image_div > img {
+        width: 340px;
+        height: 240px;
+        position: absolute;
+        left: 0;
+        top: -20px;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    /*add introduction hardware management  system*/
+    .hardware_system_introduction {
+        /*border: 1px solid red;*/
+        font-family: 'Nunito', sans-serif;
+        font-size: 16px;
+        width: 430px;
+        position: relative;
+        top: 50px;
+        left: 140px;
+        text-align: center;
+    }
+
+    /*add super Market product system div*/
+    .supermarket_system_image_div {
+        position: relative;
+        /*border: 1px solid green;*/
+        width: 100%;
+        height: 300px;
+    }
+
+    /*add super Market system image*/
+    .supermarket_system_image_div > img {
+        width: 300px;
+        height: 240px;
+        position: absolute;
+        left: 0;
+        top: -20px;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    /*add introduction super market  system*/
+    .supermarket_project_introduction {
+        /*border: 1px solid red;*/
+        font-family: 'Nunito', sans-serif;
+        font-size: 16px;
+        width: 430px;
+        position: relative;
+        top: 50px;
+        left: 140px;
+        text-align: center;
+    }
+
+    /*add chat app div*/
+    .live_chat_system_image_div {
+        position: relative;
+        /*border: 1px solid green;*/
+        width: 100%;
+        height: 300px;
+    }
+
+    /*add chat app image*/
+    .live_chat_system_image_div > img {
+        width: 340px;
+        height: 240px;
+        position: absolute;
+        left: 0;
+        top: -20px;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    /*add introduction chat app*/
+    .live_chat_project_introduction {
+        /*border: 1px solid red;*/
+        font-family: 'Nunito', sans-serif;
+        font-size: 16px;
+        width: 430px;
+        position: relative;
+        top: 50px;
+        left: 140px;
+        text-align: center;
+    }
+
+    /*footer Section*/
+    /*add colors and height into footer*/
+    body > footer {
+        position: relative;
+        height: 70px;
+        width: 100%;
+        background-color: #5B657C;
+    }
+
+    .back_png {
+        /*border: 1px solid red;*/
+        position: absolute;
+        left: 0;
+        top: 20px;
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        right: 0;
+        margin: auto;
+        border: 1px solid white;
+        transition: 1.3s;
+    }
+
+    .back_png:hover {
+        width: 41px;
+        height: 41px;
+        transition: 1.3s;
+    }
+
+    .back_png .fa-solid {
+        font-size: 30px;
+        position: relative;
+        left: -2px;
+        top: 1px;
+        color: white;
+    }
+
+}
+
+/*Tablet*/
+@media all and (max-width:768px){
+    ::-webkit-scrollbar {
+        width: 10px;
+        background-color: seashell;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: gray;
+    }
+    /*-------------------------------------------------------------------*/
+    body {
+        position: relative;
+    }
+    /*add header*/
+    body > header {
+        width: 100%;
+        height: 70px;
+        position: sticky;
+        top: 0;
+        z-index: 15;
+        background: #5B657C;
+    }
+
+    /*!*add Headline Project*!*/
+    .headline_div {
+        position: absolute;
+        font-size: 30px;
+        text-align: center;
+        color: white;
+        left: 0;
+        right: 0;
+        bottom:-26px;
+    }
+
+    /*!*add font to Project*!*/
+    .headline_div h2 {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    /*-----------------------------------------------------------------------------------------------------*/
+    /*add styles for all Sections*/
+    main > section {
+        /*border: 1px solid red;*/
+        display: flex;
+        width: 100%;
+        height: 600px;
+        position: relative;
+        top: 0px;
+        background-color: #0E1630;
+        color: #808DAD;
+    }
+
+    /*add styles under section main div*/
+    .project_maindiv {
+        /*border: 1px solid blue;*/
+        width: 100%;
+        height: 100%;
+
+    }
+
+    /*add styles for all headings*/
+    .heading {
+        color: #927733;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-family: 'Nunito', sans-serif;
+        font-size: 20px;
+        text-align: center;
+    }
+    /*add hostel management system div*/
+    .hostel_management_system_image_div {
+        position: relative;
+        /*border: 1px solid green;*/
+        width: 100%;
+        height: 300px;
+    }
+
+    /*add hostel management system image*/
+    .hostel_management_system_image_div > img {
+        width: 390px;
+        height: 240px;
+        position: absolute;
+        left: 0;
+        top: -20px;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .prview_img {
+        position: relative;
+        left: 350px;
+        bottom: 1px;
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+    }
+
+    .prview_img :hover{
+        width:43px;
+        height: 43px;
+    }
+
+    /*add all projects view button hover*/
+    .Pview_btn:hover {
+        width: 31px;
+        height: 31px;
+        transition: 0.3s;
+    }
+
+    /*add eye icon in view button*/
+    .Pview_btn .fa-solid {
+        font-size: 20px;
+        left: 3px;
+        bottom: 4px;
+        position: absolute;
+        color: black;
+    }
+
+    /*add introduction hostel management system*/
+    .hostel_project_introduction{
+        /*border: 1px solid red;*/
+        font-family: 'Nunito', sans-serif;
+        font-size: 16px;
+        width: 430px;
+        position: relative;
+        top: 50px;
+        left: 140px;
+        text-align: center;
+    }
+
+    /*Hardware system div*/
+    .hardware_management_system_image_div {
+        position: relative;
+        /*border: 1px solid green;*/
+        width: 100%;
+        height: 300px;
+    }
+
+    /*add hardware management system image*/
+    .hardware_management_system_image_div > img {
+        width: 340px;
+        height: 240px;
+        position: absolute;
+        left: 0;
+        top: -20px;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    /*add introduction hardware management  system*/
+    .hardware_system_introduction {
+        /*border: 1px solid red;*/
+        font-family: 'Nunito', sans-serif;
+        font-size: 16px;
+        width: 430px;
+        position: relative;
+        top: 50px;
+        left: 140px;
+        text-align: center;
+    }
+
+    /*add super Market product system div*/
+    .supermarket_system_image_div {
+        position: relative;
+        /*border: 1px solid green;*/
+        width: 100%;
+        height: 300px;
+    }
+
+    /*add super Market system image*/
+    .supermarket_system_image_div > img {
+        width: 300px;
+        height: 240px;
+        position: absolute;
+        left: 0;
+        top: -20px;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    /*add introduction super market  system*/
+    .supermarket_project_introduction {
+        /*border: 1px solid red;*/
+        font-family: 'Nunito', sans-serif;
+        font-size: 16px;
+        width: 430px;
+        position: relative;
+        top: 50px;
+        left: 140px;
+        text-align: center;
+    }
+
+    /*add chat app div*/
+    .live_chat_system_image_div {
+        position: relative;
+        /*border: 1px solid green;*/
+        width: 100%;
+        height: 300px;
+    }
+
+    /*add chat app image*/
+    .live_chat_system_image_div > img {
+        width: 340px;
+        height: 240px;
+        position: absolute;
+        left: 0;
+        top: -20px;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    /*add introduction chat app*/
+    .live_chat_project_introduction {
+        /*border: 1px solid red;*/
+        font-family: 'Nunito', sans-serif;
+        font-size: 16px;
+        width: 430px;
+        position: relative;
+        top: 50px;
+        left: 140px;
+        text-align: center;
+    }
+
+    /*footer Section*/
+    /*add colors and height into footer*/
+    body > footer {
+        position: relative;
+        height: 70px;
+        width: 100%;
+        background-color: #5B657C;
+    }
+
+    .back_png {
+        /*border: 1px solid red;*/
+        position: absolute;
+        left: 0;
+        top: 20px;
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        right: 0;
+        margin: auto;
+        border: 1px solid white;
+        transition: 1.3s;
+    }
+
+    .back_png:hover {
+        width: 41px;
+        height: 41px;
+        transition: 1.3s;
+    }
+
+    .back_png .fa-solid {
+        font-size: 30px;
+        position: relative;
+        left: -2px;
+        top: 1px;
+        color: white;
+    }
+
+
+}
+
+/*Mobile*/
+@media all and (max-width: 425px) {
+    ::-webkit-scrollbar {
+        width: 10px;
+        background-color: seashell;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: gray;
+    }
+    /*-------------------------------------------------------------------*/
+    body {
+        position: relative;
+    }
+    /*add header*/
+    body > header {
+        width: 100%;
+        height: 70px;
+        position: sticky;
+        top: 0;
+        z-index: 15;
+        background: #5B657C;
+    }
+
+    /*!*add Headline Project*!*/
+    .headline_div {
+        position: absolute;
+        font-size: 30px;
+        text-align: center;
+        color: white;
+        left: 0;
+        right: 0;
+        bottom:-26px;
+    }
+
+    /*!*add font to Project*!*/
+    .headline_div h2 {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    /*-----------------------------------------------------------------------------------------------------*/
+    /*add styles for all Sections*/
+    main > section {
+        /*border: 1px solid red;*/
+        display: flex;
+        width: 100%;
+        height: 600px;
+        position: relative;
+        top: 0px;
+        background-color: #0E1630;
+        color: #808DAD;
+    }
+
+    /*add styles under section main div*/
+    .project_maindiv {
+        /*border: 1px solid blue;*/
+        width: 100%;
+        height: 100%;
+
+    }
+
+    /*add styles for all headings*/
+    .heading {
+        color: #927733;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-family: 'Nunito', sans-serif;
+        font-size: 20px;
+        text-align: center;
+    }
+    /*add hostel management system div*/
+    .hostel_management_system_image_div {
+        position: relative;
+        /*border: 1px solid green;*/
+        width: 100%;
+        height: 300px;
+    }
+
+    /*add hostel management system image*/
+    .hostel_management_system_image_div > img {
+        width: 390px;
+        height: 240px;
+        position: absolute;
+        left: 0;
+        top: -20px;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .prview_img {
+        position: relative;
+        left: 350px;
+        bottom: 1px;
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+    }
+
+    .prview_img :hover{
+        width:43px;
+        height: 43px;
+    }
+
+    /*add all projects view button hover*/
+    .Pview_btn:hover {
+        width: 31px;
+        height: 31px;
+        transition: 0.3s;
+    }
+
+    /*add eye icon in view button*/
+    .Pview_btn .fa-solid {
+        font-size: 20px;
+        left: 3px;
+        bottom: 4px;
+        position: absolute;
+        color: black;
+    }
+
+    /*add introduction hostel management system*/
+    .hostel_project_introduction{
+        /*border: 1px solid red;*/
+        font-family: 'Nunito', sans-serif;
+        font-size: 16px;
+        width: 430px;
+        position: relative;
+        top: 50px;
+        left: 140px;
+        text-align: center;
+    }
+
+    /*Hardware system div*/
+    .hardware_management_system_image_div {
+        position: relative;
+        /*border: 1px solid green;*/
+        width: 100%;
+        height: 300px;
+    }
+
+    /*add hardware management system image*/
+    .hardware_management_system_image_div > img {
+        width: 340px;
+        height: 240px;
+        position: absolute;
+        left: 0;
+        top: -20px;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    /*add introduction hardware management  system*/
+    .hardware_system_introduction {
+        /*border: 1px solid red;*/
+        font-family: 'Nunito', sans-serif;
+        font-size: 16px;
+        width: 430px;
+        position: relative;
+        top: 50px;
+        left: 140px;
+        text-align: center;
+    }
+
+    /*add super Market product system div*/
+    .supermarket_system_image_div {
+        position: relative;
+        /*border: 1px solid green;*/
+        width: 100%;
+        height: 300px;
+    }
+
+    /*add super Market system image*/
+    .supermarket_system_image_div > img {
+        width: 300px;
+        height: 240px;
+        position: absolute;
+        left: 0;
+        top: -20px;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    /*add introduction super market  system*/
+    .supermarket_project_introduction {
+        /*border: 1px solid red;*/
+        font-family: 'Nunito', sans-serif;
+        font-size: 16px;
+        width: 430px;
+        position: relative;
+        top: 50px;
+        left: 140px;
+        text-align: center;
+    }
+
+    /*add chat app div*/
+    .live_chat_system_image_div {
+        position: relative;
+        /*border: 1px solid green;*/
+        width: 100%;
+        height: 300px;
+    }
+
+    /*add chat app image*/
+    .live_chat_system_image_div > img {
+        width: 340px;
+        height: 240px;
+        position: absolute;
+        left: 0;
+        top: -20px;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    /*add introduction chat app*/
+    .live_chat_project_introduction {
+        /*border: 1px solid red;*/
+        font-family: 'Nunito', sans-serif;
+        font-size: 16px;
+        width: 430px;
+        position: relative;
+        top: 50px;
+        left: 140px;
+        text-align: center;
+    }
+
+    /*footer Section*/
+    /*add colors and height into footer*/
+    body > footer {
+        position: relative;
+        height: 70px;
+        width: 100%;
+        background-color: #5B657C;
+    }
+
+    .back_png {
+        /*border: 1px solid red;*/
+        position: absolute;
+        left: 0;
+        top: 20px;
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        right: 0;
+        margin: auto;
+        border: 1px solid white;
+        transition: 1.3s;
+    }
+
+    .back_png:hover {
+        width: 41px;
+        height: 41px;
+        transition: 1.3s;
+    }
+
+    .back_png .fa-solid {
+        font-size: 30px;
+        position: relative;
+        left: -2px;
+        top: 1px;
+        color: white;
+    }
+
+}
+
+/*Mobile*/
+@media all and (max-width: 320px) {
+    ::-webkit-scrollbar {
+        width: 10px;
+        background-color: seashell;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: gray;
+    }
+    /*-------------------------------------------------------------------*/
+    body {
+        position: relative;
+    }
+    /*add header*/
+    body > header {
+        width: 100%;
+        height: 70px;
+        position: sticky;
+        top: 0;
+        z-index: 15;
+        background: #5B657C;
+    }
+
+    /*!*add Headline Project*!*/
+    .headline_div {
+        position: absolute;
+        font-size: 30px;
+        text-align: center;
+        color: white;
+        left: 0;
+        right: 0;
+        bottom:-26px;
+    }
+
+    /*!*add font to Project*!*/
+    .headline_div h2 {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    /*-----------------------------------------------------------------------------------------------------*/
+    /*add styles for all Sections*/
+    main > section {
+        /*border: 1px solid red;*/
+        display: flex;
+        width: 100%;
+        height: 600px;
+        position: relative;
+        top: 0px;
+        background-color: #0E1630;
+        color: #808DAD;
+    }
+
+    /*add styles under section main div*/
+    .project_maindiv {
+        /*border: 1px solid blue;*/
+        width: 100%;
+        height: 100%;
+
+    }
+
+    /*add styles for all headings*/
+    .heading {
+        color: #927733;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-family: 'Nunito', sans-serif;
+        font-size: 20px;
+        text-align: center;
+    }
+    /*add hostel management system div*/
+    .hostel_management_system_image_div {
+        position: relative;
+        /*border: 1px solid green;*/
+        width: 100%;
+        height: 300px;
+    }
+
+    /*add hostel management system image*/
+    .hostel_management_system_image_div > img {
+        width: 390px;
+        height: 240px;
+        position: absolute;
+        left: 0;
+        top: -20px;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .prview_img {
+        position: relative;
+        left: 350px;
+        bottom: 1px;
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+    }
+
+    .prview_img :hover{
+        width:43px;
+        height: 43px;
+    }
+
+    /*add all projects view button hover*/
+    .Pview_btn:hover {
+        width: 31px;
+        height: 31px;
+        transition: 0.3s;
+    }
+
+    /*add eye icon in view button*/
+    .Pview_btn .fa-solid {
+        font-size: 20px;
+        left: 3px;
+        bottom: 4px;
+        position: absolute;
+        color: black;
+    }
+
+    /*add introduction hostel management system*/
+    .hostel_project_introduction{
+        /*border: 1px solid red;*/
+        font-family: 'Nunito', sans-serif;
+        font-size: 16px;
+        width: 430px;
+        position: relative;
+        top: 50px;
+        left: 140px;
+        text-align: center;
+    }
+
+    /*Hardware system div*/
+    .hardware_management_system_image_div {
+        position: relative;
+        /*border: 1px solid green;*/
+        width: 100%;
+        height: 300px;
+    }
+
+    /*add hardware management system image*/
+    .hardware_management_system_image_div > img {
+        width: 340px;
+        height: 240px;
+        position: absolute;
+        left: 0;
+        top: -20px;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    /*add introduction hardware management  system*/
+    .hardware_system_introduction {
+        /*border: 1px solid red;*/
+        font-family: 'Nunito', sans-serif;
+        font-size: 16px;
+        width: 430px;
+        position: relative;
+        top: 50px;
+        left: 140px;
+        text-align: center;
+    }
+
+    /*add super Market product system div*/
+    .supermarket_system_image_div {
+        position: relative;
+        /*border: 1px solid green;*/
+        width: 100%;
+        height: 300px;
+    }
+
+    /*add super Market system image*/
+    .supermarket_system_image_div > img {
+        width: 300px;
+        height: 240px;
+        position: absolute;
+        left: 0;
+        top: -20px;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    /*add introduction super market  system*/
+    .supermarket_project_introduction {
+        /*border: 1px solid red;*/
+        font-family: 'Nunito', sans-serif;
+        font-size: 16px;
+        width: 430px;
+        position: relative;
+        top: 50px;
+        left: 140px;
+        text-align: center;
+    }
+
+    /*add chat app div*/
+    .live_chat_system_image_div {
+        position: relative;
+        /*border: 1px solid green;*/
+        width: 100%;
+        height: 300px;
+    }
+
+    /*add chat app image*/
+    .live_chat_system_image_div > img {
+        width: 340px;
+        height: 240px;
+        position: absolute;
+        left: 0;
+        top: -20px;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    /*add introduction chat app*/
+    .live_chat_project_introduction {
+        /*border: 1px solid red;*/
+        font-family: 'Nunito', sans-serif;
+        font-size: 16px;
+        width: 430px;
+        position: relative;
+        top: 50px;
+        left: 140px;
+        text-align: center;
+    }
+
+    /*footer Section*/
+    /*add colors and height into footer*/
+    body > footer {
+        position: relative;
+        height: 70px;
+        width: 100%;
+        background-color: #5B657C;
+    }
+
+    .back_png {
+        /*border: 1px solid red;*/
+        position: absolute;
+        left: 0;
+        top: 20px;
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        right: 0;
+        margin: auto;
+        border: 1px solid white;
+        transition: 1.3s;
+    }
+
+    .back_png:hover {
+        width: 41px;
+        height: 41px;
+        transition: 1.3s;
+    }
+
+    .back_png .fa-solid {
+        font-size: 30px;
+        position: relative;
+        left: -2px;
+        top: 1px;
+        color: white;
+    }
+
+}
