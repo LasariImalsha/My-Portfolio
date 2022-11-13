@@ -36,5 +36,48 @@
     </section>
 </section>
 
+<script src="assets/js/jquery-3.6.1.min.js"></script>
+<script>
+    var initArray=[];
+    var leftColours=['white','white','white','white','white','white','#d3c5c5','#be7474','#cd4a4a','#b83030','#c52525','#dc1e1e'];
+    var rightColours=['white','white','white','white','white','white','#dc1e1e','#c52525','#b83030','#cd4a4a','#be7474','#d3c5c5'];
+
+    function animateLeft() {
+        let lastColour = leftColours.pop();
+        leftColours.unshift(lastColour);
+    }
+
+    function animateRight() {
+        let firstColour = rightColours.shift();
+        rightColours.push(firstColour);
+    }
+
+    count=0;
+    function animate() {
+        count++;
+        if(count<=leftColours.length){
+            initArray=leftColours;
+            animateLeft();
+        }else{
+            if(count>=leftColours.length*2){
+                count=0
+            }
+            initArray=rightColours;
+            animateRight();
+        }
+    }
+    function renderKnightRider() {
+        $(`#container`).empty();
+        for(let i=0; i<(initArray.length)/2; i++){
+            $(`#container`).append(`<div style="background-color: ${initArray[i]}"></div>`);
+        }
+        animate();
+    }
+
+    setInterval(renderKnightRider,200);
+
+
+</script>
+
 </body>
 </html>
