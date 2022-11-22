@@ -4,16 +4,86 @@
     <meta charset="UTF-8">
     <title>TETRIS</title>
     <link rel="icon" href="assets/favIcon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital@1&display=swap" rel="stylesheet">
+    <style>
+        #score{
+            display: inline-block;
+            font-family: 'Fjalla One',sans-serif;
+        }
+
+        body{
+            text-align: center;
+            background-color: #363636;
+            font-weight: bold;
+            z-index: 2;
+            font-family: 'Fjalla One', sans-serif;
+        }
+
+        header{
+            font-size: 30px;
+            color: #735F32;
+            font-family: 'Bell MT',sans-serif;
+            font-weight: bold;
+
+        }
+
+        main{
+            position: relative;
+            z-index: 2;
+        }
+
+        main>section{
+            font-size: 25px;
+            color: #C69749;
+            z-index: 1;
+            font-family: 'Fjalla One', sans-serif;
+        }
+
+        #message{
+            position: relative;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #363636;
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #735F32;
+            z-index: 3;
+        }
+
+        .btn-Restart:active{
+            box-shadow: #282A3A 0 0 0;
+            transform: translateX(4px) translateY(4px);
+        }
+
+        #message>div:nth-child(1){
+            font-family: 'Bell MT', sans-serif;
+            font-size: 100px;
+        }
+
+        #message>div:nth-child(2){
+            font-family: 'Fjalla One', sans-serif;
+            font-size: 50px;
+        }
+
+        #message.show{
+            display: flex;
+        }
+
+    </style>
 </head>
 <body>
 <header>
     <p>TETRIS</p>
 </header>
 <main>
-    <canvas width="200" height="400" style="background-color: #2F2F2A"></canvas>
+    <canvas width="200" height="400" style="background-color: #f0f0f0"></canvas>
     <section>
         <br>
-        Scores: <div>0</div>
+        Scores: <div id="score">0</div>
     </section>
 </main>
 <section>
@@ -30,10 +100,10 @@
         <li></li>
     </ul>
 </section>
-<section>
+<section id="message">
     <div>Game Over</div><br>
     <div>Your Score : 0</div><br>
-    <button>Restart</button><br>
+    <button class="btn-Restart">Restart</button><br>
 </section>
 </body>
 </html>
