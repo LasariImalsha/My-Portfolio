@@ -23,4 +23,12 @@ for (r=0; r < ROW; r++ ){
     }
 }
 
-drawSquare();
+function drawBoard() {
+    for (r=0; r < ROW; r++){
+        for (c=0; c < COL; c++){
+           drawSquare(c,r,board[r][c]);
+        }
+    }
+}
+
+drawBoard();
