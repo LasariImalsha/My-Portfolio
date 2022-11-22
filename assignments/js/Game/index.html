@@ -14,9 +14,7 @@
         body{
             text-align: center;
             background-color: #363636;
-            font-weight: bold;
-            z-index: 2;
-            font-family: 'Fjalla One', sans-serif;
+
         }
 
         header{
@@ -24,6 +22,7 @@
             color: #735F32;
             font-family: 'Bell MT',sans-serif;
             font-weight: bold;
+            z-index: 2;
 
         }
 
@@ -40,7 +39,7 @@
         }
 
         #message{
-            position: relative;
+            position: fixed;
             top: 0;
             bottom: 0;
             left: 0;
@@ -54,6 +53,19 @@
             z-index: 3;
         }
 
+        .btnRestart{
+            width: 120px;
+            height:40px;
+            font-size: 20px;
+            background-color: #808DAD;
+            box-shadow: black 4px 4px 0;
+            border-width: 0;
+            border-radius: 8px;
+            color: white;
+            cursor: pointer;
+            font-family: 'Fjalla One', sans-serif;
+            transition: transform 200ms, box-shadow;
+        }
         .btnRestart:active{
             box-shadow: #282A3A 0 0 0;
             transform: translateX(4px) translateY(4px);
@@ -64,7 +76,7 @@
             font-size: 100px;
         }
 
-        #message>div:nth-child(2){
+        #message>div:nth-child(3){
             font-family: 'Fjalla One', sans-serif;
             font-size: 50px;
         }
