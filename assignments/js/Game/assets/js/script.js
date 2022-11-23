@@ -6,6 +6,17 @@ const COL = 10;
 const SQ  = 20;//squareSize
 const VACANT = "#F0EBCE";
 
+const PIECES = [
+    [Z,"#F7A4A4"],
+    [S,"#FEBE8C"],
+    [T,"#FFFBC1"],
+    [O,"#B6E2A1"],
+    [L,"#B8E8FC"],
+    [I,"#B1AFFF"],
+    [J,"#F9C5D5"]
+];
+
+
 let board = [];
 
 
