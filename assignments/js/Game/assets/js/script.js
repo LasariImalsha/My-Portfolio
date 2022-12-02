@@ -8,13 +8,13 @@ const SQ  = 20; //squareSize
 const VACANT = "#30343f";
 
 const PIECES = [
-    [Z,"#F7A4A4"],
-    [S,"#FEBE8C"],
-    [T,"#FFFBC1"],
-    [O,"#B6E2A1"],
-    [L,"#B8E8FC"],
-    [I,"#B1AFFF"],
-    [J,"#F9C5D5"]
+    [Z,"#143F6B"],
+    [S,"#FEB139"],
+    [T,"#EA047E"],
+    [O,"#FF6D28"],
+    [L,"#FCE700"],
+    [I,"#367E18"],
+    [J,"#00F5FF"]
 ];
 
 
